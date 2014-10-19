@@ -207,8 +207,8 @@ Basic small signal diode good up to 200mA. SMB footprint. Common part #: BAS16</
 <wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
 <smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
 <smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
-<text x="0" y="0.635" size="0.6096" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.635" size="0.6096" layer="27" font="vector" ratio="12" align="top-center">&gt;VALUE</text>
+<text x="-1.143" y="0" size="0.4064" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="1.143" y="0" size="0.4064" layer="27" font="vector" ratio="12" rot="R90" align="top-center">&gt;VALUE</text>
 </package>
 <package name="R0603">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
@@ -277,8 +277,8 @@ Basic small signal diode good up to 200mA. SMB footprint. Common part #: BAS16</
 <wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
 <smd name="2" x="1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
 <smd name="1" x="-1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<text x="-2.413" y="0" size="0.6096" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center">&gt;NAME</text>
-<text x="2.413" y="0" size="0.6096" layer="27" font="vector" ratio="12" rot="R90" align="top-center">&gt;VALUE</text>
+<text x="-2.413" y="0" size="0.4064" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="2.413" y="0" size="0.4064" layer="27" font="vector" ratio="12" rot="R90" align="top-center">&gt;VALUE</text>
 </package>
 <package name="R1206W">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
@@ -3709,8 +3709,8 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <rectangle x1="-2.921" y1="-0.254" x2="-2.286" y2="0.254" layer="21"/>
 </package>
 <package name="1X01NSATALL">
-<pad name="1" x="0" y="0" drill="0.8" diameter="1.6764" rot="R90"/>
-<text x="0" y="1.651" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<pad name="1" x="0" y="0" drill="0.8" diameter="1.6764" shape="octagon" rot="R90"/>
+<text x="0" y="0.9525" size="0.6096" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="1X01_LONGPAD">
 <wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
@@ -4008,8 +4008,8 @@ grid 2.5 mm, outline 2.5 x 5 mm</description>
 <wire x1="1.4" y1="1.1" x2="1.4" y2="-1.1" width="0.1524" layer="21"/>
 <wire x1="1.4" y1="-1.1" x2="-1.4" y2="-1.1" width="0.1524" layer="21"/>
 <wire x1="-1.4" y1="-1.1" x2="-1.4" y2="1.1" width="0.1524" layer="21"/>
-<text x="0" y="1.3" size="0.6096" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.3" size="0.6096" layer="27" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;VALUE</text>
+<text x="0" y="1.3" size="0.4064" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.3" size="0.4064" layer="27" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="SMA-DIODE">
 <description>&lt;B&gt;Diode&lt;/B&gt;&lt;p&gt;
@@ -4078,49 +4078,23 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <smd name="5" x="1.397" y="0" dx="0.6096" dy="0.3556" layer="1" rot="R180"/>
 <smd name="6" x="1.397" y="0.9398" dx="0.6096" dy="0.3556" layer="1" rot="R180"/>
 <smd name="7" x="0" y="0" dx="1.6002" dy="2.1082" layer="1"/>
-<wire x1="-1.9558" y1="0.9398" x2="-2.1082" y2="0.9398" width="0.1524" layer="21" curve="-180"/>
-<wire x1="-2.1082" y1="0.9398" x2="-1.9558" y2="0.9398" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-1.3208" y1="1.3843" x2="-1.4732" y2="1.3843" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-1.4732" y1="1.3843" x2="-1.3208" y2="1.3843" width="0.1524" layer="21" curve="-180"/>
 <wire x1="-1.0414" y1="1.5494" x2="-1.5494" y2="1.5494" width="0.1524" layer="51"/>
 <wire x1="-1.5494" y1="1.0414" x2="-1.5494" y2="-1.5494" width="0.1524" layer="51"/>
-<wire x1="-1.9558" y1="0.9398" x2="-2.1082" y2="0.9398" width="0.1524" layer="51" curve="-180"/>
-<wire x1="-2.1082" y1="0.9398" x2="-1.9558" y2="0.9398" width="0.1524" layer="51" curve="-180"/>
-<text x="0" y="1.778" size="0.6096" layer="25" font="vector" ratio="12" rot="SR0" align="bottom-center">&gt;NAME</text>
-<wire x1="-1.5494" y1="-1.5494" x2="1.5494" y2="-1.5494" width="0.1524" layer="21"/>
-<wire x1="1.5494" y1="1.5494" x2="-1.5494" y2="1.5494" width="0.1524" layer="21"/>
+<text x="0" y="1.651" size="0.6096" layer="25" font="vector" ratio="12" rot="SR0" align="bottom-center">&gt;NAME</text>
 <wire x1="-1.0414" y1="1.5494" x2="-1.5494" y2="1.0414" width="0.1524" layer="51"/>
 <wire x1="-1.5494" y1="-1.5494" x2="1.5494" y2="-1.5494" width="0.1524" layer="51"/>
 <wire x1="1.5494" y1="-1.5494" x2="1.5494" y2="1.5494" width="0.1524" layer="51"/>
 <wire x1="1.5494" y1="1.5494" x2="-1.0414" y2="1.5494" width="0.1524" layer="51"/>
 <wire x1="-1.5494" y1="1.5494" x2="-1.5494" y2="1.0414" width="0.1524" layer="51"/>
 </package>
-<package name="SO08-EIAJ">
-<description>Fits EIAJ packages (wide version of the SOIC-8).</description>
-<wire x1="-2.54" y1="-2.032" x2="2.54" y2="-2.032" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-2.032" x2="2.54" y2="2.032" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="2.032" x2="-2.54" y2="2.032" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-2.54" y2="-2.032" width="0.1524" layer="21"/>
-<smd name="1" x="-1.905" y="-3.3782" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="2" x="-0.635" y="-3.3782" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="3" x="0.635" y="-3.3782" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="4" x="1.905" y="-3.3782" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="5" x="1.905" y="3.3528" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="6" x="0.635" y="3.3528" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="7" x="-0.635" y="3.3528" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="8" x="-1.905" y="3.3528" dx="0.6096" dy="2.2098" layer="1"/>
-<text x="0" y="0" size="0.6096" layer="25" font="vector" ratio="12" align="center">&gt;VALUE</text>
-<text x="-2.667" y="0" size="0.6096" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center">&gt;NAME</text>
-<wire x1="-2.54" y1="2.032" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-2.54" y2="0.635" width="0.1524" layer="21" curve="180"/>
-</package>
 <package name="DIP08">
 <description>&lt;b&gt;Dual In Line&lt;/b&gt;</description>
 <wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-1.524" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-2.54" width="0.2032" layer="21"/>
 <wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.2032" layer="21"/>
 <wire x1="-5.08" y1="-2.54" x2="5.08" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="-1.524" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="-1.524" x2="-5.08" y2="-1.016" width="0.2032" layer="21"/>
-<circle x="-3.81" y="-1.27" radius="0.7184" width="0.254" layer="21"/>
 <pad name="1" x="-3.81" y="-3.81" drill="0.8128" diameter="1.7272" shape="octagon"/>
 <pad name="2" x="-1.27" y="-3.81" drill="0.8128" diameter="1.7272" shape="octagon"/>
 <pad name="3" x="1.27" y="-3.81" drill="0.8128" diameter="1.7272" shape="octagon"/>
@@ -4129,8 +4103,33 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <pad name="6" x="1.27" y="3.81" drill="0.8128" diameter="1.7272" shape="octagon"/>
 <pad name="7" x="-1.27" y="3.81" drill="0.8128" diameter="1.7272" shape="octagon"/>
 <pad name="8" x="-3.81" y="3.81" drill="0.8128" diameter="1.7272" shape="octagon"/>
-<text x="-3.175" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-5.715" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" font="vector" ratio="12" align="center">&gt;VALUE</text>
+<text x="-5.315" y="0" size="0.8128" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="SO08">
+<description>&lt;b&gt;Small Outline Package&lt;/b&gt; Fits JEDEC packages (narrow SOIC-8)</description>
+<smd name="1" x="-1.905" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="2" x="-0.635" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="3" x="0.635" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="4" x="1.905" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="5" x="1.905" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="6" x="0.635" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="7" x="-0.635" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="8" x="-1.905" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<text x="0" y="0" size="0.4064" layer="27" font="vector" ratio="12" align="center">&gt;VALUE</text>
+<text x="-2.54" y="0" size="0.4064" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center">&gt;NAME</text>
+<wire x1="-2.413" y1="1.27" x2="2.413" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="2.413" y1="1.27" x2="2.413" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="2.413" y1="-1.27" x2="-2.413" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.413" y1="-0.381" x2="-2.413" y2="0.381" width="0.1524" layer="21" curve="180"/>
+<wire x1="-2.413" y1="0.381" x2="-2.413" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.413" y1="-0.381" x2="-2.413" y2="-1.27" width="0.1524" layer="21"/>
+</package>
+<package name="1X01-KIT">
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90" stop="no"/>
+<circle x="0" y="0" radius="0.508" width="0" layer="29"/>
+<circle x="0" y="0" radius="0.9398" width="0" layer="30"/>
+<circle x="0" y="0" radius="1.016" width="0.1524" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -6430,6 +6429,14 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <technology name=""/>
 </technologies>
 </device>
+<device name="PTH-KIT" package="1X01-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="LM3410XSD" prefix="U">
@@ -6460,13 +6467,13 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </device>
 </devices>
 </deviceset>
-<deviceset name="ATTINY45" prefix="U" uservalue="yes">
-<description>Atmel 8-pin 2/4/8kB flash uC</description>
+<deviceset name="ATTINY13">
+<description>Atmel 8-pin 1kB flash uC</description>
 <gates>
 <gate name="G$1" symbol="ATTINY13" x="0" y="0"/>
 </gates>
 <devices>
-<device name="TINY45-20-SMT" package="SO08-EIAJ">
+<device name="SOIC" package="SO08">
 <connects>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="PB0(MOSI)" pad="5"/>
@@ -6478,13 +6485,10 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="IC-08922"/>
-<attribute name="VALUE" value="Tiny45-20-SMT" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
-<device name="TINY45-20-DIP" package="DIP08">
+<device name="DIP" package="DIP08">
 <connects>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="PB0(MOSI)" pad="5"/>
@@ -6496,46 +6500,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="IC-09439"/>
-<attribute name="VALUE" value="TINY45-20-DIP" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TINY85-20-DIP" package="DIP08">
-<connects>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="PB0(MOSI)" pad="5"/>
-<connect gate="G$1" pin="PB1(MISO)" pad="6"/>
-<connect gate="G$1" pin="PB2(SCK/ADC1)" pad="7"/>
-<connect gate="G$1" pin="PB3(ADC3)" pad="2"/>
-<connect gate="G$1" pin="PB4(ADC2)" pad="3"/>
-<connect gate="G$1" pin="PB5(NRES)" pad="1"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="IC-09445"/>
-<attribute name="VALUE" value="TINY85-20-DIP" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TINY85-20-SMT" package="SO08-EIAJ">
-<connects>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="PB0(MOSI)" pad="5"/>
-<connect gate="G$1" pin="PB1(MISO)" pad="6"/>
-<connect gate="G$1" pin="PB2(SCK/ADC1)" pad="7"/>
-<connect gate="G$1" pin="PB3(ADC3)" pad="2"/>
-<connect gate="G$1" pin="PB4(ADC2)" pad="3"/>
-<connect gate="G$1" pin="PB5(NRES)" pad="1"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="IC-09092"/>
-<attribute name="VALUE" value="Tiny85-20-SMT" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -6589,8 +6554,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JBATT+" library="A_butts" deviceset="M01" device="NOT-A-VIA-NOPE" value="M01NOT-A-VIA-NOPE"/>
 <part name="C2" library="A_butts" deviceset="CAPACITOR-CERAMIC" device="C0603" value="10uF"/>
 <part name="L1" library="A_butts" deviceset="INDUCTOR" device="IFSC-0806" value="4.7uH"/>
-<part name="LED+" library="A_butts" deviceset="M01" device="PTH-NS-NOTSUCK" value="M01PTH-NS-NOTSUCK"/>
-<part name="LED-" library="A_butts" deviceset="M01" device="PTH-NS-NOTSUCK" value="M01PTH-NS-NOTSUCK"/>
+<part name="+" library="A_butts" deviceset="M01" device="PTH-KIT" value="M01PTH-KIT"/>
+<part name="-" library="A_butts" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="D1" library="A_butts" deviceset="DIODE-SCHOTTKY" device="BAT20J" value="BAT20J"/>
 <part name="C3" library="A_butts" deviceset="CAPACITOR-CERAMIC" device="C0805" value="2.2uF"/>
@@ -6599,12 +6564,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U1" library="A_butts" deviceset="LM3410XSD" device=""/>
-<part name="R1" library="A_butts" deviceset="RESISTOR" device="R1206" value="1.3R"/>
-<part name="R2" library="A_butts" deviceset="RESISTOR" device="R1206" value="1.3R"/>
-<part name="U2" library="A_butts" deviceset="ATTINY45" device="TINY85-20-SMT" value="Tiny85-20-SMT"/>
+<part name="LM3410" library="A_butts" deviceset="LM3410XSD" device=""/>
+<part name="R1" library="A_butts" deviceset="RESISTOR" device="R1206" value="0.68"/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R3" library="A_butts" deviceset="RESISTOR" device="R0402" value="100k"/>
+<part name="IC2" library="A_butts" deviceset="ATTINY13" device="SOIC" value="ATTINY13"/>
+<part name="R2" library="A_butts" deviceset="RESISTOR" device="R0402" value="100k"/>
 </parts>
 <sheets>
 <sheet>
@@ -6623,12 +6587,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="73.66" y="78.74" size="1.778" layer="95"/>
 <attribute name="VALUE" x="73.66" y="73.66" size="1.778" layer="96"/>
 </instance>
-<instance part="LED+" gate="G$1" x="142.24" y="76.2" smashed="yes" rot="R180">
-<attribute name="NAME" x="144.78" y="80.518" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="LED-" gate="G$1" x="142.24" y="66.04" smashed="yes" rot="R180">
-<attribute name="NAME" x="144.78" y="70.358" size="1.778" layer="95" rot="R180"/>
-</instance>
+<instance part="+" gate="G$1" x="142.24" y="76.2" rot="R180"/>
+<instance part="-" gate="G$1" x="142.24" y="66.04" rot="R180"/>
 <instance part="GND1" gate="1" x="35.56" y="15.24"/>
 <instance part="D1" gate="G$1" x="116.84" y="76.2" smashed="yes">
 <attribute name="NAME" x="119.38" y="76.6826" size="1.778" layer="95"/>
@@ -6647,18 +6607,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND2" gate="1" x="111.76" y="53.34"/>
 <instance part="GND3" gate="1" x="121.92" y="53.34"/>
 <instance part="GND4" gate="1" x="60.96" y="38.1"/>
-<instance part="U1" gate="A" x="78.74" y="55.88"/>
-<instance part="R1" gate="G$1" x="45.72" y="25.4" smashed="yes">
-<attribute name="NAME" x="42.1386" y="21.59" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="44.958" y="21.59" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="R2" gate="G$1" x="45.72" y="30.48" smashed="yes">
-<attribute name="NAME" x="44.2214" y="34.29" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="46.482" y="34.29" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="U2" gate="G$1" x="58.42" y="104.14"/>
+<instance part="LM3410" gate="A" x="78.74" y="55.88"/>
+<instance part="R1" gate="G$1" x="45.72" y="27.94"/>
 <instance part="GND5" gate="1" x="40.64" y="93.98"/>
-<instance part="R3" gate="G$1" x="73.66" y="91.44" smashed="yes" rot="R270">
+<instance part="IC2" gate="G$1" x="58.42" y="104.14"/>
+<instance part="R2" gate="G$1" x="73.66" y="91.44" smashed="yes" rot="R270">
 <attribute name="NAME" x="72.39" y="95.0214" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="72.39" y="92.202" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -6677,15 +6630,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="27.94" y1="66.04" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="66.04" x2="30.48" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="27.94" x2="35.56" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="27.94" x2="35.56" y2="27.94" width="0.1524" layer="91"/>
 <junction x="35.56" y="27.94"/>
-<wire x1="38.1" y1="27.94" x2="38.1" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="30.48" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="27.94" x2="38.1" y2="25.4" width="0.1524" layer="91"/>
-<junction x="38.1" y="27.94"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="25.4" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="27.94" x2="40.64" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="L2" gate="G$1" pin="2"/>
@@ -6701,18 +6648,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="60.96" y1="40.64" x2="60.96" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="43.18" x2="60.96" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="PGND"/>
-<pinref part="U1" gate="A" pin="AGND"/>
+<pinref part="LM3410" gate="A" pin="PGND"/>
+<pinref part="LM3410" gate="A" pin="AGND"/>
 <wire x1="60.96" y1="45.72" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
 <junction x="60.96" y="45.72"/>
-<pinref part="U1" gate="A" pin="EPAD"/>
+<pinref part="LM3410" gate="A" pin="EPAD"/>
 <junction x="60.96" y="43.18"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="40.64" y1="96.52" x2="40.64" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="GND"/>
 <wire x1="40.64" y1="99.06" x2="43.18" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="LED_ANODE" class="0">
@@ -6723,19 +6670,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="121.92" y1="76.2" x2="121.92" y2="68.58" width="0.1524" layer="91"/>
 <junction x="121.92" y="76.2"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<pinref part="LED+" gate="G$1" pin="1"/>
+<pinref part="+" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="D0" class="0">
 <segment>
 <wire x1="50.8" y1="55.88" x2="60.96" y2="55.88" width="0.1524" layer="91"/>
 <label x="50.8" y="55.88" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="U1" gate="A" pin="DIM"/>
+<pinref part="LM3410" gate="A" pin="DIM"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="PB0(MOSI)"/>
 <wire x1="71.12" y1="111.76" x2="73.66" y2="111.76" width="0.1524" layer="91"/>
 <label x="73.66" y="111.76" size="1.778" layer="95" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="PB0(MOSI)"/>
 </segment>
 </net>
 <net name="SW" class="0">
@@ -6746,7 +6693,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="96.52" y1="76.2" x2="86.36" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="60.96" x2="96.52" y2="76.2" width="0.1524" layer="91"/>
 <junction x="96.52" y="76.2"/>
-<pinref part="U1" gate="A" pin="SW"/>
+<pinref part="LM3410" gate="A" pin="SW"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -6762,22 +6709,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="N$6" class="0">
 <segment>
-<wire x1="53.34" y1="27.94" x2="55.88" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="27.94" x2="55.88" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="53.34" x2="60.96" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="LED-" gate="G$1" pin="1"/>
+<pinref part="-" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="66.04" x2="132.08" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="66.04" x2="132.08" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="27.94" x2="55.88" y2="27.94" width="0.1524" layer="91"/>
 <junction x="55.88" y="27.94"/>
-<pinref part="U1" gate="A" pin="FB"/>
+<pinref part="LM3410" gate="A" pin="FB"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="25.4" x2="53.34" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="25.4" x2="53.34" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="30.48" x2="53.34" y2="27.94" width="0.1524" layer="91"/>
-<junction x="53.34" y="27.94"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="30.48" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="27.94" x2="55.88" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V_BATT+" class="0">
@@ -6792,8 +6733,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="60.96" y1="60.96" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="60.96" x2="58.42" y2="76.2" width="0.1524" layer="91"/>
 <junction x="58.42" y="76.2"/>
-<pinref part="U1" gate="A" pin="VIN"/>
-<pinref part="U2" gate="G$1" pin="VCC"/>
+<pinref part="LM3410" gate="A" pin="VIN"/>
 <wire x1="43.18" y1="111.76" x2="35.56" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="111.76" x2="35.56" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="76.2" x2="63.5" y2="83.82" width="0.1524" layer="91"/>
@@ -6803,15 +6743,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="JBATT+" gate="G$1" pin="1"/>
 <wire x1="27.94" y1="76.2" x2="35.56" y2="76.2" width="0.1524" layer="91"/>
 <label x="35.56" y="86.36" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="IC2" gate="G$1" pin="VCC"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="PB5(NRES)"/>
 <wire x1="71.12" y1="99.06" x2="73.66" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="99.06" x2="73.66" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="IC2" gate="G$1" pin="PB5(NRES)"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
