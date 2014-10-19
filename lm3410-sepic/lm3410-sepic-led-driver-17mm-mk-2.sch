@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
+<grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
@@ -207,8 +207,8 @@ Basic small signal diode good up to 200mA. SMB footprint. Common part #: BAS16</
 <wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
 <smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
 <smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
-<text x="-1.143" y="0" size="0.4064" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center">&gt;NAME</text>
-<text x="1.143" y="0" size="0.4064" layer="27" font="vector" ratio="12" rot="R90" align="top-center">&gt;VALUE</text>
+<text x="0" y="0.635" size="0.6096" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.635" size="0.6096" layer="27" font="vector" ratio="12" align="top-center">&gt;VALUE</text>
 </package>
 <package name="R0603">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
@@ -3708,10 +3708,6 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <rectangle x1="2.286" y1="-0.254" x2="2.921" y2="0.254" layer="21"/>
 <rectangle x1="-2.921" y1="-0.254" x2="-2.286" y2="0.254" layer="21"/>
 </package>
-<package name="1X01NSATALL">
-<pad name="1" x="0" y="0" drill="0.8" diameter="1.6764" shape="octagon" rot="R90"/>
-<text x="0" y="0.9525" size="0.6096" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-</package>
 <package name="1X01_LONGPAD">
 <wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
 <wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
@@ -4078,16 +4074,35 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <smd name="5" x="1.397" y="0" dx="0.6096" dy="0.3556" layer="1" rot="R180"/>
 <smd name="6" x="1.397" y="0.9398" dx="0.6096" dy="0.3556" layer="1" rot="R180"/>
 <smd name="7" x="0" y="0" dx="1.6002" dy="2.1082" layer="1"/>
-<wire x1="-1.3208" y1="1.3843" x2="-1.4732" y2="1.3843" width="0.1524" layer="21" curve="-180"/>
-<wire x1="-1.4732" y1="1.3843" x2="-1.3208" y2="1.3843" width="0.1524" layer="21" curve="-180"/>
 <wire x1="-1.0414" y1="1.5494" x2="-1.5494" y2="1.5494" width="0.1524" layer="51"/>
 <wire x1="-1.5494" y1="1.0414" x2="-1.5494" y2="-1.5494" width="0.1524" layer="51"/>
-<text x="0" y="1.651" size="0.6096" layer="25" font="vector" ratio="12" rot="SR0" align="bottom-center">&gt;NAME</text>
+<text x="0" y="1.751" size="0.6096" layer="25" font="vector" ratio="12" rot="SR0" align="bottom-center">&gt;NAME</text>
+<wire x1="-1.6" y1="-1.6" x2="1.6" y2="-1.6" width="0.1524" layer="21"/>
+<wire x1="1.6" y1="1.6" x2="-1.6" y2="1.6" width="0.1524" layer="21"/>
 <wire x1="-1.0414" y1="1.5494" x2="-1.5494" y2="1.0414" width="0.1524" layer="51"/>
 <wire x1="-1.5494" y1="-1.5494" x2="1.5494" y2="-1.5494" width="0.1524" layer="51"/>
 <wire x1="1.5494" y1="-1.5494" x2="1.5494" y2="1.5494" width="0.1524" layer="51"/>
 <wire x1="1.5494" y1="1.5494" x2="-1.0414" y2="1.5494" width="0.1524" layer="51"/>
 <wire x1="-1.5494" y1="1.5494" x2="-1.5494" y2="1.0414" width="0.1524" layer="51"/>
+<polygon width="0.1524" layer="21">
+<vertex x="-1.35" y="1.3" curve="-90"/>
+<vertex x="-1.4" y="1.35" curve="-90"/>
+<vertex x="-1.35" y="1.4" curve="-90"/>
+<vertex x="-1.3" y="1.35" curve="-90"/>
+</polygon>
+<wire x1="-1.6" y1="-1.6" x2="-1.6" y2="-1.3" width="0.1524" layer="21"/>
+<wire x1="-1.6" y1="1.6" x2="-1.6" y2="1.3" width="0.1524" layer="21"/>
+<wire x1="1.6" y1="1.6" x2="1.6" y2="1.3" width="0.1524" layer="21"/>
+<wire x1="1.6" y1="-1.6" x2="1.6" y2="-1.3" width="0.1524" layer="21"/>
+<wire x1="1.6" y1="-0.59" x2="1.6" y2="-0.35" width="0.1524" layer="21"/>
+<wire x1="-1.6" y1="-0.59" x2="-1.6" y2="-0.35" width="0.1524" layer="21"/>
+<wire x1="-1.6" y1="0.59" x2="-1.6" y2="0.35" width="0.1524" layer="21"/>
+<wire x1="1.6" y1="0.59" x2="1.6" y2="0.35" width="0.1524" layer="21"/>
+<pad name="7@1" x="-0.35" y="0.6" drill="0.4" stop="no" thermals="no"/>
+<pad name="7@2" x="0.35" y="0.6" drill="0.4" stop="no" thermals="no"/>
+<pad name="7@3" x="-0.35" y="-0.6" drill="0.4" stop="no" thermals="no"/>
+<pad name="7@4" x="0.35" y="-0.6" drill="0.4" stop="no" thermals="no"/>
+<pad name="7@5" x="0" y="0" drill="0.4" stop="no" thermals="no"/>
 </package>
 <package name="DIP08">
 <description>&lt;b&gt;Dual In Line&lt;/b&gt;</description>
@@ -4118,18 +4133,33 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <smd name="8" x="-1.905" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
 <text x="0" y="0" size="0.4064" layer="27" font="vector" ratio="12" align="center">&gt;VALUE</text>
 <text x="-2.54" y="0" size="0.4064" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center">&gt;NAME</text>
-<wire x1="-2.413" y1="1.27" x2="2.413" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="2.413" y1="1.27" x2="2.413" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="2.413" y1="-1.27" x2="-2.413" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-2.413" y1="-0.381" x2="-2.413" y2="0.381" width="0.1524" layer="21" curve="180"/>
-<wire x1="-2.413" y1="0.381" x2="-2.413" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-2.413" y1="-0.381" x2="-2.413" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="2.413" y1="1.778" x2="2.413" y2="-1.778" width="0.1524" layer="21"/>
+<wire x1="-1.4224" y1="1.778" x2="-1.1176" y2="1.778" width="0.1524" layer="21"/>
+<wire x1="-0.1524" y1="1.778" x2="0.1524" y2="1.778" width="0.1524" layer="21"/>
+<wire x1="1.1176" y1="1.778" x2="1.4224" y2="1.778" width="0.1524" layer="21"/>
+<wire x1="-2.413" y1="1.778" x2="-2.3876" y2="1.778" width="0.1524" layer="21"/>
+<wire x1="2.413" y1="1.778" x2="2.3876" y2="1.778" width="0.1524" layer="21"/>
+<wire x1="-1.4224" y1="-1.778" x2="-1.1176" y2="-1.778" width="0.1524" layer="21"/>
+<wire x1="-0.1524" y1="-1.778" x2="0.1524" y2="-1.778" width="0.1524" layer="21"/>
+<wire x1="1.1176" y1="-1.778" x2="1.4224" y2="-1.778" width="0.1524" layer="21"/>
+<wire x1="2.413" y1="-1.778" x2="2.3876" y2="-1.778" width="0.1524" layer="21"/>
+<wire x1="-2.413" y1="-1.778" x2="-2.3876" y2="-1.778" width="0.1524" layer="21"/>
+<wire x1="-2.413" y1="1.778" x2="2.413" y2="1.778" width="0.1524" layer="51"/>
+<wire x1="-2.413" y1="-1.778" x2="2.413" y2="-1.778" width="0.1524" layer="51"/>
+<wire x1="-2.413" y1="-1.778" x2="-2.413" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="-2.413" y1="0.508" x2="-2.413" y2="1.778" width="0.1524" layer="21"/>
+<wire x1="-2.413" y1="-0.508" x2="-2.413" y2="0.508" width="0.1524" layer="21" curve="180"/>
+</package>
+<package name="1X01NSATALL">
+<pad name="1" x="0" y="0" drill="0.8" diameter="1.6764" rot="R90"/>
+<text x="0" y="1.651" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="1X01-KIT">
 <pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90" stop="no"/>
 <circle x="0" y="0" radius="0.508" width="0" layer="29"/>
 <circle x="0" y="0" radius="0.9398" width="0" layer="30"/>
-<circle x="0" y="0" radius="1.016" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="1.04726875" width="0.1524" layer="21"/>
+<text x="0" y="1.27" size="0.6096" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -6449,7 +6479,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <connects>
 <connect gate="A" pin="AGND" pad="5"/>
 <connect gate="A" pin="DIM" pad="3"/>
-<connect gate="A" pin="EPAD" pad="7"/>
+<connect gate="A" pin="EPAD" pad="7 7@1 7@2 7@3 7@4 7@5"/>
 <connect gate="A" pin="FB" pad="4"/>
 <connect gate="A" pin="PGND" pad="1"/>
 <connect gate="A" pin="SW" pad="6"/>
@@ -6759,7 +6789,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,60.96,60.96,U1,VIN,N$2,,,"/>
+<approved hash="104,1,60.96,60.96,LM3410,VIN,V_BATT+,,,"/>
 </errors>
 </schematic>
 </drawing>
