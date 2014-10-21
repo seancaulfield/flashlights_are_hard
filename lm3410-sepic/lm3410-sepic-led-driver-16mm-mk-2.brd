@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -158,11 +158,17 @@
 <wire x1="8" y1="0" x2="16" y2="8" width="0" layer="20" curve="90"/>
 <wire x1="16" y1="8" x2="8" y2="16" width="0" layer="20" curve="90"/>
 <wire x1="8" y1="16" x2="0" y2="8" width="0" layer="20" curve="90"/>
-<circle x="8" y="8" radius="7.6" width="1.27" layer="29"/>
-<circle x="8" y="8" radius="7.6" width="1.27" layer="30"/>
+<circle x="8" y="8" radius="7.6" width="1.016" layer="29"/>
+<circle x="8" y="8" radius="7.5" width="1.27" layer="30"/>
 <text x="7.99" y="5.61" size="0.6096" layer="22" font="vector" ratio="12" rot="MR180" align="bottom-center">Septic SEPIC
 16mm Rev 1.0
 CC-BY-SA-4.0</text>
+<polygon width="0.1524" layer="30">
+<vertex x="6" y="8" curve="90"/>
+<vertex x="8" y="6" curve="90"/>
+<vertex x="10" y="8" curve="90"/>
+<vertex x="8" y="10" curve="90"/>
+</polygon>
 </plain>
 <libraries>
 <library name="A_butts">
