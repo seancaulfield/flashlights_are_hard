@@ -22,25 +22,25 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -154,53 +154,74 @@
 </layers>
 <board>
 <plain>
-<wire x1="6" y1="0" x2="0" y2="6" width="0" layer="20" curve="-90"/>
-<wire x1="0" y1="6" x2="6" y2="12" width="0" layer="20" curve="-90"/>
-<wire x1="6" y1="12" x2="12" y2="6" width="0" layer="20" curve="-90"/>
-<wire x1="12" y1="6" x2="6" y2="0" width="0" layer="20" curve="-90"/>
+<wire x1="0" y1="6" x2="6" y2="0" width="0" layer="20" curve="90"/>
+<wire x1="6" y1="0" x2="12" y2="6" width="0" layer="20" curve="90"/>
+<wire x1="12" y1="6" x2="6" y2="12" width="0" layer="20" curve="90"/>
+<wire x1="6" y1="12" x2="0" y2="6" width="0" layer="20" curve="90"/>
+<polygon width="0.1524" layer="30">
+<vertex x="4.45" y="6.05"/>
+<vertex x="4.45" y="5.95" curve="90"/>
+<vertex x="5.95" y="4.45"/>
+<vertex x="6.05" y="4.45" curve="90"/>
+<vertex x="7.55" y="5.95"/>
+<vertex x="7.55" y="6.05" curve="90"/>
+<vertex x="6.05" y="7.55"/>
+<vertex x="5.95" y="7.55" curve="90"/>
+</polygon>
+<text x="3" y="5.974" size="0.6096" layer="22" font="vector" ratio="12" rot="MR90" align="center">ZXLD363
+LED Driver</text>
+<text x="9" y="6" size="0.6096" layer="22" font="vector" ratio="12" rot="MR90" align="center">12mm Mk 3
+CC-BY-SA-4.0</text>
+<circle x="6" y="6" radius="5.375871875" width="1.27" layer="30"/>
 </plain>
 <libraries>
 <library name="A_butts">
 <packages>
-<package name="SOT23-3">
-<wire x1="-0.673" y1="0.7" x2="-1.4" y2="0.7" width="0.1524" layer="21"/>
-<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.227" width="0.1524" layer="21"/>
-<wire x1="0.673" y1="0.7" x2="1.4" y2="0.7" width="0.1524" layer="21"/>
-<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.227" width="0.1524" layer="21"/>
-<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
-<text x="0" y="1.778" size="0.4064" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<wire x1="-0.3556" y1="-0.635" x2="0.3556" y2="-0.635" width="0.1524" layer="21"/>
+<package name="1007">
+<description>1007 (2518 metric) package</description>
+<wire x1="1.027" y1="1.25" x2="-1.027" y2="1.25" width="0.127" layer="39"/>
+<wire x1="-1.027" y1="1.25" x2="-1.027" y2="-1.25" width="0.127" layer="39"/>
+<wire x1="-1.027" y1="-1.25" x2="1.027" y2="-1.25" width="0.127" layer="39"/>
+<wire x1="1.027" y1="-1.25" x2="1.027" y2="1.25" width="0.127" layer="39"/>
+<wire x1="-1" y1="-0.4" x2="-1" y2="0.4" width="0.127" layer="21"/>
+<wire x1="1" y1="-0.4" x2="1" y2="0.4" width="0.127" layer="21"/>
+<smd name="1" x="0" y="1" dx="2" dy="0.8" layer="1"/>
+<smd name="2" x="0" y="-1" dx="2" dy="0.8" layer="1"/>
+<text x="0.016" y="1.6" size="0.4064" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="0.016" y="-1.619" size="0.4064" layer="27" font="vector" ratio="12" align="top-center">&gt;VALUE</text>
 </package>
-<package name="1X01NSATALL">
-<pad name="1" x="0" y="0" drill="0.8" diameter="1.6764" rot="R90"/>
-<text x="0" y="1.651" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<package name="TSOT-23-5">
+<wire x1="0.8104" y1="-1.524" x2="-0.8128" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="-0.8128" y1="1.524" x2="0.8128" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-0.8128" y1="1.4224" x2="-0.8128" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-0.8128" y1="-1.524" x2="-0.8128" y2="-1.4224" width="0.1524" layer="21"/>
+<wire x1="0.8128" y1="-1.4224" x2="0.8104" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="0.8128" y1="1.524" x2="0.8128" y2="1.4224" width="0.1524" layer="21"/>
+<smd name="1" x="-1.3" y="0.95" dx="0.55" dy="1.2" layer="1" rot="R270"/>
+<smd name="2" x="-1.3" y="0" dx="0.55" dy="1.2" layer="1" rot="R270"/>
+<smd name="3" x="-1.3" y="-0.95" dx="0.55" dy="1.2" layer="1" rot="R270"/>
+<smd name="4" x="1.3001" y="-0.95" dx="0.55" dy="1.2" layer="1" rot="R270"/>
+<smd name="5" x="1.3001" y="0.95" dx="0.55" dy="1.2" layer="1" rot="R270"/>
+<text x="0" y="1.651" size="0.4064" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<polygon width="0.1524" layer="21">
+<vertex x="-0.3175" y="1.0795" curve="90"/>
+<vertex x="-0.4445" y="0.9525" curve="90"/>
+<vertex x="-0.3175" y="0.8255" curve="90"/>
+<vertex x="-0.1905" y="0.9525" curve="90"/>
+</polygon>
+<wire x1="0.8128" y1="0.4826" x2="0.8128" y2="-0.4826" width="0.1524" layer="21"/>
 </package>
-<package name="0805">
-<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<text x="0" y="0.762" size="0.4064" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.762" size="0.4064" layer="27" font="vector" ratio="12" align="top-center">&gt;VALUE</text>
-<wire x1="-1.524" y1="-0.762" x2="-1.524" y2="0.762" width="0.1524" layer="39"/>
-<wire x1="-1.524" y1="0.762" x2="1.524" y2="0.762" width="0.1524" layer="39"/>
-<wire x1="1.524" y1="0.762" x2="1.524" y2="-0.762" width="0.1524" layer="39"/>
-<wire x1="1.524" y1="-0.762" x2="-1.524" y2="-0.762" width="0.1524" layer="39"/>
+<package name="1X01-1.2MM">
+<pad name="P$1" x="0" y="0" drill="1.2" diameter="1.9304"/>
+<text x="0" y="1.27" size="0.6096" layer="21" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<circle x="0" y="0" radius="1.143" width="0.1524" layer="21"/>
 </package>
-<package name="SOT23">
-<description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<text x="0" y="1.905" size="0.4064" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<text x="0" y="0.1905" size="0.4064" layer="27" font="vector" ratio="12" align="top-center">&gt;VALUE</text>
-<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
-<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
-<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+<package name="1X01-1.2MM-NS">
+<pad name="P$1" x="0" y="0" drill="1.2" diameter="1.9304"/>
+<text x="0" y="1.27" size="0.6096" layer="21" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="1X01_NOSILK_NOSTOP">
+<pad name="P$1" x="0" y="0" drill="0.3302" stop="no" thermals="no"/>
 </package>
 </packages>
 </library>
@@ -386,60 +407,67 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="ZXLD381" library="A_butts" package="SOT23-3" value="ZXLD381" x="6" y="9" smashed="yes">
-<attribute name="NAME" x="6" y="10.778" size="0.4064" layer="25" font="vector" ratio="12" align="bottom-center"/>
+<element name="L1" library="A_butts" package="1007" value="4.7uH" x="4" y="5.9" rot="R180"/>
+<element name="ZXLD383" library="A_butts" package="TSOT-23-5" value="ZXLD383" x="8.5" y="6" rot="R180"/>
+<element name="JP1" library="A_butts" package="1X01_NOSILK_NOSTOP" value="M01NOT-A-VIA-NOPE" x="6" y="5"/>
+<element name="+" library="A_butts" package="1X01-1.2MM" value="M01PTH-1.2MM" x="6" y="9.15" smashed="yes" rot="R90">
+<attribute name="NAME" x="4.73" y="9.15" size="1.27" layer="21" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 </element>
-<element name="+" library="A_butts" package="1X01NSATALL" value="M01PTH-NS-NOTSUCK" x="9.5" y="6"/>
-<element name="-" library="A_butts" package="1X01NSATALL" value="M01PTH-NS-NOTSUCK" x="2.5" y="6"/>
-<element name="L1" library="A_butts" package="0805" value="15uH" x="6" y="5.9" smashed="yes">
-<attribute name="NAME" x="6" y="6.662" size="0.4064" layer="25" font="vector" ratio="12" align="bottom-center"/>
-</element>
-<element name="Q1" library="A_butts" package="SOT23" value="MOSFET-NCHANNELIRLML2502" x="6" y="2.7" smashed="yes" rot="R180">
-<attribute name="NAME" x="6" y="0.795" size="0.4064" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
+<element name="-" library="A_butts" package="1X01-1.2MM-NS" value="M01PTH-1.2MM-NS" x="6" y="2.75" smashed="yes" rot="R270">
+<attribute name="NAME" x="7.27" y="2.75" size="1.27" layer="21" font="vector" ratio="12" rot="R270" align="bottom-center"/>
 </element>
 </elements>
 <signals>
-<signal name="LED+">
-<contactref element="ZXLD381" pad="2"/>
-<contactref element="L1" pad="2"/>
-<contactref element="+" pad="1"/>
-<wire x1="6.95" y1="8" x2="9.5" y2="6" width="0" layer="19" extent="1-1"/>
-<wire x1="6.9" y1="5.9" x2="6.95" y2="8" width="0" layer="19" extent="1-1"/>
+<signal name="VCC">
+<contactref element="ZXLD383" pad="1"/>
+<contactref element="L1" pad="1"/>
+<contactref element="ZXLD383" pad="5"/>
+<contactref element="JP1" pad="P$1"/>
+<polygon width="0.1524" layer="16">
+<vertex x="4.5" y="6" curve="90"/>
+<vertex x="6" y="4.5" curve="90"/>
+<vertex x="7.5" y="6" curve="90"/>
+<vertex x="6" y="7.5" curve="90"/>
+</polygon>
+<wire x1="7.1999" y1="5.05" x2="6" y2="5.05" width="0.5" layer="1"/>
+<wire x1="6" y1="5.05" x2="4.15" y2="5.05" width="0.5" layer="1"/>
+<wire x1="4.15" y1="5.05" x2="4" y2="4.9" width="0.5" layer="1"/>
+<wire x1="7.1999" y1="5.05" x2="9.8" y2="5.05" width="0.5" layer="1"/>
+<wire x1="6" y1="5" x2="6" y2="5.05" width="0.5" layer="1"/>
 </signal>
-<signal name="BATT-">
-<contactref element="Q1" pad="3"/>
+<signal name="GND">
+<contactref element="ZXLD383" pad="2"/>
+<contactref element="ZXLD383" pad="3"/>
+<polygon width="0.1524" layer="1" rank="6">
+<vertex x="6" y="0" curve="-90"/>
+<vertex x="0" y="6" curve="-90"/>
+<vertex x="6" y="12" curve="-90"/>
+<vertex x="12" y="6" curve="-90"/>
+</polygon>
 <polygon width="0.1524" layer="16" rank="6">
 <vertex x="6" y="0" curve="-90"/>
 <vertex x="0" y="6" curve="-90"/>
 <vertex x="6" y="12" curve="-90"/>
 <vertex x="12" y="6" curve="-90"/>
 </polygon>
-<via x="15.9" y="11.2" extent="1-16" drill="0.6"/>
-<wire x1="15.9" y1="11.2" x2="6" y2="1.6" width="0" layer="19" extent="1-1"/>
+<contactref element="-" pad="P$1"/>
 </signal>
-<signal name="LED-">
-<contactref element="Q1" pad="2"/>
-<contactref element="ZXLD381" pad="3"/>
-<contactref element="-" pad="1"/>
-<wire x1="2.5" y1="6" x2="5.05" y2="3.8" width="0" layer="19" extent="1-1"/>
-<wire x1="6" y1="10.1" x2="2.5" y2="6" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="BATT+">
-<contactref element="ZXLD381" pad="1"/>
-<contactref element="L1" pad="1"/>
-<contactref element="Q1" pad="1"/>
-<polygon width="0.1524" layer="16">
-<vertex x="6" y="8" curve="90"/>
-<vertex x="4" y="6" curve="90"/>
-<vertex x="6" y="4" curve="90"/>
-<vertex x="8" y="6" curve="90"/>
-</polygon>
-<via x="6" y="7.3" extent="1-16" drill="0.6"/>
-<wire x1="6" y1="7.3" x2="5.05" y2="8" width="0" layer="19" extent="1-1"/>
-<wire x1="5.1" y1="5.9" x2="6" y2="7.3" width="0" layer="19" extent="1-1"/>
-<wire x1="6.95" y1="3.8" x2="5.1" y2="5.9" width="0" layer="19" extent="1-1"/>
+<signal name="VOUT">
+<contactref element="ZXLD383" pad="4"/>
+<contactref element="L1" pad="2"/>
+<contactref element="+" pad="P$1"/>
+<wire x1="7.1999" y1="6.95" x2="6" y2="6.95" width="0.5" layer="1"/>
+<wire x1="6" y1="6.95" x2="4.05" y2="6.95" width="0.5" layer="1"/>
+<wire x1="4.05" y1="6.95" x2="4" y2="6.9" width="0.5" layer="1"/>
+<wire x1="6" y1="9.15" x2="6" y2="6.95" width="0.5" layer="1"/>
 </signal>
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
