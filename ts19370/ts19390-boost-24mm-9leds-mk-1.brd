@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -163,15 +163,6 @@
 <text x="17.5" y="10" size="0.6096" layer="22" font="vector" ratio="12" rot="MR90" align="top-center">NC</text>
 <text x="11.5" y="13" size="0.6096" layer="22" font="vector" ratio="12" rot="MR90" align="top-center">NC</text>
 <text x="10" y="2" size="0.6096" layer="22" font="vector" ratio="12" rot="MR180" align="top-center">NC</text>
-<dimension x1="1" y1="10" x2="19" y2="10" x3="10" y3="-2.5" textsize="0.6096" textratio="12" layer="47"/>
-<dimension x1="1" y1="10" x2="10" y2="19" x3="5.5" y3="21" textsize="0.6096" textratio="12" layer="47" dtype="horizontal"/>
-<dimension x1="10" y1="19" x2="19" y2="10" x3="14.5" y3="21" textsize="0.6096" textratio="12" layer="47" dtype="horizontal"/>
-<dimension x1="10" y1="19" x2="10" y2="1" x3="-1" y3="10" textsize="0.6096" textratio="12" layer="47" dtype="horizontal"/>
-<dimension x1="10" y1="19" x2="19" y2="10" x3="22.5" y3="14.5" textsize="0.6096" textratio="12" layer="47" dtype="vertical"/>
-<dimension x1="19" y1="10" x2="10" y2="1" x3="22.5" y3="5.5" textsize="0.6096" textratio="12" layer="47" dtype="vertical"/>
-<dimension x1="10" y1="20" x2="10" y2="0" x3="27" y3="10" textsize="0.6096" textratio="12" layer="47" dtype="vertical"/>
-<dimension x1="7" y1="13" x2="13" y2="13" x3="10" y3="24" textsize="0.6096" textratio="12" layer="47" dtype="vertical"/>
-<dimension x1="7" y1="13" x2="7" y2="7" x3="-3.5" y3="10" textsize="0.6096" textratio="12" layer="47" dtype="vertical"/>
 </plain>
 <libraries>
 <library name="A_butts">
