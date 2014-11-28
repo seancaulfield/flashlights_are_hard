@@ -168,13 +168,9 @@
 <package name="1X01_NOSILK_NOSTOP">
 <pad name="P$1" x="0" y="0" drill="0.3302" stop="no" thermals="no"/>
 </package>
-<package name="1X05-0.9X2MM-PTH">
-<pad name="1" x="-4" y="0" drill="0.9" diameter="1.5" shape="octagon"/>
-<pad name="2" x="-2" y="0" drill="0.9" diameter="1.5" shape="octagon"/>
-<pad name="3" x="0" y="0" drill="0.9" diameter="1.5" shape="octagon"/>
-<pad name="4" x="2" y="0" drill="0.9" diameter="1.5" shape="octagon"/>
-<pad name="5" x="4" y="0" drill="0.9" diameter="1.5" shape="octagon"/>
-<text x="-4.7" y="0.9" size="0.4064" layer="21" font="vector" ratio="12">&gt;NAME</text>
+<package name="1X01_SMD_NOSTOP_NOSILK">
+<smd name="1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" stop="no" cream="no"/>
+<text x="0" y="0.762" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -361,33 +357,44 @@ Please make sure your boards conform to these design rules.</description>
 </autorouter>
 <elements>
 <element name="JP3" library="A_butts" package="1X01_NOSILK_NOSTOP" value="M01NOT-A-VIA-NOPE" x="11" y="3"/>
-<element name="JP1" library="A_butts" package="1X05-0.9X2MM-PTH" value="" x="11" y="12.28"/>
-<element name="JP2" library="A_butts" package="1X05-0.9X2MM-PTH" value="" x="11" y="9.72"/>
+<element name="JP2" library="A_butts" package="1X01_NOSILK_NOSTOP" value="M01NOT-A-VIA-NOPE" x="11" y="11"/>
+<element name="JP4" library="A_butts" package="1X01_NOSILK_NOSTOP" value="M01NOT-A-VIA-NOPE" x="9" y="11"/>
+<element name="JP5" library="A_butts" package="1X01_NOSILK_NOSTOP" value="M01NOT-A-VIA-NOPE" x="13" y="11"/>
+<element name="JP6" library="A_butts" package="1X01_SMD_NOSTOP_NOSILK" value="M01NOSTOP-CANTSTOP-DONTKNOWHOWTOSTOP" x="15" y="11" smashed="yes"/>
+<element name="JP7" library="A_butts" package="1X01_SMD_NOSTOP_NOSILK" value="M01NOSTOP-CANTSTOP-DONTKNOWHOWTOSTOP" x="7" y="11" smashed="yes"/>
 </elements>
 <signals>
 <signal name="VIN">
-<polygon width="0.1524" layer="16">
+<polygon width="0.1524" layer="16" isolate="0.254">
 <vertex x="6" y="11" curve="90"/>
 <vertex x="11" y="6" curve="90"/>
 <vertex x="16" y="11" curve="90"/>
 <vertex x="11" y="16" curve="90"/>
 </polygon>
-<contactref element="JP1" pad="2"/>
-<contactref element="JP1" pad="3"/>
-<contactref element="JP1" pad="4"/>
-<contactref element="JP2" pad="2"/>
-<contactref element="JP2" pad="3"/>
-<contactref element="JP2" pad="4"/>
+<contactref element="JP2" pad="P$1"/>
+<contactref element="JP4" pad="P$1"/>
+<contactref element="JP5" pad="P$1"/>
+<polygon width="0.1524" layer="1">
+<vertex x="10.5" y="16"/>
+<vertex x="10.5" y="6"/>
+<vertex x="11.5" y="6"/>
+<vertex x="11.5" y="16"/>
+</polygon>
+<polygon width="0.1524" layer="1">
+<vertex x="12.5" y="16"/>
+<vertex x="13.5" y="16"/>
+<vertex x="13.5" y="6"/>
+<vertex x="12.5" y="6"/>
+</polygon>
+<polygon width="0.1524" layer="1">
+<vertex x="9.5" y="16"/>
+<vertex x="8.5" y="16"/>
+<vertex x="8.5" y="6"/>
+<vertex x="9.5" y="6"/>
+</polygon>
 </signal>
 <signal name="GND">
-<contactref element="JP3" pad="P$1"/>
-<polygon width="0.1524" layer="1">
-<vertex x="11" y="0" curve="-90"/>
-<vertex x="0" y="11" curve="-90"/>
-<vertex x="11" y="22" curve="-90"/>
-<vertex x="22" y="11" curve="-90"/>
-</polygon>
-<polygon width="0.1524" layer="16" rank="2">
+<polygon width="0.1524" layer="16" isolate="0.254" rank="6">
 <vertex x="11" y="0" curve="-90"/>
 <vertex x="0" y="11" curve="-90"/>
 <vertex x="11" y="22" curve="-90"/>
@@ -396,10 +403,47 @@ Please make sure your boards conform to these design rules.</description>
 <via x="11" y="19" extent="1-16" drill="0.3324"/>
 <via x="3" y="11" extent="1-16" drill="0.3324"/>
 <via x="19" y="11" extent="1-16" drill="0.3324"/>
-<contactref element="JP2" pad="5"/>
-<contactref element="JP2" pad="1"/>
-<contactref element="JP1" pad="1"/>
-<contactref element="JP1" pad="5"/>
+<contactref element="JP6" pad="1"/>
+<contactref element="JP7" pad="1"/>
+<polygon width="0.1524" layer="1">
+<vertex x="14.5" y="16"/>
+<vertex x="14.5" y="6"/>
+<vertex x="15.5" y="6"/>
+<vertex x="15.5" y="16"/>
+</polygon>
+<polygon width="0.1524" layer="1" isolate="0.254">
+<vertex x="7.5" y="16"/>
+<vertex x="6.5" y="16"/>
+<vertex x="6.5" y="6"/>
+<vertex x="7.5" y="6"/>
+</polygon>
+<polygon width="0.1524" layer="1" rank="6">
+<vertex x="0" y="11"/>
+<vertex x="0" y="22"/>
+<vertex x="11" y="22"/>
+<vertex x="11" y="11"/>
+</polygon>
+<polygon width="0.1524" layer="1" rank="6">
+<vertex x="0" y="0"/>
+<vertex x="0" y="11"/>
+<vertex x="11" y="11"/>
+<vertex x="11" y="0"/>
+</polygon>
+<polygon width="0.1524" layer="1" rank="6">
+<vertex x="11" y="11"/>
+<vertex x="11" y="0"/>
+<vertex x="22" y="0"/>
+<vertex x="22" y="11"/>
+</polygon>
+<polygon width="0.1524" layer="1" rank="6">
+<vertex x="11" y="22"/>
+<vertex x="22" y="22"/>
+<vertex x="22" y="11"/>
+<vertex x="11" y="11"/>
+</polygon>
+<contactref element="JP3" pad="P$1"/>
+<wire x1="3" y1="11" x2="7" y2="11" width="0" layer="19" extent="1-1"/>
+<wire x1="15" y1="11" x2="19" y2="11" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

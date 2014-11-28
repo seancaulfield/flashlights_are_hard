@@ -22,25 +22,25 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -220,17 +220,39 @@
 <wire x1="6" y1="-5" x2="5" y2="-6" width="0.2032" layer="21" curve="-90"/>
 <wire x1="-5" y1="-6" x2="-6" y2="-5" width="0.2032" layer="21" curve="-90"/>
 <circle x="0" y="0" radius="3.5" width="0.2032" layer="21"/>
-<circle x="-4.5" y="4.5" radius="0.3" width="0.7" layer="21"/>
-<circle x="4.5" y="4.5" radius="0.3" width="0.7" layer="21"/>
-<circle x="4.5" y="-4.5" radius="0.3" width="0.7" layer="21"/>
-<circle x="-4.5" y="-4.5" radius="0.3" width="0.7" layer="21"/>
+<circle x="-4.5" y="4.5" radius="0.63" width="0" layer="21"/>
 <pad name="4" x="-6.25" y="2.5" drill="1.2" diameter="2.159"/>
 <pad name="2" x="-6.25" y="-2.5" drill="1.2" diameter="2.159"/>
 <pad name="1" x="6.25" y="-2.5" drill="1.2" diameter="2.159"/>
 <pad name="3" x="6.25" y="2.5" drill="1.2" diameter="2.159"/>
+<circle x="4.5" y="4.5" radius="0.63" width="0" layer="21"/>
+<circle x="-4.5" y="-4.5" radius="0.63" width="0" layer="21"/>
+<circle x="4.5" y="-4.5" radius="0.63" width="0" layer="21"/>
 </package>
 <package name="1X01-0.9MM-NS">
 <pad name="1" x="0" y="0" drill="0.9" diameter="1.5" shape="octagon"/>
+</package>
+<package name="JST-6-ZH-RA-SMD">
+<wire x1="-6" y1="5" x2="6" y2="5" width="0.1524" layer="21"/>
+<wire x1="6" y1="5" x2="6" y2="4.2" width="0.1524" layer="21"/>
+<wire x1="6" y1="1.9" x2="6" y2="-1" width="0.1524" layer="21"/>
+<wire x1="-6" y1="5" x2="-6" y2="4.2" width="0.1524" layer="21"/>
+<wire x1="-6" y1="1.9" x2="-6" y2="-1" width="0.1524" layer="21"/>
+<wire x1="-5.5" y1="0" x2="-4.5" y2="0" width="0.1524" layer="21"/>
+<wire x1="4.5" y1="0" x2="5.5" y2="0" width="0.1524" layer="21"/>
+<wire x1="-5.5" y1="0" x2="-5.5" y2="-1" width="0.1524" layer="21"/>
+<wire x1="5.5" y1="0" x2="5.5" y2="-1" width="0.1524" layer="21"/>
+<wire x1="-6" y1="-1" x2="-5.5" y2="-1" width="0.1524" layer="21"/>
+<wire x1="5.5" y1="-1" x2="6" y2="-1" width="0.1524" layer="21"/>
+<smd name="6" x="-3.75" y="-0.8" dx="0.9" dy="3" layer="1"/>
+<smd name="5" x="-2.25" y="-0.8" dx="0.9" dy="3" layer="1"/>
+<smd name="4" x="-0.75" y="-0.8" dx="0.9" dy="3" layer="1"/>
+<smd name="3" x="0.75" y="-0.8" dx="0.9" dy="3" layer="1"/>
+<smd name="2" x="2.25" y="-0.8" dx="0.9" dy="3" layer="1"/>
+<smd name="1" x="3.75" y="-0.8" dx="0.9" dy="3" layer="1"/>
+<smd name="G@2" x="5.7" y="3.05" dx="1.1" dy="1.9" layer="1"/>
+<smd name="G@1" x="-5.7" y="3.05" dx="1.1" dy="1.9" layer="1"/>
+<text x="0" y="-2.5" size="0.6096" layer="25" font="vector" ratio="12" align="top-center">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -416,13 +438,13 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="A_butts" package="C0603" value="0.1uF" x="13.25" y="7.5" rot="R270"/>
-<element name="R1" library="A_butts" package="R0603" value="100k" x="13.25" y="12.5" rot="R90"/>
-<element name="U1" library="A_butts" package="SO08-EIAJ" value="Tiny85" x="9" y="10" rot="R180">
-<attribute name="PROD_ID" value="IC-09092" x="-7.51" y="27.78" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C1" library="A_butts" package="C0603" value="0.1uF" x="8.25" y="7.5" rot="R270"/>
+<element name="R1" library="A_butts" package="R0603" value="100k" x="8.25" y="12.5" rot="R90"/>
+<element name="U1" library="A_butts" package="SO08-EIAJ" value="Tiny85" x="4" y="10" rot="R180">
+<attribute name="PROD_ID" value="IC-09092" x="-12.51" y="27.78" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="S1" library="A_butts" package="TACTILE-PTH-12MM" value="SWITCH-MOMENTARY-212MM" x="10" y="10" rot="MR0">
-<attribute name="PROD_ID" value="SWCH-09185" x="-10.32" y="3.65" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="S1" library="A_butts" package="TACTILE-PTH-12MM" value="SWITCH-MOMENTARY-212MM" x="10" y="10" rot="MR270">
+<attribute name="PROD_ID" value="SWCH-09185" x="16.35" y="-10.32" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="JP5" library="A_butts" package="1X01-0.9MM-NS" value="M01PTH-0.9MM-NS" x="10" y="2"/>
 <element name="JP6" library="A_butts" package="1X01-0.9MM-NS" value="M01PTH-0.9MM-NS" x="18" y="2"/>
@@ -430,6 +452,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="JP2" library="A_butts" package="1X01-0.9MM-NS" value="M01PTH-0.9MM-NS" x="10" y="18"/>
 <element name="JP3" library="A_butts" package="1X01-0.9MM-NS" value="M01PTH-0.9MM-NS" x="18" y="18"/>
 <element name="JP4" library="A_butts" package="1X01-0.9MM-NS" value="M01PTH-0.9MM-NS" x="2" y="2"/>
+<element name="AVRISP" library="A_butts" package="JST-6-ZH-RA-SMD" value="M06JST-ZH-SMD-RA" x="15" y="10" rot="R270"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -449,57 +472,88 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="20" y="20"/>
 <vertex x="20" y="0"/>
 </polygon>
+<contactref element="S1" pad="4"/>
+<contactref element="AVRISP" pad="6"/>
 </signal>
 <signal name="GREENPWM">
 <contactref element="U1" pad="3"/>
 <contactref element="JP1" pad="1"/>
-<wire x1="2" y1="18" x2="5" y2="18" width="0.3048" layer="1"/>
-<wire x1="5" y1="18" x2="8.365" y2="14.635" width="0.3048" layer="1"/>
-<wire x1="8.365" y1="14.635" x2="8.365" y2="13.3782" width="0.3048" layer="1"/>
+<wire x1="2" y1="18" x2="3.365" y2="16.635" width="0.3048" layer="1"/>
+<wire x1="3.365" y1="16.635" x2="3.365" y2="13.3782" width="0.3048" layer="1"/>
 </signal>
 <signal name="REDPWM">
 <contactref element="U1" pad="2"/>
 <contactref element="JP2" pad="1"/>
-<wire x1="10" y1="18" x2="9.635" y2="17.635" width="0.3048" layer="1"/>
-<wire x1="9.635" y1="17.635" x2="9.635" y2="13.3782" width="0.3048" layer="1"/>
+<wire x1="5.5" y1="18.5" x2="4.635" y2="17.635" width="0.3048" layer="1"/>
+<wire x1="4.635" y1="17.635" x2="4.635" y2="13.3782" width="0.3048" layer="1"/>
+<wire x1="5.5" y1="18.5" x2="9.5" y2="18.5" width="0.3048" layer="1"/>
+<wire x1="9.5" y1="18.5" x2="10" y2="18" width="0.3048" layer="1"/>
 </signal>
 <signal name="WHITEPWM">
-<contactref element="U1" pad="7"/>
 <contactref element="JP5" pad="1"/>
-<wire x1="9.635" y1="6.6472" x2="9.635" y2="2.365" width="0.3048" layer="1"/>
-<wire x1="9.635" y1="2.365" x2="10" y2="2" width="0.3048" layer="1"/>
+<contactref element="AVRISP" pad="2"/>
+<contactref element="U1" pad="6"/>
+<wire x1="4.5" y1="1.5" x2="3.365" y2="2.635" width="0.3048" layer="1"/>
+<wire x1="3.365" y1="2.635" x2="3.365" y2="6.6472" width="0.3048" layer="1"/>
+<via x="11.5" y="7.75" extent="1-16" drill="0.3302"/>
+<wire x1="14.2" y1="7.75" x2="11.5" y2="7.75" width="0.3048" layer="1"/>
+<wire x1="10" y1="6.25" x2="10" y2="2" width="0.3048" layer="16"/>
+<wire x1="4.5" y1="1.5" x2="9.5" y2="1.5" width="0.3048" layer="1"/>
+<wire x1="9.5" y1="1.5" x2="10" y2="2" width="0.3048" layer="1"/>
+<wire x1="11.5" y1="7.75" x2="10" y2="6.25" width="0.3048" layer="16"/>
 </signal>
-<signal name="N$1">
+<signal name="RESET">
 <contactref element="U1" pad="1"/>
 <contactref element="R1" pad="2"/>
-<wire x1="10.905" y1="13.3782" x2="10.9332" y2="13.35" width="0.3048" layer="1"/>
-<wire x1="10.9332" y1="13.35" x2="13.25" y2="13.35" width="0.3048" layer="1"/>
+<contactref element="AVRISP" pad="5"/>
+<wire x1="5.905" y1="13.3782" x2="5.9332" y2="13.35" width="0.3048" layer="1"/>
+<wire x1="5.9332" y1="13.35" x2="8.25" y2="13.35" width="0.3048" layer="1"/>
+<wire x1="9.85" y1="12.25" x2="14.2" y2="12.25" width="0.3048" layer="1"/>
+<wire x1="8.25" y1="13.35" x2="8.75" y2="13.35" width="0.3048" layer="1"/>
+<wire x1="8.75" y1="13.35" x2="9.85" y2="12.25" width="0.3048" layer="1"/>
 </signal>
 <signal name="5V">
 <contactref element="C1" pad="1"/>
 <contactref element="U1" pad="8"/>
 <contactref element="R1" pad="1"/>
 <contactref element="JP6" pad="1"/>
-<wire x1="13.25" y1="11.65" x2="13.25" y2="10" width="0.3048" layer="1"/>
-<wire x1="13.25" y1="10" x2="13.25" y2="8.35" width="0.3048" layer="1"/>
-<wire x1="18" y1="2" x2="18" y2="8.5" width="0.3048" layer="1"/>
-<wire x1="18" y1="8.5" x2="16.5" y2="10" width="0.3048" layer="1"/>
-<wire x1="16.5" y1="10" x2="13.25" y2="10" width="0.3048" layer="1"/>
-<wire x1="13.25" y1="8.35" x2="12.6078" y2="8.35" width="0.3048" layer="1"/>
-<wire x1="12.6078" y1="8.35" x2="10.905" y2="6.6472" width="0.3048" layer="1"/>
+<contactref element="AVRISP" pad="1"/>
+<wire x1="8.25" y1="11.65" x2="8.25" y2="8.35" width="0.3048" layer="1"/>
+<wire x1="5.905" y1="6.6472" x2="7.6078" y2="8.35" width="0.3048" layer="1"/>
+<wire x1="7.6078" y1="8.35" x2="8.25" y2="8.35" width="0.3048" layer="1"/>
+<wire x1="18" y1="2" x2="17.5" y2="2" width="0.3048" layer="1"/>
+<wire x1="17.5" y1="2" x2="14.2" y2="5.3" width="0.3048" layer="1"/>
+<wire x1="14.2" y1="5.3" x2="14.2" y2="6.25" width="0.3048" layer="1"/>
+<wire x1="8.25" y1="8.35" x2="8.65" y2="8.35" width="0.3048" layer="1"/>
+<wire x1="8.65" y1="8.35" x2="10.75" y2="6.25" width="0.3048" layer="1"/>
+<wire x1="10.75" y1="6.25" x2="14.2" y2="6.25" width="0.3048" layer="1"/>
 </signal>
 <signal name="BUTT">
 <contactref element="S1" pad="1"/>
-<contactref element="U1" pad="5"/>
-<wire x1="3.75" y1="7.5" x2="4.6028" y2="6.6472" width="0.3048" layer="1"/>
-<wire x1="4.6028" y1="6.6472" x2="7.095" y2="6.6472" width="0.3048" layer="1"/>
+<contactref element="S1" pad="2"/>
+<contactref element="AVRISP" pad="4"/>
+<contactref element="U1" pad="7"/>
+<via x="11" y="10.75" extent="1-16" drill="0.3302"/>
+<wire x1="14.2" y1="10.75" x2="11" y2="10.75" width="0.3048" layer="1"/>
+<wire x1="12.5" y1="3.75" x2="12.5" y2="10.75" width="0.3048" layer="16"/>
+<wire x1="12.5" y1="10.75" x2="12.5" y2="16.25" width="0.3048" layer="16"/>
+<wire x1="11" y1="10.75" x2="12.5" y2="10.75" width="0.3048" layer="16"/>
+<via x="4.63" y="9" extent="1-16" drill="0.3302"/>
+<wire x1="4.635" y1="6.6472" x2="4.63" y2="6.6522" width="0.3048" layer="1"/>
+<wire x1="4.63" y1="6.6522" x2="4.63" y2="9" width="0.3048" layer="1"/>
+<wire x1="11" y1="10.75" x2="6.38" y2="10.75" width="0.3048" layer="16"/>
+<wire x1="6.38" y1="10.75" x2="4.63" y2="9" width="0.3048" layer="16"/>
 </signal>
 <signal name="BLUEPWM">
-<contactref element="U1" pad="6"/>
 <contactref element="JP4" pad="1"/>
-<wire x1="2" y1="2" x2="5" y2="2" width="0.3048" layer="1"/>
-<wire x1="5" y1="2" x2="8.365" y2="5.365" width="0.3048" layer="1"/>
-<wire x1="8.365" y1="5.365" x2="8.365" y2="6.6472" width="0.3048" layer="1"/>
+<contactref element="AVRISP" pad="3"/>
+<contactref element="U1" pad="5"/>
+<wire x1="2" y1="2" x2="2.095" y2="2.095" width="0.3048" layer="1"/>
+<wire x1="2.095" y1="2.095" x2="2.095" y2="6.6472" width="0.3048" layer="1"/>
+<via x="11" y="9.25" extent="1-16" drill="0.3302"/>
+<wire x1="11" y1="9.25" x2="9.25" y2="9.25" width="0.3048" layer="16"/>
+<wire x1="9.25" y1="9.25" x2="2" y2="2" width="0.3048" layer="16"/>
+<wire x1="14.2" y1="9.25" x2="11" y2="9.25" width="0.3048" layer="1"/>
 </signal>
 </signals>
 </board>
