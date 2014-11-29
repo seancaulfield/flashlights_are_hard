@@ -154,12 +154,16 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="20" y2="0" width="0" layer="20"/>
-<wire x1="20" y1="0" x2="20" y2="20" width="0" layer="20"/>
-<wire x1="20" y1="20" x2="0" y2="20" width="0" layer="20"/>
-<wire x1="0" y1="20" x2="0" y2="0" width="0" layer="20"/>
-<hole x="6" y="2" drill="2.8"/>
-<hole x="14" y="18" drill="2.8"/>
+<wire x1="0" y1="17.5" x2="0" y2="2.5" width="0" layer="20"/>
+<wire x1="0" y1="2.5" x2="2.5" y2="0" width="0" layer="20" curve="90"/>
+<wire x1="2.5" y1="0" x2="17.5" y2="0" width="0" layer="20"/>
+<wire x1="17.5" y1="0" x2="20" y2="2.5" width="0" layer="20" curve="90"/>
+<wire x1="20" y1="2.5" x2="20" y2="17.5" width="0" layer="20"/>
+<wire x1="20" y1="17.5" x2="17.5" y2="20" width="0" layer="20" curve="90"/>
+<wire x1="17.5" y1="20" x2="2.5" y2="20" width="0" layer="20"/>
+<wire x1="2.5" y1="20" x2="0" y2="17.5" width="0" layer="20" curve="90"/>
+<hole x="6" y="2" drill="2.5"/>
+<hole x="14" y="18" drill="2.5"/>
 <text x="15" y="6" size="0.762" layer="25" font="vector" ratio="12" align="center-left">+</text>
 <text x="15" y="14" size="0.762" layer="25" font="vector" ratio="12" align="center-left">R</text>
 <text x="15" y="12" size="0.762" layer="25" font="vector" ratio="12" align="center-left">G</text>
@@ -412,12 +416,12 @@ Please make sure your boards conform to these design rules.</description>
 <element name="BLUE" library="A_butts" package="SOT89" value="AMC7135SOT-89" x="3.5" y="6.75" rot="R180"/>
 <element name="WHITE" library="A_butts" package="SOT89" value="AMC7135SOT-89" x="9" y="6.75" rot="R180"/>
 <element name="JP1" library="A_butts" package="JST-5-PH-RA-PTH" value="" x="13.5" y="10" smashed="yes" rot="MR90"/>
-<element name="R_PWM" library="A_butts" package="1X01-0.9MM" value="M01PTH-0.9MM" x="10" y="18"/>
-<element name="G_PWM" library="A_butts" package="1X01-0.9MM" value="M01PTH-0.9MM" x="2" y="18"/>
+<element name="R_PWM" library="A_butts" package="1X01-0.9MM" value="M01PTH-0.9MM" x="10" y="18" rot="R180"/>
+<element name="G_PWM" library="A_butts" package="1X01-0.9MM" value="M01PTH-0.9MM" x="2" y="18" rot="R180"/>
 <element name="B_PWM" library="A_butts" package="1X01-0.9MM" value="M01PTH-0.9MM" x="2" y="2"/>
 <element name="W_PWM" library="A_butts" package="1X01-0.9MM" value="M01PTH-0.9MM" x="10" y="2"/>
 <element name="5V" library="A_butts" package="1X01-0.9MM" value="M01PTH-0.9MM" x="18" y="2"/>
-<element name="GND" library="A_butts" package="1X01-0.9MM" value="M01PTH-0.9MM" x="18" y="18"/>
+<element name="GND" library="A_butts" package="1X01-0.9MM" value="M01PTH-0.9MM" x="18" y="18" rot="R180"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -430,10 +434,14 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="WHITE" pad="2"/>
 <contactref element="WHITE" pad="4"/>
 <polygon width="0.1524" layer="1">
-<vertex x="0" y="0"/>
-<vertex x="0" y="20"/>
-<vertex x="20" y="20"/>
-<vertex x="20" y="0"/>
+<vertex x="17.5" y="0"/>
+<vertex x="2.5" y="0" curve="-90"/>
+<vertex x="0" y="2.5"/>
+<vertex x="0" y="17.5" curve="-90"/>
+<vertex x="2.5" y="20"/>
+<vertex x="17.5" y="20" curve="-90"/>
+<vertex x="20" y="17.5"/>
+<vertex x="20" y="2.5" curve="-90"/>
 </polygon>
 <contactref element="GND" pad="1"/>
 </signal>
@@ -473,10 +481,8 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="RED-">
 <contactref element="RED" pad="1"/>
 <contactref element="JP1" pad="5"/>
-<via x="10.5" y="16.25" extent="1-16" drill="0.3302"/>
-<wire x1="10.5" y1="16.25" x2="10.5" y2="15.05" width="0.8128" layer="1"/>
-<wire x1="10.5" y1="16.25" x2="12.75" y2="14" width="0.6096" layer="16"/>
-<wire x1="12.75" y1="14" x2="13.5" y2="14" width="0.6096" layer="16"/>
+<wire x1="10.5" y1="15.05" x2="11.55" y2="14" width="0.6096" layer="1"/>
+<wire x1="11.55" y1="14" x2="13.5" y2="14" width="0.6096" layer="1"/>
 </signal>
 <signal name="WHITEPWM">
 <contactref element="WHITE" pad="3"/>
@@ -502,7 +508,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 </signals>
 <errors>
-<approved hash="18,30,3f095f9204165307"/>
+<approved hash="18,30,7bf73d271e7ea8c1"/>
 </errors>
 </board>
 </drawing>
