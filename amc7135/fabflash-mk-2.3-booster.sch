@@ -8,20 +8,20 @@
 </settings>
 <grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,17 +39,17 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -4549,6 +4549,14 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <smd name="P$4" x="2" y="0" dx="1" dy="3" layer="1"/>
 <smd name="P$5" x="4" y="0" dx="1" dy="3" layer="1"/>
 </package>
+<package name="1X05-0.9X2MM-PTH">
+<pad name="1" x="-4" y="0" drill="0.9" diameter="1.4224" shape="octagon"/>
+<pad name="2" x="-2" y="0" drill="0.9" diameter="1.4224" shape="octagon"/>
+<pad name="3" x="0" y="0" drill="0.9" diameter="1.4224" shape="octagon"/>
+<pad name="4" x="2" y="0" drill="0.9" diameter="1.4224" shape="octagon"/>
+<pad name="5" x="4" y="0" drill="0.9" diameter="1.4224" shape="octagon"/>
+<text x="-4.7" y="0.9" size="0.4064" layer="21" font="vector" ratio="12">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LM2735YMF">
@@ -7401,6 +7409,18 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <technology name=""/>
 </technologies>
 </device>
+<device name="2MMPTH" package="1X05-0.9X2MM-PTH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -7415,14 +7435,14 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </class>
 </classes>
 <parts>
-<part name="U1" library="A_butts" deviceset="LM2735YMF" device=""/>
+<part name="U1" library="A_butts" deviceset="LM2735YMF" device="" value="LM2735Y"/>
 <part name="GND1" library="A_butts" deviceset="GND" device=""/>
 <part name="C1" library="A_butts" deviceset="CAPACITOR-CERAMIC" device="C0805" value="22uF"/>
 <part name="C3" library="A_butts" deviceset="CAPACITOR-CERAMIC" device="C0805" value="10uF"/>
 <part name="C5" library="A_butts" deviceset="CAPACITOR-CERAMIC" device="C0603" value="2.2nF"/>
 <part name="C6" library="A_butts" deviceset="CAPACITOR-CERAMIC" device="C0805" value="2.2uF"/>
 <part name="R2" library="A_butts" deviceset="RESISTOR" device="R0603" value="30k"/>
-<part name="D1" library="A_butts" deviceset="DIODE-SCHOTTKY" device="SOD123" value="B340A"/>
+<part name="D1" library="A_butts" deviceset="DIODE-SCHOTTKY" device="B340A" value="B340A"/>
 <part name="L1" library="A_butts" deviceset="INDUCTOR" device="TAIYO-YUDEN-40XX" value="6.8uH"/>
 <part name="L2" library="A_butts" deviceset="INDUCTOR" device="TAIYO-YUDEN-40XX" value="6.8uH"/>
 <part name="R1" library="A_butts" deviceset="RESISTOR" device="R0603" value="10k"/>
@@ -7433,14 +7453,17 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="GND2" library="A_butts" deviceset="GND" device=""/>
 <part name="JP1" library="A_butts" deviceset="M01" device="PTH-0.9MM-NS"/>
 <part name="JP2" library="A_butts" deviceset="M01" device="PTH-0.9MM-NS"/>
-<part name="JP3" library="A_butts" deviceset="M01" device="PTH-0.9MM-NS"/>
+<part name="GND" library="A_butts" deviceset="M01" device="PTH-0.9MM" value="M01PTH-0.9MM"/>
 <part name="JP4" library="A_butts" deviceset="M01" device="PTH-0.9MM-NS"/>
 <part name="JP5" library="A_butts" deviceset="M01" device="PTH-0.9MM-NS"/>
-<part name="JP6" library="A_butts" deviceset="M01" device="PTH-0.9MM-NS"/>
+<part name="5V" library="A_butts" deviceset="M01" device="PTH-0.9MM" value="M01PTH-0.9MM"/>
 <part name="JP7" library="A_butts" deviceset="M05" device="SMD-SHORT-2MM"/>
 <part name="GND3" library="A_butts" deviceset="GND" device=""/>
 <part name="JP8" library="A_butts" deviceset="M05" device="SMD-SHORT-2MM"/>
 <part name="GND5" library="A_butts" deviceset="GND" device=""/>
+<part name="JP3" library="A_butts" deviceset="M01" device="NOT-A-VIA-NOPE"/>
+<part name="JP6" library="A_butts" deviceset="M01" device="NOT-A-VIA-NOPE"/>
+<part name="GND4" library="A_butts" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7465,14 +7488,17 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="GND2" gate="1" x="12.7" y="86.36" rot="R90"/>
 <instance part="JP1" gate="G$1" x="-20.32" y="106.68"/>
 <instance part="JP2" gate="G$1" x="-20.32" y="96.52"/>
-<instance part="JP3" gate="G$1" x="-20.32" y="86.36"/>
+<instance part="GND" gate="G$1" x="-20.32" y="86.36"/>
 <instance part="JP4" gate="G$1" x="-20.32" y="76.2"/>
 <instance part="JP5" gate="G$1" x="-20.32" y="66.04"/>
-<instance part="JP6" gate="G$1" x="-20.32" y="55.88"/>
+<instance part="5V" gate="G$1" x="-20.32" y="55.88"/>
 <instance part="JP7" gate="G$1" x="0" y="60.96"/>
 <instance part="GND3" gate="1" x="5.08" y="48.26" rot="MR90"/>
 <instance part="JP8" gate="G$1" x="0" y="35.56"/>
 <instance part="GND5" gate="1" x="7.62" y="25.4"/>
+<instance part="JP3" gate="G$1" x="30.48" y="101.6"/>
+<instance part="JP6" gate="G$1" x="30.48" y="91.44"/>
+<instance part="GND4" gate="1" x="43.18" y="101.6" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -7529,7 +7555,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <wire x1="-12.7" y1="86.36" x2="7.62" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="JP3" gate="G$1" pin="1"/>
+<pinref part="GND" gate="G$1" pin="1"/>
 <pinref part="JP7" gate="G$1" pin="5"/>
 <wire x1="7.62" y1="86.36" x2="10.16" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="66.04" x2="7.62" y2="86.36" width="0.1524" layer="91"/>
@@ -7547,6 +7573,11 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="JP8" gate="G$1" pin="1"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="7.62" y1="30.48" x2="7.62" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="1"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="38.1" y1="101.6" x2="40.64" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -7615,7 +7646,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <wire x1="-12.7" y1="55.88" x2="-10.16" y2="55.88" width="0.1524" layer="91"/>
 <label x="-10.16" y="55.88" size="1.27" layer="95" xref="yes"/>
-<pinref part="JP6" gate="G$1" pin="1"/>
+<pinref part="5V" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
@@ -7660,6 +7691,12 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="JP8" gate="G$1" pin="3"/>
 <wire x1="7.62" y1="35.56" x2="10.16" y2="35.56" width="0.1524" layer="91"/>
 <junction x="10.16" y="35.56"/>
+<label x="10.16" y="63.5" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP6" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="91.44" x2="40.64" y2="91.44" width="0.1524" layer="91"/>
+<label x="40.64" y="91.44" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>

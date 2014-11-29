@@ -8,20 +8,20 @@
 </settings>
 <grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,17 +39,17 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -4820,6 +4820,22 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <smd name="G@1" x="-5.7" y="3.05" dx="1.1" dy="1.9" layer="1"/>
 <text x="0" y="-2.5" size="0.6096" layer="25" font="vector" ratio="12" align="top-center">&gt;NAME</text>
 </package>
+<package name="TACTILE-SMD-6MM-GULL">
+<smd name="1" x="-4.55" y="2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="2" x="4.55" y="2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="3" x="-4.55" y="-2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="4" x="4.55" y="-2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<wire x1="-3" y1="3" x2="3" y2="3" width="0.1524" layer="21"/>
+<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.1524" layer="21"/>
+<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.1524" layer="21"/>
+<wire x1="3" y1="-3" x2="3" y2="3" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="1.75" width="0.1524" layer="21"/>
+<wire x1="-2.5" y1="2.25" x2="-2.5" y2="0.5" width="0.1524" layer="21"/>
+<wire x1="-2.5" y1="-2.25" x2="-2.5" y2="-0.5" width="0.1524" layer="21"/>
+<wire x1="-2.5" y1="0.5" x2="-2.1" y2="-0.3" width="0.1524" layer="21"/>
+<circle x="-2.5" y="-0.5" radius="0.15" width="0" layer="21"/>
+<text x="-3.4" y="0" size="0.4064" layer="25" font="vector" ratio="12" rot="R270" align="top-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="C-EU">
@@ -6763,6 +6779,15 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <technology name=""/>
 </technologies>
 </device>
+<device name="SMD-6MM-GULL" package="TACTILE-SMD-6MM-GULL">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2"/>
+<connect gate="G$1" pin="2" pad="3 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="5V" prefix="SUPPLY">
@@ -7420,17 +7445,17 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="R1" library="A_butts" deviceset="RESISTOR" device="R0603" value="100k"/>
 <part name="GND4" library="A_butts" deviceset="GND" device=""/>
 <part name="U1" library="A_butts" deviceset="ATTINY45" device="TINY85-20-SOICW" value="Tiny85"/>
-<part name="S1" library="A_butts" deviceset="SWITCH-MOMENTARY-2" device="12MM"/>
+<part name="S1" library="A_butts" deviceset="SWITCH-MOMENTARY-2" device="SMD-6MM-GULL" value="SWITCH-MOMENTARY-2SMD-6MM-GULL"/>
 <part name="SUPPLY1" library="A_butts" deviceset="5V" device=""/>
 <part name="GND3" library="A_butts" deviceset="GND" device=""/>
 <part name="GND1" library="A_butts" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="A_butts" deviceset="5V" device=""/>
-<part name="JP5" library="A_butts" deviceset="M01" device="PTH-0.9MM-NS"/>
-<part name="JP6" library="A_butts" deviceset="M01" device="PTH-0.9MM-NS"/>
-<part name="JP1" library="A_butts" deviceset="M01" device="PTH-0.9MM-NS"/>
-<part name="JP2" library="A_butts" deviceset="M01" device="PTH-0.9MM-NS"/>
-<part name="JP3" library="A_butts" deviceset="M01" device="PTH-0.9MM-NS"/>
-<part name="JP4" library="A_butts" deviceset="M01" device="PTH-0.9MM-NS"/>
+<part name="W_PWM" library="A_butts" deviceset="M01" device="PTH-0.9MM" value="M01PTH-0.9MM"/>
+<part name="5V" library="A_butts" deviceset="M01" device="PTH-0.9MM" value="M01PTH-0.9MM"/>
+<part name="G_PWM" library="A_butts" deviceset="M01" device="PTH-0.9MM" value="M01PTH-0.9MM"/>
+<part name="R_PWM" library="A_butts" deviceset="M01" device="PTH-0.9MM" value="M01PTH-0.9MM"/>
+<part name="GND" library="A_butts" deviceset="M01" device="PTH-0.9MM" value="M01PTH-0.9MM"/>
+<part name="B_PWM" library="A_butts" deviceset="M01" device="PTH-0.9MM" value="M01PTH-0.9MM"/>
 <part name="AVRISP" library="A_butts" deviceset="M06" device="JST-ZH-SMD-RA" value="M06JST-ZH-SMD-RA"/>
 <part name="SUPPLY2" library="A_butts" deviceset="5V" device=""/>
 <part name="GND2" library="A_butts" deviceset="GND" device=""/>
@@ -7449,13 +7474,13 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <instance part="GND3" gate="1" x="86.36" y="20.32"/>
 <instance part="GND1" gate="1" x="30.48" y="86.36"/>
 <instance part="SUPPLY3" gate="G$1" x="30.48" y="60.96"/>
-<instance part="JP5" gate="G$1" x="20.32" y="50.8" rot="R90"/>
-<instance part="JP6" gate="G$1" x="30.48" y="50.8" rot="R90"/>
-<instance part="JP1" gate="G$1" x="10.16" y="99.06" rot="R270"/>
-<instance part="JP2" gate="G$1" x="20.32" y="99.06" rot="R270"/>
-<instance part="JP3" gate="G$1" x="30.48" y="99.06" rot="R270"/>
-<instance part="JP4" gate="G$1" x="10.16" y="50.8" rot="R90"/>
-<instance part="AVRISP" gate="G$1" x="81.28" y="63.5" rot="R180"/>
+<instance part="W_PWM" gate="G$1" x="20.32" y="50.8" rot="R90"/>
+<instance part="5V" gate="G$1" x="30.48" y="50.8" rot="R90"/>
+<instance part="G_PWM" gate="G$1" x="10.16" y="99.06" rot="R270"/>
+<instance part="R_PWM" gate="G$1" x="20.32" y="99.06" rot="R270"/>
+<instance part="GND" gate="G$1" x="30.48" y="99.06" rot="R270"/>
+<instance part="B_PWM" gate="G$1" x="10.16" y="50.8" rot="R90"/>
+<instance part="AVRISP" gate="G$1" x="78.74" y="63.5" rot="R180"/>
 <instance part="SUPPLY2" gate="G$1" x="71.12" y="71.12"/>
 <instance part="GND2" gate="1" x="71.12" y="50.8"/>
 </instances>
@@ -7480,14 +7505,14 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="JP3" gate="G$1" pin="1"/>
+<pinref part="GND" gate="G$1" pin="1"/>
 <wire x1="30.48" y1="91.44" x2="30.48" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="AVRISP" gate="G$1" pin="6"/>
-<wire x1="76.2" y1="55.88" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="71.12" y1="53.34" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="AVRISP" gate="G$1" pin="6"/>
+<wire x1="71.12" y1="55.88" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GREENPWM" class="0">
@@ -7499,7 +7524,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <segment>
 <wire x1="10.16" y1="91.44" x2="10.16" y2="88.9" width="0.1524" layer="91"/>
 <label x="10.16" y="88.9" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="G_PWM" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="REDPWM" class="0">
@@ -7511,24 +7536,24 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <segment>
 <wire x1="20.32" y1="91.44" x2="20.32" y2="88.9" width="0.1524" layer="91"/>
 <label x="20.32" y="88.9" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
+<pinref part="R_PWM" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="WHITEPWM" class="0">
 <segment>
 <wire x1="20.32" y1="58.42" x2="20.32" y2="60.96" width="0.1524" layer="91"/>
 <label x="20.32" y="60.96" size="1.27" layer="95" rot="R90" xref="yes"/>
-<pinref part="JP5" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="AVRISP" gate="G$1" pin="2"/>
-<wire x1="76.2" y1="66.04" x2="73.66" y2="66.04" width="0.1524" layer="91"/>
-<label x="73.66" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="W_PWM" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="38.1" y1="17.78" x2="43.18" y2="17.78" width="0.1524" layer="91"/>
 <label x="43.18" y="17.78" size="1.27" layer="95" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="PB1(MISO)"/>
+</segment>
+<segment>
+<pinref part="AVRISP" gate="G$1" pin="3"/>
+<wire x1="73.66" y1="63.5" x2="71.12" y2="63.5" width="0.1524" layer="91"/>
+<label x="71.12" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -7542,8 +7567,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </segment>
 <segment>
 <pinref part="AVRISP" gate="G$1" pin="5"/>
-<wire x1="76.2" y1="58.42" x2="73.66" y2="58.42" width="0.1524" layer="91"/>
-<label x="73.66" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="73.66" y1="58.42" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
+<label x="71.12" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -7563,14 +7588,14 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </segment>
 <segment>
 <pinref part="SUPPLY3" gate="G$1" pin="5V"/>
-<pinref part="JP6" gate="G$1" pin="1"/>
+<pinref part="5V" gate="G$1" pin="1"/>
 <wire x1="30.48" y1="58.42" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="AVRISP" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="68.58" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="5V"/>
-<wire x1="71.12" y1="68.58" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="71.12" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="AVRISP" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="68.58" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BUTT" class="0">
@@ -7580,31 +7605,31 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <label x="71.12" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="AVRISP" gate="G$1" pin="4"/>
-<wire x1="76.2" y1="60.96" x2="73.66" y2="60.96" width="0.1524" layer="91"/>
-<label x="73.66" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="PB2(SCK/ADC1)"/>
 <wire x1="38.1" y1="15.24" x2="43.18" y2="15.24" width="0.1524" layer="91"/>
 <label x="43.18" y="15.24" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AVRISP" gate="G$1" pin="2"/>
+<wire x1="73.66" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
+<label x="71.12" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="BLUEPWM" class="0">
 <segment>
 <wire x1="10.16" y1="58.42" x2="10.16" y2="60.96" width="0.1524" layer="91"/>
 <label x="10.16" y="60.96" size="1.27" layer="95" rot="R90" xref="yes"/>
-<pinref part="JP4" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="AVRISP" gate="G$1" pin="3"/>
-<wire x1="76.2" y1="63.5" x2="73.66" y2="63.5" width="0.1524" layer="91"/>
-<label x="73.66" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="B_PWM" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="38.1" y1="20.32" x2="43.18" y2="20.32" width="0.1524" layer="91"/>
 <label x="43.18" y="20.32" size="1.27" layer="95" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="PB0(MOSI)"/>
+</segment>
+<segment>
+<pinref part="AVRISP" gate="G$1" pin="4"/>
+<wire x1="73.66" y1="60.96" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
+<label x="71.12" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>

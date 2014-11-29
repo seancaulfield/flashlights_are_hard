@@ -1048,20 +1048,20 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <parts>
 <part name="GND2" library="A_butts" deviceset="GND" device=""/>
 <part name="GND3" library="A_butts" deviceset="GND" device=""/>
-<part name="U2" library="A_butts" deviceset="AMC7135" device="SOT-89"/>
-<part name="U3" library="A_butts" deviceset="AMC7135" device="SOT-89"/>
-<part name="U4" library="A_butts" deviceset="AMC7135" device="SOT-89"/>
+<part name="RED" library="A_butts" deviceset="AMC7135" device="SOT-89"/>
+<part name="GREEN" library="A_butts" deviceset="AMC7135" device="SOT-89"/>
+<part name="BLUE" library="A_butts" deviceset="AMC7135" device="SOT-89"/>
 <part name="GND1" library="A_butts" deviceset="GND" device=""/>
 <part name="GND7" library="A_butts" deviceset="GND" device=""/>
-<part name="U5" library="A_butts" deviceset="AMC7135" device="SOT-89"/>
+<part name="WHITE" library="A_butts" deviceset="AMC7135" device="SOT-89"/>
 <part name="JP1" library="A_butts" deviceset="M05" device="JST-PH-RA-PTH"/>
 <part name="GND4" library="A_butts" deviceset="GND" device=""/>
-<part name="JP2" library="A_butts" deviceset="M01" device="PTH-0.9MM-NS" value="M01PTH-0.9MM-NS"/>
-<part name="JP3" library="A_butts" deviceset="M01" device="PTH-0.9MM-NS" value="M01PTH-0.9MM-NS"/>
-<part name="JP4" library="A_butts" deviceset="M01" device="PTH-0.9MM-NS" value="M01PTH-0.9MM-NS"/>
-<part name="JP5" library="A_butts" deviceset="M01" device="PTH-0.9MM-NS" value="M01PTH-0.9MM-NS"/>
-<part name="JP6" library="A_butts" deviceset="M01" device="PTH-0.9MM-NS" value="M01PTH-0.9MM-NS"/>
-<part name="JP7" library="A_butts" deviceset="M01" device="PTH-0.9MM-NS" value="M01PTH-0.9MM-NS"/>
+<part name="R_PWM" library="A_butts" deviceset="M01" device="PTH-0.9MM" value="M01PTH-0.9MM"/>
+<part name="G_PWM" library="A_butts" deviceset="M01" device="PTH-0.9MM" value="M01PTH-0.9MM"/>
+<part name="B_PWM" library="A_butts" deviceset="M01" device="PTH-0.9MM" value="M01PTH-0.9MM"/>
+<part name="W_PWM" library="A_butts" deviceset="M01" device="PTH-0.9MM" value="M01PTH-0.9MM"/>
+<part name="5V" library="A_butts" deviceset="M01" device="PTH-0.9MM" value="M01PTH-0.9MM"/>
+<part name="GND" library="A_butts" deviceset="M01" device="PTH-0.9MM" value="M01PTH-0.9MM"/>
 </parts>
 <sheets>
 <sheet>
@@ -1070,45 +1070,45 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instances>
 <instance part="GND2" gate="1" x="58.42" y="53.34"/>
 <instance part="GND3" gate="1" x="119.38" y="78.74"/>
-<instance part="U2" gate="G$1" x="40.64" y="86.36"/>
-<instance part="U3" gate="G$1" x="40.64" y="60.96"/>
-<instance part="U4" gate="G$1" x="101.6" y="86.36"/>
+<instance part="RED" gate="G$1" x="40.64" y="86.36"/>
+<instance part="GREEN" gate="G$1" x="40.64" y="60.96"/>
+<instance part="BLUE" gate="G$1" x="101.6" y="86.36"/>
 <instance part="GND1" gate="1" x="58.42" y="78.74"/>
 <instance part="GND7" gate="1" x="119.38" y="53.34"/>
-<instance part="U5" gate="G$1" x="101.6" y="60.96"/>
+<instance part="WHITE" gate="G$1" x="101.6" y="60.96"/>
 <instance part="JP1" gate="G$1" x="139.7" y="71.12"/>
 <instance part="GND4" gate="1" x="50.8" y="114.3" rot="R90"/>
-<instance part="JP2" gate="G$1" x="2.54" y="134.62"/>
-<instance part="JP3" gate="G$1" x="2.54" y="124.46"/>
-<instance part="JP4" gate="G$1" x="38.1" y="134.62"/>
-<instance part="JP5" gate="G$1" x="38.1" y="124.46"/>
-<instance part="JP6" gate="G$1" x="2.54" y="114.3"/>
-<instance part="JP7" gate="G$1" x="38.1" y="114.3"/>
+<instance part="R_PWM" gate="G$1" x="2.54" y="134.62"/>
+<instance part="G_PWM" gate="G$1" x="2.54" y="124.46"/>
+<instance part="B_PWM" gate="G$1" x="38.1" y="134.62"/>
+<instance part="W_PWM" gate="G$1" x="38.1" y="124.46"/>
+<instance part="5V" gate="G$1" x="2.54" y="114.3"/>
+<instance part="GND" gate="G$1" x="38.1" y="114.3"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="GND"/>
+<pinref part="RED" gate="G$1" pin="GND"/>
 <wire x1="55.88" y1="83.82" x2="58.42" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="58.42" y1="83.82" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="GND"/>
+<pinref part="GREEN" gate="G$1" pin="GND"/>
 <wire x1="55.88" y1="58.42" x2="58.42" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="58.42" y1="58.42" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U4" gate="G$1" pin="GND"/>
+<pinref part="BLUE" gate="G$1" pin="GND"/>
 <wire x1="116.84" y1="83.82" x2="119.38" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="119.38" y1="83.82" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="GND"/>
+<pinref part="WHITE" gate="G$1" pin="GND"/>
 <wire x1="116.84" y1="58.42" x2="119.38" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="119.38" y1="58.42" x2="119.38" y2="55.88" width="0.1524" layer="91"/>
@@ -1116,36 +1116,36 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="45.72" y1="114.3" x2="48.26" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="JP7" gate="G$1" pin="1"/>
+<pinref part="GND" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="GREENPWM" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="VDD"/>
+<pinref part="GREEN" gate="G$1" pin="VDD"/>
 <wire x1="25.4" y1="60.96" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
 <label x="22.86" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="12.7" y1="124.46" x2="10.16" y2="124.46" width="0.1524" layer="91"/>
 <label x="12.7" y="124.46" size="1.27" layer="95" xref="yes"/>
-<pinref part="JP3" gate="G$1" pin="1"/>
+<pinref part="G_PWM" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="REDPWM" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="VDD"/>
+<pinref part="RED" gate="G$1" pin="VDD"/>
 <wire x1="25.4" y1="86.36" x2="22.86" y2="86.36" width="0.1524" layer="91"/>
 <label x="22.86" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="12.7" y1="134.62" x2="10.16" y2="134.62" width="0.1524" layer="91"/>
 <label x="12.7" y="134.62" size="1.27" layer="95" xref="yes"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
+<pinref part="R_PWM" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="BLUE-" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="LED"/>
+<pinref part="BLUE" gate="G$1" pin="LED"/>
 <wire x1="116.84" y1="88.9" x2="119.38" y2="88.9" width="0.1524" layer="91"/>
 <label x="119.38" y="88.9" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -1157,7 +1157,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="GREEN-" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="LED"/>
+<pinref part="GREEN" gate="G$1" pin="LED"/>
 <wire x1="55.88" y1="63.5" x2="58.42" y2="63.5" width="0.1524" layer="91"/>
 <label x="58.42" y="63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -1169,19 +1169,19 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="BLUEPWM" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="VDD"/>
+<pinref part="BLUE" gate="G$1" pin="VDD"/>
 <wire x1="86.36" y1="86.36" x2="83.82" y2="86.36" width="0.1524" layer="91"/>
 <label x="83.82" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="48.26" y1="134.62" x2="45.72" y2="134.62" width="0.1524" layer="91"/>
 <label x="48.26" y="134.62" size="1.27" layer="95" xref="yes"/>
-<pinref part="JP4" gate="G$1" pin="1"/>
+<pinref part="B_PWM" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="RED-" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="LED"/>
+<pinref part="RED" gate="G$1" pin="LED"/>
 <wire x1="55.88" y1="88.9" x2="58.42" y2="88.9" width="0.1524" layer="91"/>
 <label x="58.42" y="88.9" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -1193,19 +1193,19 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="WHITEPWM" class="0">
 <segment>
-<pinref part="U5" gate="G$1" pin="VDD"/>
+<pinref part="WHITE" gate="G$1" pin="VDD"/>
 <wire x1="86.36" y1="60.96" x2="83.82" y2="60.96" width="0.1524" layer="91"/>
 <label x="83.82" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="48.26" y1="124.46" x2="45.72" y2="124.46" width="0.1524" layer="91"/>
 <label x="48.26" y="124.46" size="1.27" layer="95" xref="yes"/>
-<pinref part="JP5" gate="G$1" pin="1"/>
+<pinref part="W_PWM" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="WHITE-" class="0">
 <segment>
-<pinref part="U5" gate="G$1" pin="LED"/>
+<pinref part="WHITE" gate="G$1" pin="LED"/>
 <wire x1="116.84" y1="63.5" x2="119.38" y2="63.5" width="0.1524" layer="91"/>
 <label x="119.38" y="63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -1224,7 +1224,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <wire x1="12.7" y1="114.3" x2="10.16" y2="114.3" width="0.1524" layer="91"/>
 <label x="12.7" y="114.3" size="1.27" layer="95" xref="yes"/>
-<pinref part="JP6" gate="G$1" pin="1"/>
+<pinref part="5V" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
