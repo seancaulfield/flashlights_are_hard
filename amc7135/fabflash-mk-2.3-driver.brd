@@ -251,20 +251,19 @@
 <wire x1="1.143" y1="-0.635" x2="-1.143" y2="-0.635" width="0.1524" layer="21" curve="-120"/>
 <wire x1="-1.143" y1="-1.524" x2="4.445" y2="-1.524" width="0.1524" layer="21"/>
 </package>
-<package name="COW">
-<wire x1="0" y1="5.08" x2="-6.35" y2="7.62" width="0.6096" layer="21" curve="-56.309932"/>
-<wire x1="0" y1="5.08" x2="6.35" y2="7.62" width="0.6096" layer="21" curve="50.194429"/>
-<wire x1="0" y1="6.35" x2="-1.27" y2="-3.81" width="0.6096" layer="21" curve="161.075356"/>
-<wire x1="1.27" y1="-3.81" x2="0" y2="6.35" width="0.6096" layer="21" curve="161.075356"/>
-<wire x1="-1.27" y1="-3.81" x2="1.27" y2="-3.81" width="0.6096" layer="21" curve="43.602819"/>
-<wire x1="0.508" y1="1.524" x2="3.048" y2="2.54" width="0.6096" layer="21"/>
-<wire x1="-0.508" y1="1.524" x2="-3.048" y2="2.54" width="0.6096" layer="21"/>
-<wire x1="-1.27" y1="-1.27" x2="-3.81" y2="-2.54" width="0.6096" layer="21" curve="67.380135"/>
-<wire x1="1.27" y1="-1.27" x2="3.81" y2="-2.54" width="0.6096" layer="21" curve="-67.380135"/>
-<wire x1="-3.81" y1="-2.54" x2="-2.54" y2="-5.08" width="0.6096" layer="21" curve="63.434949"/>
-<wire x1="3.81" y1="-2.54" x2="2.54" y2="-5.08" width="0.6096" layer="21" curve="-53.130102"/>
-<wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.6096" layer="21" curve="59.489763"/>
-<wire x1="-2.54" y1="0.508" x2="2.54" y2="0.508" width="0.6096" layer="21"/>
+<package name="COW_SMALL">
+<wire x1="-2.286" y1="2.54" x2="2.286" y2="2.54" width="0.3048" layer="21" curve="121.890792"/>
+<wire x1="0.254" y1="0" x2="1.27" y2="0.508" width="0.3048" layer="21"/>
+<wire x1="-0.254" y1="0" x2="-1.27" y2="0.508" width="0.3048" layer="21"/>
+<wire x1="-1.27" y1="-0.508" x2="1.27" y2="-0.508" width="0.3048" layer="21"/>
+<wire x1="1.778" y1="-1.524" x2="-1.778" y2="-1.524" width="0.3048" layer="21" curve="-140"/>
+<wire x1="2.032" y1="-1.016" x2="-2.032" y2="-0.762" width="0.3048" layer="21" curve="220"/>
+<wire x1="1.778" y1="-1.524" x2="2.032" y2="-1.016" width="0.3048" layer="21"/>
+<wire x1="-1.778" y1="-1.524" x2="-2.032" y2="-0.762" width="0.3048" layer="21"/>
+<wire x1="-1.27" y1="-2.286" x2="1.27" y2="-2.286" width="0.3048" layer="21" curve="180"/>
+<wire x1="-1.27" y1="-2.286" x2="-0.762" y2="-1.27" width="0.3048" layer="21" curve="-75"/>
+<wire x1="1.27" y1="-2.286" x2="0.762" y2="-1.27" width="0.3048" layer="21" curve="75"/>
+<text x="0" y="-4.064" size="0.6096" layer="21" font="vector" ratio="15" align="center">deathbycow</text>
 </package>
 </packages>
 </library>
@@ -462,7 +461,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="5V" library="A_butts" package="1X01-0.9MM" value="M01PTH-0.9MM" x="18" y="2"/>
 <element name="GND" library="A_butts" package="1X01-0.9MM" value="M01PTH-0.9MM" x="18" y="18" rot="R180"/>
 <element name="U$1" library="A_butts" package="CC-BY-SA-4.0-NO-URL" value="" x="17.5" y="8.5" rot="R90"/>
-<element name="U$3" library="A_butts" package="COW" value="" x="7" y="11.25" rot="MR180"/>
+<element name="U$2" library="A_butts" package="COW_SMALL" value="" x="6" y="10" rot="MR270"/>
 </elements>
 <signals>
 <signal name="GND">
