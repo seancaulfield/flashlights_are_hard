@@ -227,6 +227,45 @@
 <pad name="1" x="0" y="0" drill="0.9" diameter="1.5" shape="octagon"/>
 <text x="0" y="0.9" size="0.6096" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="CC-BY-SA-4.0-NO-URL">
+<text x="0.0635" y="0" size="0.7112" layer="21" font="vector" ratio="15" rot="SR0" align="center">CC</text>
+<circle x="0" y="0" radius="0.889" width="0.1524" layer="21"/>
+<circle x="1.905" y="0.254" radius="0.635" width="0.1524" layer="21"/>
+<rectangle x1="1.651" y1="0.127" x2="2.159" y2="0.4445" layer="21"/>
+<rectangle x1="1.778" y1="-0.1905" x2="2.032" y2="0.127" layer="21"/>
+<circle x="1.905" y="0.5715" radius="0.0635" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="0.508" x2="1.905" y2="0.254" width="0.1524" layer="21"/>
+<circle x="3.556" y="0.254" radius="0.635" width="0.1524" layer="21"/>
+<text x="1.905" y="-1.0795" size="0.4064" layer="21" font="vector" ratio="12" rot="SR0" align="center">BY</text>
+<text x="3.556" y="-1.0795" size="0.4064" layer="21" font="vector" ratio="12" rot="SR0" align="center">SA</text>
+<wire x1="3.302" y1="0.0762" x2="3.302" y2="0.4572" width="0.1524" layer="21" curve="290"/>
+<wire x1="3.2004" y1="0.29119375" x2="3.2004" y2="0.49439375" width="0.1524" layer="21"/>
+<wire x1="3.2004" y1="0.49439375" x2="3.4036" y2="0.36739375" width="0.1524" layer="21"/>
+<wire x1="3.4036" y1="0.36739375" x2="3.2004" y2="0.29119375" width="0.1524" layer="21"/>
+<wire x1="-1.143" y1="-1.524" x2="-1.143" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.143" y1="-0.635" x2="-1.143" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="-1.143" y1="1.143" x2="4.445" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="1.143" x2="4.445" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="-0.635" x2="4.445" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="-0.635" x2="4.445" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="-0.635" x2="-1.143" y2="-0.635" width="0.1524" layer="21" curve="-120"/>
+<wire x1="-1.143" y1="-1.524" x2="4.445" y2="-1.524" width="0.1524" layer="21"/>
+</package>
+<package name="COW">
+<wire x1="0" y1="5.08" x2="-6.35" y2="7.62" width="0.6096" layer="21" curve="-56.309932"/>
+<wire x1="0" y1="5.08" x2="6.35" y2="7.62" width="0.6096" layer="21" curve="50.194429"/>
+<wire x1="0" y1="6.35" x2="-1.27" y2="-3.81" width="0.6096" layer="21" curve="161.075356"/>
+<wire x1="1.27" y1="-3.81" x2="0" y2="6.35" width="0.6096" layer="21" curve="161.075356"/>
+<wire x1="-1.27" y1="-3.81" x2="1.27" y2="-3.81" width="0.6096" layer="21" curve="43.602819"/>
+<wire x1="0.508" y1="1.524" x2="3.048" y2="2.54" width="0.6096" layer="21"/>
+<wire x1="-0.508" y1="1.524" x2="-3.048" y2="2.54" width="0.6096" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="-3.81" y2="-2.54" width="0.6096" layer="21" curve="67.380135"/>
+<wire x1="1.27" y1="-1.27" x2="3.81" y2="-2.54" width="0.6096" layer="21" curve="-67.380135"/>
+<wire x1="-3.81" y1="-2.54" x2="-2.54" y2="-5.08" width="0.6096" layer="21" curve="63.434949"/>
+<wire x1="3.81" y1="-2.54" x2="2.54" y2="-5.08" width="0.6096" layer="21" curve="-53.130102"/>
+<wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.6096" layer="21" curve="59.489763"/>
+<wire x1="-2.54" y1="0.508" x2="2.54" y2="0.508" width="0.6096" layer="21"/>
+</package>
 </packages>
 </library>
 </libraries>
@@ -415,13 +454,15 @@ Please make sure your boards conform to these design rules.</description>
 <element name="GREEN" library="A_butts" package="SOT89" value="AMC7135SOT-89" x="3.5" y="13.25" rot="R180"/>
 <element name="BLUE" library="A_butts" package="SOT89" value="AMC7135SOT-89" x="3.5" y="6.75" rot="R180"/>
 <element name="WHITE" library="A_butts" package="SOT89" value="AMC7135SOT-89" x="9" y="6.75" rot="R180"/>
-<element name="JP1" library="A_butts" package="JST-5-PH-RA-PTH" value="" x="13.5" y="10" smashed="yes" rot="MR90"/>
+<element name="JP1" library="A_butts" package="JST-5-PH-RA-PTH" value="M05JST-PH-RA-PTH" x="13.5" y="10" smashed="yes" rot="MR90"/>
 <element name="R_PWM" library="A_butts" package="1X01-0.9MM" value="M01PTH-0.9MM" x="10" y="18" rot="R180"/>
 <element name="G_PWM" library="A_butts" package="1X01-0.9MM" value="M01PTH-0.9MM" x="2" y="18" rot="R180"/>
 <element name="B_PWM" library="A_butts" package="1X01-0.9MM" value="M01PTH-0.9MM" x="2" y="2"/>
 <element name="W_PWM" library="A_butts" package="1X01-0.9MM" value="M01PTH-0.9MM" x="10" y="2"/>
 <element name="5V" library="A_butts" package="1X01-0.9MM" value="M01PTH-0.9MM" x="18" y="2"/>
 <element name="GND" library="A_butts" package="1X01-0.9MM" value="M01PTH-0.9MM" x="18" y="18" rot="R180"/>
+<element name="U$1" library="A_butts" package="CC-BY-SA-4.0-NO-URL" value="" x="17.5" y="8.5" rot="R90"/>
+<element name="U$3" library="A_butts" package="COW" value="" x="7" y="11.25" rot="MR180"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -460,7 +501,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="BLUE" pad="1"/>
 <contactref element="JP1" pad="3"/>
 <via x="5" y="10" extent="1-16" drill="0.3302"/>
-<wire x1="5" y1="10" x2="5" y2="8.55" width="0.8128" layer="1"/>
+<wire x1="5" y1="10" x2="5" y2="8.55" width="0.6096" layer="1"/>
 <wire x1="5" y1="10" x2="13.5" y2="10" width="0.6096" layer="16"/>
 </signal>
 <signal name="GREEN-">

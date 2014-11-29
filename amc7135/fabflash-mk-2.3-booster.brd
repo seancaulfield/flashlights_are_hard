@@ -263,9 +263,7 @@
 <text x="0" y="1.778" size="0.4064" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 <wire x1="-0.3556" y1="-0.635" x2="0.3556" y2="-0.635" width="0.1524" layer="21"/>
 </package>
-<package name="SMA-DIODE">
-<description>&lt;B&gt;Diode&lt;/B&gt;&lt;p&gt;
-Basic SMA packaged diode. Good for reverse polarization protection. Common part #: MBRA140</description>
+<package name="SMA-DIODE-SCHOTTKY">
 <wire x1="-2.3" y1="1" x2="-2.3" y2="1.45" width="0.1524" layer="21"/>
 <wire x1="-2.3" y1="1.45" x2="2.3" y2="1.45" width="0.1524" layer="21"/>
 <wire x1="2.3" y1="1.45" x2="2.3" y2="1" width="0.1524" layer="21"/>
@@ -275,26 +273,29 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <smd name="A" x="-2.15" y="0" dx="1.27" dy="1.47" layer="1" rot="R180"/>
 <smd name="C" x="2.15" y="0" dx="1.27" dy="1.47" layer="1"/>
 <text x="-2.286" y="1.651" size="0.4064" layer="25" font="vector" ratio="12">&gt;NAME</text>
-<wire x1="-0.762" y1="-1.016" x2="-0.762" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-0.762" y1="-1.016" x2="0.762" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.762" y1="0" x2="-0.762" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="0.762" y1="-1.016" x2="0.762" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.762" y1="0" x2="0.762" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-0.75" y1="-1" x2="-0.75" y2="1" width="0.1524" layer="21"/>
+<wire x1="-0.75" y1="-1" x2="0.75" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.75" y1="0" x2="-0.75" y2="1" width="0.1524" layer="21"/>
+<wire x1="0.75" y1="-0.6" x2="0.75" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.75" y1="0" x2="0.75" y2="0.6" width="0.1524" layer="21"/>
+<wire x1="1.15" y1="1" x2="0.75" y2="0.6" width="0.1524" layer="21"/>
+<wire x1="0.75" y1="-0.6" x2="0.35" y2="-1" width="0.1524" layer="21"/>
 </package>
-<package name="SOD123">
-<description>&lt;b&gt;Diode&lt;/b&gt;</description>
-<smd name="C" x="-1.9" y="0" dx="1.4" dy="1.4" layer="1"/>
-<smd name="A" x="1.9" y="0" dx="1.4" dy="1.4" layer="1"/>
+<package name="SOD123-ZENER">
+<smd name="C" x="1.9" y="0" dx="1.4" dy="1.4" layer="1"/>
+<smd name="A" x="-1.9" y="0" dx="1.4" dy="1.4" layer="1"/>
 <text x="0" y="0.889" size="0.4064" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<wire x1="-2.032" y1="0.889" x2="2.032" y2="0.889" width="0.1524" layer="39"/>
-<wire x1="2.032" y1="0.889" x2="2.032" y2="-0.889" width="0.1524" layer="39"/>
 <wire x1="2.032" y1="-0.889" x2="-2.032" y2="-0.889" width="0.1524" layer="39"/>
 <wire x1="-2.032" y1="-0.889" x2="-2.032" y2="0.889" width="0.1524" layer="39"/>
-<wire x1="-0.508" y1="0.635" x2="-0.508" y2="0" width="0.1524" layer="21"/>
-<wire x1="-0.508" y1="0" x2="-0.508" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-0.508" y1="0" x2="0.508" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0.508" y1="0.635" x2="0.508" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="0.508" y1="-0.635" x2="-0.508" y2="0" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="0.889" x2="2.032" y2="0.889" width="0.1524" layer="39"/>
+<wire x1="2.032" y1="0.889" x2="2.032" y2="-0.889" width="0.1524" layer="39"/>
+<wire x1="0.5" y1="-0.635" x2="0.5" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.5" y1="0" x2="0.5" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0.5" y1="0" x2="-0.5" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-0.5" y1="-0.635" x2="-0.5" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-0.5" y1="0.635" x2="0.5" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.5" y1="0.635" x2="0.8" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0.5" y1="-0.635" x2="0.2" y2="-0.635" width="0.1524" layer="21"/>
 </package>
 <package name="1X01_NOSILK_NOSTOP">
 <pad name="P$1" x="0" y="0" drill="0.3302" stop="no" thermals="no"/>
@@ -311,6 +312,45 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <smd name="3" x="1.27" y="0" dx="2.54" dy="1" layer="1" rot="R90"/>
 <smd name="2" x="-1.27" y="0" dx="2.54" dy="1" layer="1" rot="R90"/>
 <smd name="1" x="-3.81" y="0" dx="2.54" dy="1" layer="1" rot="R90"/>
+</package>
+<package name="COW">
+<wire x1="0" y1="5.08" x2="-6.35" y2="7.62" width="0.6096" layer="21" curve="-56.309932"/>
+<wire x1="0" y1="5.08" x2="6.35" y2="7.62" width="0.6096" layer="21" curve="50.194429"/>
+<wire x1="0" y1="6.35" x2="-1.27" y2="-3.81" width="0.6096" layer="21" curve="161.075356"/>
+<wire x1="1.27" y1="-3.81" x2="0" y2="6.35" width="0.6096" layer="21" curve="161.075356"/>
+<wire x1="-1.27" y1="-3.81" x2="1.27" y2="-3.81" width="0.6096" layer="21" curve="43.602819"/>
+<wire x1="0.508" y1="1.524" x2="3.048" y2="2.54" width="0.6096" layer="21"/>
+<wire x1="-0.508" y1="1.524" x2="-3.048" y2="2.54" width="0.6096" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="-3.81" y2="-2.54" width="0.6096" layer="21" curve="67.380135"/>
+<wire x1="1.27" y1="-1.27" x2="3.81" y2="-2.54" width="0.6096" layer="21" curve="-67.380135"/>
+<wire x1="-3.81" y1="-2.54" x2="-2.54" y2="-5.08" width="0.6096" layer="21" curve="63.434949"/>
+<wire x1="3.81" y1="-2.54" x2="2.54" y2="-5.08" width="0.6096" layer="21" curve="-53.130102"/>
+<wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.6096" layer="21" curve="59.489763"/>
+<wire x1="-2.54" y1="0.508" x2="2.54" y2="0.508" width="0.6096" layer="21"/>
+</package>
+<package name="CC-BY-SA-4.0-NO-URL">
+<text x="0.0635" y="0" size="0.7112" layer="21" font="vector" ratio="15" rot="SR0" align="center">CC</text>
+<circle x="0" y="0" radius="0.889" width="0.1524" layer="21"/>
+<circle x="1.905" y="0.254" radius="0.635" width="0.1524" layer="21"/>
+<rectangle x1="1.651" y1="0.127" x2="2.159" y2="0.4445" layer="21"/>
+<rectangle x1="1.778" y1="-0.1905" x2="2.032" y2="0.127" layer="21"/>
+<circle x="1.905" y="0.5715" radius="0.0635" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="0.508" x2="1.905" y2="0.254" width="0.1524" layer="21"/>
+<circle x="3.556" y="0.254" radius="0.635" width="0.1524" layer="21"/>
+<text x="1.905" y="-1.0795" size="0.4064" layer="21" font="vector" ratio="12" rot="SR0" align="center">BY</text>
+<text x="3.556" y="-1.0795" size="0.4064" layer="21" font="vector" ratio="12" rot="SR0" align="center">SA</text>
+<wire x1="3.302" y1="0.0762" x2="3.302" y2="0.4572" width="0.1524" layer="21" curve="290"/>
+<wire x1="3.2004" y1="0.29119375" x2="3.2004" y2="0.49439375" width="0.1524" layer="21"/>
+<wire x1="3.2004" y1="0.49439375" x2="3.4036" y2="0.36739375" width="0.1524" layer="21"/>
+<wire x1="3.4036" y1="0.36739375" x2="3.2004" y2="0.29119375" width="0.1524" layer="21"/>
+<wire x1="-1.143" y1="-1.524" x2="-1.143" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.143" y1="-0.635" x2="-1.143" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="-1.143" y1="1.143" x2="4.445" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="1.143" x2="4.445" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="-0.635" x2="4.445" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="-0.635" x2="4.445" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="-0.635" x2="-1.143" y2="-0.635" width="0.1524" layer="21" curve="-120"/>
+<wire x1="-1.143" y1="-1.524" x2="4.445" y2="-1.524" width="0.1524" layer="21"/>
 </package>
 </packages>
 </library>
@@ -502,36 +542,65 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MPN" value="LM2735YMF" x="-3.96" y="12.11" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER" value="National Semiconductor" x="-3.96" y="12.11" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="1426509" x="-3.96" y="12.11" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="12.378" y="8.35" size="0.4064" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="12.378" y="8.35" size="0.4064" layer="21" font="vector" ratio="12" rot="R270" align="bottom-center"/>
 </element>
-<element name="C1" library="A_butts" package="C0805" value="22uF" x="12" y="5.3"/>
-<element name="C3" library="A_butts" package="C0805" value="10uF" x="13.5" y="18" rot="R180"/>
-<element name="C5" library="A_butts" package="C0603" value="2.2nF" x="8.4" y="15.5" rot="R180"/>
-<element name="C6" library="A_butts" package="C0805" value="2.2uF" x="17" y="10.15"/>
-<element name="R2" library="A_butts" package="R0603" value="30k" x="8.4" y="13.25"/>
-<element name="D1" library="A_butts" package="SMA-DIODE" value="B340A" x="12.65" y="13.25" rot="R90">
-<attribute name="PROD_ID" value="DIO-09886" x="12.65" y="13.25" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" value="B340A" x="12.65" y="13.25" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C1" library="A_butts" package="C0805" value="22uF" x="12" y="5.3" smashed="yes">
+<attribute name="NAME" x="10.222" y="5.3" size="0.4064" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="13.778" y="5.3" size="0.4064" layer="21" font="vector" ratio="12" rot="R90" align="top-center"/>
 </element>
-<element name="L1" library="A_butts" package="TAIYO-YUDEN-40XX" value="6.8uH" x="17" y="6.25" rot="R90"/>
-<element name="L2" library="A_butts" package="TAIYO-YUDEN-40XX" value="6.8uH" x="17" y="14.05" rot="R90"/>
-<element name="R1" library="A_butts" package="R0603" value="10k" x="8.4" y="11"/>
-<element name="R3" library="A_butts" package="R0603" value="100k" x="8.4" y="8.75"/>
+<element name="C3" library="A_butts" package="C0805" value="10uF" x="13.5" y="18" smashed="yes" rot="R180">
+<attribute name="NAME" x="15.278" y="18" size="0.4064" layer="25" font="vector" ratio="12" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="11.722" y="18" size="0.4064" layer="21" font="vector" ratio="12" rot="R270" align="top-center"/>
+</element>
+<element name="C5" library="A_butts" package="C0603" value="2.2nF" x="8.4" y="15.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="9.924" y="15.5" size="0.4064" layer="25" font="vector" ratio="12" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="6.876" y="15.5" size="0.4064" layer="21" font="vector" ratio="12" rot="R270" align="top-center"/>
+</element>
+<element name="C6" library="A_butts" package="C0805" value="2.2uF" x="17" y="10.15" smashed="yes">
+<attribute name="NAME" x="15.222" y="10.15" size="0.4064" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="18.778" y="10.15" size="0.4064" layer="21" font="vector" ratio="12" rot="R90" align="top-center"/>
+</element>
+<element name="R2" library="A_butts" package="R0603" value="30k" x="8.4" y="13.25" smashed="yes">
+<attribute name="NAME" x="6.9268" y="13.25" size="0.4064" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="9.8732" y="13.25" size="0.4064" layer="21" font="vector" ratio="12" rot="R90" align="top-center"/>
+</element>
+<element name="D1" library="A_butts" package="SMA-DIODE-SCHOTTKY" value="B340A" x="12.65" y="13.25" rot="R90"/>
+<element name="L1" library="A_butts" package="TAIYO-YUDEN-40XX" value="6.8uH" x="17" y="6.25" smashed="yes" rot="R90">
+<attribute name="NAME" x="14.9" y="6.25" size="0.4064" layer="21" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="19" y="6.25" size="0.4064" layer="21" font="vector" ratio="12" rot="R90" align="top-center"/>
+</element>
+<element name="L2" library="A_butts" package="TAIYO-YUDEN-40XX" value="6.8uH" x="17" y="14.05" smashed="yes" rot="R90">
+<attribute name="NAME" x="14.9" y="14.05" size="0.4064" layer="21" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="19" y="14.05" size="0.4064" layer="21" font="vector" ratio="12" rot="R90" align="top-center"/>
+</element>
+<element name="R1" library="A_butts" package="R0603" value="10k" x="8.4" y="11" smashed="yes">
+<attribute name="NAME" x="6.9268" y="11" size="0.4064" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="9.8732" y="11" size="0.4064" layer="21" font="vector" ratio="12" rot="R90" align="top-center"/>
+</element>
+<element name="R3" library="A_butts" package="R0603" value="100k" x="8.4" y="8.75" smashed="yes">
+<attribute name="NAME" x="6.9268" y="8.75" size="0.4064" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="9.8732" y="8.75" size="0.4064" layer="21" font="vector" ratio="12" rot="R90" align="top-center"/>
+</element>
 <element name="Q1" library="A_butts" package="SOT23-3" value="MOSFET-PCHANNELIRLML2244" x="8.15" y="5.25" smashed="yes">
 <attribute name="PROD_ID" value="TRANS-11153" x="41.17" y="-3.64" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="8.372" y="3.75" size="0.4064" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 </element>
-<element name="D2" library="A_butts" package="SOD123" value="10V" x="6" y="2" rot="R180"/>
-<element name="R4" library="A_butts" package="R0603" value="100k" x="4.6" y="4"/>
+<element name="D2" library="A_butts" package="SOD123-ZENER" value="10V" x="6" y="2"/>
+<element name="R4" library="A_butts" package="R0603" value="100k" x="4.6" y="4.25" smashed="yes">
+<attribute name="NAME" x="3.1268" y="4.25" size="0.4064" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="6.0732" y="4.25" size="0.4064" layer="21" font="vector" ratio="12" rot="R90" align="top-center"/>
+</element>
 <element name="JP1" library="A_butts" package="1X01-0.9MM-NS" value="M01PTH-0.9MM-NS" x="2" y="18"/>
 <element name="JP2" library="A_butts" package="1X01-0.9MM-NS" value="M01PTH-0.9MM-NS" x="10" y="18"/>
-<element name="GND" library="A_butts" package="1X01-0.9MM" value="M01PTH-0.9MM" x="18" y="2"/>
+<element name="GND" library="A_butts" package="1X01-0.9MM" value="M01PTH-0.9MM" x="18" y="2" rot="R90"/>
 <element name="JP3" library="A_butts" package="1X01-0.9MM-NS" value="M01PTH-0.9MM-NS" x="2" y="2" rot="R90"/>
 <element name="JP4" library="A_butts" package="1X01-0.9MM-NS" value="M01PTH-0.9MM-NS" x="10" y="2"/>
-<element name="5V" library="A_butts" package="1X01-0.9MM" value="M01PTH-0.9MM" x="18" y="18"/>
+<element name="5V" library="A_butts" package="1X01-0.9MM" value="M01PTH-0.9MM" x="18" y="18" rot="R90"/>
 <element name="JP5" library="A_butts" package="1X04-SMD-SHORT" value="M04SMD-SHORT-NS" x="4.6" y="10" rot="R90"/>
 <element name="JP6" library="A_butts" package="1X04-SMD-SHORT" value="M04SMD-SHORT-NS" x="4.6" y="10" rot="MR90"/>
 <element name="JP7" library="A_butts" package="1X01_NOSILK_NOSTOP" value="M01NOT-A-VIA-NOPE" x="7" y="6.5"/>
+<element name="U$1" library="A_butts" package="COW" value="" x="13" y="10" rot="MR270"/>
+<element name="U$2" library="A_butts" package="CC-BY-SA-4.0-NO-URL" value="" x="12.5" y="18" rot="MR180"/>
 </elements>
 <signals>
 <signal name="N$1">
@@ -636,10 +705,9 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R4" pad="2"/>
 <contactref element="Q1" pad="1"/>
 <contactref element="D2" pad="A"/>
-<wire x1="5.45" y1="4" x2="5.45" y2="3.35" width="0.3048" layer="1"/>
-<wire x1="5.45" y1="3.35" x2="4.1" y2="2" width="0.3048" layer="1"/>
-<wire x1="7.2" y1="4.25" x2="5.7" y2="4.25" width="0.3048" layer="1"/>
-<wire x1="5.7" y1="4.25" x2="5.45" y2="4" width="0.3048" layer="1"/>
+<wire x1="7.2" y1="4.25" x2="5.45" y2="4.25" width="0.3048" layer="1"/>
+<wire x1="4.1" y1="2" x2="5.45" y2="3.35" width="0.3048" layer="1"/>
+<wire x1="5.45" y1="3.35" x2="5.45" y2="4.25" width="0.3048" layer="1"/>
 </signal>
 <signal name="5V">
 <contactref element="R2" pad="2"/>
