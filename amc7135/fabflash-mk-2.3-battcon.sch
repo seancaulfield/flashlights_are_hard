@@ -276,7 +276,6 @@
 <pad name="1" x="0" y="0" drill="1.016" diameter="1.778" rot="R90" stop="no"/>
 <circle x="0" y="0" radius="0.508" width="0" layer="29"/>
 <circle x="0" y="0" radius="0.889" width="0" layer="30"/>
-<text x="0" y="1.016" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="1X01NSATALL">
 <pad name="1" x="0" y="0" drill="0.8" diameter="1.6764" rot="R90"/>
@@ -334,6 +333,21 @@
 <package name="1X01-0.9MM">
 <pad name="1" x="0" y="0" drill="0.9" diameter="1.5" shape="octagon"/>
 <text x="0" y="0.9" size="0.6096" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="1X01-NS-LONG-KIT">
+<pad name="1" x="0" y="0" drill="1" diameter="1.5" shape="offset" stop="no"/>
+<polygon width="0.1524" layer="30">
+<vertex x="2.2" y="0" curve="-90"/>
+<vertex x="1.5" y="-0.7"/>
+<vertex x="0" y="-0.7" curve="-90"/>
+<vertex x="-0.7" y="0" curve="-90"/>
+<vertex x="0" y="0.7"/>
+<vertex x="1.5" y="0.7" curve="-90"/>
+</polygon>
+<circle x="0" y="0" radius="0.5" width="0" layer="29"/>
+</package>
+<package name="1X01-SMD-1X2.5MM-NS">
+<smd name="1" x="0" y="0" dx="1" dy="2.5" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -616,6 +630,22 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <technology name=""/>
 </technologies>
 </device>
+<device name="PTH-NS-KIT-LONG" package="1X01-NS-LONG-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD-1X2.5MM-NS" package="1X01-SMD-1X2.5MM-NS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -632,26 +662,34 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <parts>
 <part name="SUPPLY1" library="A_butts" deviceset="VIN" device=""/>
 <part name="GND1" library="A_butts" deviceset="GND" device=""/>
-<part name="JP3" library="A_butts" deviceset="M01" device="NOT-A-VIA-NOPE"/>
+<part name="JP1" library="A_butts" deviceset="M01" device="NOT-A-VIA-NOPE"/>
 <part name="JP2" library="A_butts" deviceset="M01" device="NOT-A-VIA-NOPE"/>
-<part name="JP4" library="A_butts" deviceset="M01" device="NOT-A-VIA-NOPE"/>
-<part name="JP5" library="A_butts" deviceset="M01" device="NOT-A-VIA-NOPE"/>
-<part name="JP6" library="A_butts" deviceset="M01" device="NOSTOP-CANTSTOP-DONTKNOWHOWTOSTOP"/>
-<part name="JP7" library="A_butts" deviceset="M01" device="NOSTOP-CANTSTOP-DONTKNOWHOWTOSTOP"/>
+<part name="JP5" library="A_butts" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
+<part name="JP3" library="A_butts" deviceset="M01" device="SMD-1X2.5MM-NS" value="M01SMD-1X2.5MM-NS"/>
+<part name="JP4" library="A_butts" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
+<part name="JP6" library="A_butts" deviceset="M01" device="SMD-1X2.5MM-NS" value="M01SMD-1X2.5MM-NS"/>
+<part name="JP7" library="A_butts" deviceset="M01" device="SMD-1X2.5MM-NS" value="M01SMD-1X2.5MM-NS"/>
+<part name="JP8" library="A_butts" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
+<part name="JP9" library="A_butts" deviceset="M01" device="NOSILK-KIT" value="M01NOSILK-KIT"/>
+<part name="JP10" library="A_butts" deviceset="M01" device="SMD-1X2.5MM-NS" value="M01SMD-1X2.5MM-NS"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="SUPPLY1" gate="G$1" x="25.4" y="20.32"/>
-<instance part="GND1" gate="1" x="22.86" y="-27.94"/>
-<instance part="JP3" gate="G$1" x="12.7" y="-2.54"/>
-<instance part="JP2" gate="G$1" x="35.56" y="-2.54" rot="R180"/>
-<instance part="JP4" gate="G$1" x="35.56" y="7.62" rot="R180"/>
-<instance part="JP5" gate="G$1" x="35.56" y="-12.7" rot="R180"/>
-<instance part="JP6" gate="G$1" x="35.56" y="17.78" rot="R180"/>
-<instance part="JP7" gate="G$1" x="35.56" y="-22.86" rot="R180"/>
+<instance part="SUPPLY1" gate="G$1" x="25.4" y="38.1"/>
+<instance part="GND1" gate="1" x="22.86" y="-40.64"/>
+<instance part="JP1" gate="G$1" x="12.7" y="5.08"/>
+<instance part="JP2" gate="G$1" x="12.7" y="-5.08"/>
+<instance part="JP5" gate="G$1" x="35.56" y="15.24" rot="R180"/>
+<instance part="JP3" gate="G$1" x="35.56" y="35.56" rot="R180"/>
+<instance part="JP4" gate="G$1" x="35.56" y="25.4" rot="R180"/>
+<instance part="JP6" gate="G$1" x="35.56" y="5.08" rot="R180"/>
+<instance part="JP7" gate="G$1" x="35.56" y="-5.08" rot="R180"/>
+<instance part="JP8" gate="G$1" x="35.56" y="-15.24" rot="R180"/>
+<instance part="JP9" gate="G$1" x="35.56" y="-25.4" rot="R180"/>
+<instance part="JP10" gate="G$1" x="35.56" y="-35.56" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -659,33 +697,47 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <net name="GND" class="0">
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="22.86" y1="-25.4" x2="22.86" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="-22.86" x2="22.86" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="-2.54" x2="22.86" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="-22.86" x2="27.94" y2="-22.86" width="0.1524" layer="91"/>
-<junction x="22.86" y="-22.86"/>
-<wire x1="22.86" y1="17.78" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="-38.1" x2="22.86" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="-35.56" x2="22.86" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="-5.08" x2="22.86" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="5.08" x2="22.86" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="5.08" x2="22.86" y2="5.08" width="0.1524" layer="91"/>
+<junction x="22.86" y="5.08"/>
+<pinref part="JP2" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="-5.08" x2="22.86" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="22.86" y="-5.08"/>
+<wire x1="27.94" y1="5.08" x2="22.86" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-5.08" x2="22.86" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-35.56" x2="22.86" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="22.86" y="-35.56"/>
+<wire x1="27.94" y1="35.56" x2="22.86" y2="35.56" width="0.1524" layer="91"/>
+<label x="20.32" y="2.54" size="1.27" layer="95" rot="R270"/>
 <pinref part="JP6" gate="G$1" pin="1"/>
-<pinref part="JP7" gate="G$1" pin="1"/>
 <pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="-2.54" x2="20.32" y2="-2.54" width="0.1524" layer="91"/>
-<junction x="22.86" y="-2.54"/>
+<pinref part="JP7" gate="G$1" pin="1"/>
+<pinref part="JP10" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="VIN" class="0">
 <segment>
 <pinref part="SUPPLY1" gate="G$1" pin="VIN"/>
-<wire x1="25.4" y1="20.32" x2="25.4" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="7.62" x2="27.94" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="7.62" x2="25.4" y2="-2.54" width="0.1524" layer="91"/>
-<junction x="25.4" y="7.62"/>
-<wire x1="25.4" y1="-2.54" x2="27.94" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="-2.54" x2="25.4" y2="-12.7" width="0.1524" layer="91"/>
-<junction x="25.4" y="-2.54"/>
-<wire x1="25.4" y1="-12.7" x2="27.94" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
-<pinref part="JP4" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="38.1" x2="25.4" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="25.4" x2="25.4" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="15.24" x2="25.4" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-15.24" x2="25.4" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-25.4" x2="25.4" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-15.24" x2="25.4" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="25.4" y="-15.24"/>
+<wire x1="27.94" y1="15.24" x2="25.4" y2="15.24" width="0.1524" layer="91"/>
+<junction x="25.4" y="15.24"/>
+<wire x1="27.94" y1="25.4" x2="25.4" y2="25.4" width="0.1524" layer="91"/>
+<junction x="25.4" y="25.4"/>
+<label x="27.94" y="0" size="1.27" layer="95" rot="R90"/>
 <pinref part="JP5" gate="G$1" pin="1"/>
+<pinref part="JP4" gate="G$1" pin="1"/>
+<pinref part="JP9" gate="G$1" pin="1"/>
+<pinref part="JP8" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -158,49 +158,38 @@
 <wire x1="11" y1="0" x2="22" y2="11" width="0" layer="20" curve="90"/>
 <wire x1="22" y1="11" x2="11" y2="22" width="0" layer="20" curve="90"/>
 <wire x1="11" y1="22" x2="0" y2="11" width="0" layer="20" curve="90"/>
-<circle x="11" y="11" radius="10.2" width="1.6" layer="30"/>
-<circle x="11" y="11" radius="9.2" width="3.55" layer="29"/>
-<circle x="11" y="11" radius="5.1" width="0" layer="30"/>
-<polygon width="0.1524" layer="29">
-<vertex x="6.4" y="16.1"/>
-<vertex x="6.4" y="5.9"/>
-<vertex x="7.6" y="5.9"/>
-<vertex x="7.6" y="16.1"/>
+<circle x="11" y="11" radius="9.2" width="3.55" layer="30"/>
+<polygon width="0.5" layer="29">
+<vertex x="1" y="16"/>
+<vertex x="5.5" y="16" curve="-50"/>
+<vertex x="11" y="18.5" curve="-50"/>
+<vertex x="16.5" y="16"/>
+<vertex x="21" y="16" curve="60"/>
+<vertex x="11" y="22" curve="60"/>
 </polygon>
-<polygon width="0.1524" layer="29">
-<vertex x="8.4" y="16.1"/>
-<vertex x="8.4" y="5.9"/>
-<vertex x="9.6" y="5.9"/>
-<vertex x="9.6" y="16.1"/>
+<polygon width="0.5" layer="29">
+<vertex x="21" y="6"/>
+<vertex x="16.5" y="6" curve="-50"/>
+<vertex x="11" y="3.5" curve="-50"/>
+<vertex x="5.5" y="6"/>
+<vertex x="1" y="6" curve="60"/>
+<vertex x="11" y="0" curve="60"/>
 </polygon>
-<polygon width="0.1524" layer="29">
-<vertex x="10.4" y="16.1"/>
-<vertex x="10.4" y="5.9"/>
-<vertex x="11.6" y="5.9"/>
-<vertex x="11.6" y="16.1"/>
-</polygon>
-<polygon width="0.1524" layer="29">
-<vertex x="12.4" y="16.1"/>
-<vertex x="12.4" y="5.9"/>
-<vertex x="13.6" y="5.9"/>
-<vertex x="13.6" y="16.1"/>
-</polygon>
-<polygon width="0.1524" layer="29">
-<vertex x="14.4" y="16.1"/>
-<vertex x="14.4" y="5.9"/>
-<vertex x="15.6" y="5.9"/>
-<vertex x="15.6" y="16.1"/>
-</polygon>
+<circle x="11" y="11" radius="5.2" width="0" layer="30"/>
 </plain>
 <libraries>
 <library name="A_butts">
 <packages>
+<package name="1X01-SMD-1X2.5MM-NS">
+<smd name="1" x="0" y="0" dx="1" dy="2.5" layer="1"/>
+</package>
+<package name="1X01NS-KIT">
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.778" rot="R90" stop="no"/>
+<circle x="0" y="0" radius="0.508" width="0" layer="29"/>
+<circle x="0" y="0" radius="0.889" width="0" layer="30"/>
+</package>
 <package name="1X01_NOSILK_NOSTOP">
 <pad name="P$1" x="0" y="0" drill="0.3302" stop="no" thermals="no"/>
-</package>
-<package name="1X01_SMD_NOSTOP_NOSILK">
-<smd name="1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" stop="no" cream="no"/>
-<text x="0" y="0.762" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -386,67 +375,31 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="JP3" library="A_butts" package="1X01_NOSILK_NOSTOP" value="M01NOT-A-VIA-NOPE" x="11" y="2.5"/>
-<element name="JP2" library="A_butts" package="1X01_NOSILK_NOSTOP" value="M01NOT-A-VIA-NOPE" x="11" y="11"/>
-<element name="JP4" library="A_butts" package="1X01_NOSILK_NOSTOP" value="M01NOT-A-VIA-NOPE" x="9" y="11"/>
-<element name="JP5" library="A_butts" package="1X01_NOSILK_NOSTOP" value="M01NOT-A-VIA-NOPE" x="13" y="11"/>
-<element name="JP6" library="A_butts" package="1X01_SMD_NOSTOP_NOSILK" value="M01NOSTOP-CANTSTOP-DONTKNOWHOWTOSTOP" x="15" y="11" smashed="yes"/>
-<element name="JP7" library="A_butts" package="1X01_SMD_NOSTOP_NOSILK" value="M01NOSTOP-CANTSTOP-DONTKNOWHOWTOSTOP" x="7" y="11" smashed="yes"/>
+<element name="JP1" library="A_butts" package="1X01_NOSILK_NOSTOP" value="M01NOT-A-VIA-NOPE" x="2" y="11"/>
+<element name="JP2" library="A_butts" package="1X01_NOSILK_NOSTOP" value="M01NOT-A-VIA-NOPE" x="20" y="11"/>
+<element name="JP5" library="A_butts" package="1X01NS-KIT" value="M01NOSILK-KIT" x="9.73" y="12.33" rot="R90"/>
+<element name="JP3" library="A_butts" package="1X01-SMD-1X2.5MM-NS" value="M01SMD-1X2.5MM-NS" x="7" y="12.33" rot="R270"/>
+<element name="JP4" library="A_butts" package="1X01NS-KIT" value="M01NOSILK-KIT" x="12.27" y="12.33" rot="R90"/>
+<element name="JP6" library="A_butts" package="1X01-SMD-1X2.5MM-NS" value="M01SMD-1X2.5MM-NS" x="15" y="12.33" rot="R90"/>
+<element name="JP7" library="A_butts" package="1X01-SMD-1X2.5MM-NS" value="M01SMD-1X2.5MM-NS" x="7" y="9.67" rot="R270"/>
+<element name="JP8" library="A_butts" package="1X01NS-KIT" value="M01NOSILK-KIT" x="9.73" y="9.67" rot="R270"/>
+<element name="JP9" library="A_butts" package="1X01NS-KIT" value="M01NOSILK-KIT" x="12.27" y="9.67" rot="R270"/>
+<element name="JP10" library="A_butts" package="1X01-SMD-1X2.5MM-NS" value="M01SMD-1X2.5MM-NS" x="15" y="9.67" rot="R90"/>
 </elements>
 <signals>
 <signal name="VIN">
-<polygon width="0.1524" layer="16" isolate="0.254">
-<vertex x="6" y="11" curve="90"/>
-<vertex x="11" y="6" curve="90"/>
-<vertex x="16" y="11" curve="90"/>
-<vertex x="11" y="16" curve="90"/>
-</polygon>
-<contactref element="JP2" pad="P$1"/>
-<contactref element="JP4" pad="P$1"/>
-<contactref element="JP5" pad="P$1"/>
-<polygon width="0.1524" layer="1">
-<vertex x="10.5" y="16"/>
-<vertex x="10.5" y="6"/>
-<vertex x="11.5" y="6"/>
-<vertex x="11.5" y="16"/>
-</polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="12.5" y="16"/>
-<vertex x="13.5" y="16"/>
-<vertex x="13.5" y="6"/>
-<vertex x="12.5" y="6"/>
-</polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="9.5" y="16"/>
-<vertex x="8.5" y="16"/>
-<vertex x="8.5" y="6"/>
-<vertex x="9.5" y="6"/>
+<contactref element="JP5" pad="1"/>
+<contactref element="JP4" pad="1"/>
+<contactref element="JP9" pad="1"/>
+<contactref element="JP8" pad="1"/>
+<polygon width="0.1524" layer="16">
+<vertex x="11" y="6" curve="-90"/>
+<vertex x="6" y="11" curve="-90"/>
+<vertex x="11" y="16" curve="-90"/>
+<vertex x="16" y="11" curve="-90"/>
 </polygon>
 </signal>
 <signal name="GND">
-<polygon width="0.1524" layer="16" isolate="0.254" rank="6">
-<vertex x="11" y="0" curve="-90"/>
-<vertex x="0" y="11" curve="-90"/>
-<vertex x="11" y="22" curve="-90"/>
-<vertex x="22" y="11" curve="-90"/>
-</polygon>
-<via x="11" y="19.5" extent="1-16" drill="0.3324"/>
-<via x="2.5" y="11" extent="1-16" drill="0.3324"/>
-<via x="19.5" y="11" extent="1-16" drill="0.3324"/>
-<contactref element="JP6" pad="1"/>
-<contactref element="JP7" pad="1"/>
-<polygon width="0.1524" layer="1" thermals="no">
-<vertex x="14.5" y="16"/>
-<vertex x="14.5" y="6"/>
-<vertex x="15.5" y="6"/>
-<vertex x="15.5" y="16"/>
-</polygon>
-<polygon width="0.1524" layer="1" isolate="0.254" thermals="no">
-<vertex x="7.5" y="16"/>
-<vertex x="6.5" y="16"/>
-<vertex x="6.5" y="6"/>
-<vertex x="7.5" y="6"/>
-</polygon>
 <polygon width="0.1524" layer="1" rank="6">
 <vertex x="0" y="11"/>
 <vertex x="0" y="22"/>
@@ -475,9 +428,46 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="18.5" y="11" curve="90"/>
 <vertex x="11" y="18.5"/>
 </polygon>
-<contactref element="JP3" pad="P$1"/>
-<wire x1="7" y1="11" x2="2.5" y2="11" width="1.016" layer="1"/>
-<wire x1="15" y1="11" x2="19.5" y2="11" width="1.016" layer="1"/>
+<contactref element="JP1" pad="P$1"/>
+<contactref element="JP2" pad="P$1"/>
+<polygon width="0.1524" layer="16" rank="6">
+<vertex x="0" y="11"/>
+<vertex x="0" y="22"/>
+<vertex x="11" y="22"/>
+<vertex x="11" y="18.5" curve="90"/>
+<vertex x="3.5" y="11"/>
+</polygon>
+<polygon width="0.1524" layer="16" rank="6">
+<vertex x="11" y="22"/>
+<vertex x="22" y="22"/>
+<vertex x="22" y="11"/>
+<vertex x="18.5" y="11" curve="90"/>
+<vertex x="11" y="18.5"/>
+</polygon>
+<polygon width="0.1524" layer="16" rank="6">
+<vertex x="11" y="3.5"/>
+<vertex x="11" y="0"/>
+<vertex x="22" y="0"/>
+<vertex x="22" y="11"/>
+<vertex x="18.5" y="11" curve="-90"/>
+</polygon>
+<polygon width="0.1524" layer="16" rank="6">
+<vertex x="0" y="0"/>
+<vertex x="0" y="11"/>
+<vertex x="3.5" y="11" curve="90"/>
+<vertex x="11" y="3.5"/>
+<vertex x="11" y="0"/>
+</polygon>
+<contactref element="JP6" pad="1"/>
+<contactref element="JP3" pad="1"/>
+<contactref element="JP7" pad="1"/>
+<contactref element="JP10" pad="1"/>
+<wire x1="7" y1="9.67" x2="7" y2="11" width="0.8128" layer="1"/>
+<wire x1="7" y1="11" x2="7" y2="12.33" width="0.8128" layer="1"/>
+<wire x1="15" y1="9.67" x2="15" y2="11" width="0.8128" layer="1"/>
+<wire x1="15" y1="11" x2="15" y2="12.33" width="0.8128" layer="1"/>
+<wire x1="20" y1="11" x2="15" y2="11" width="0.8128" layer="1"/>
+<wire x1="2" y1="11" x2="7" y2="11" width="0.8128" layer="1"/>
 </signal>
 </signals>
 </board>
