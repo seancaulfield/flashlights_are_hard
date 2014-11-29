@@ -3943,12 +3943,6 @@ grid 2.5 mm, outline 2.4 x 4.4 mm</description>
 <text x="-1.3462" y="5.6388" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-1.27" y="-5.715" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="1X01NS-KIT">
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.778" rot="R90" stop="no"/>
-<circle x="0" y="0" radius="0.508" width="0" layer="29"/>
-<circle x="0" y="0" radius="0.889" width="0" layer="30"/>
-<text x="0" y="1.016" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-</package>
 <package name="1X01NSATALL">
 <pad name="1" x="0" y="0" drill="0.8" diameter="1.6764" rot="R90"/>
 <text x="0" y="1" size="0.6096" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
@@ -4858,6 +4852,35 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="3.9" y1="0.25" x2="4.1" y2="0.25" width="0.1524" layer="21"/>
 <wire x1="5.9" y1="0.25" x2="7" y2="0.25" width="0.1524" layer="21"/>
 <wire x1="-8" y1="6.25" x2="8" y2="6.25" width="0.1524" layer="21"/>
+</package>
+<package name="1X01NS-KIT">
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.778" rot="R90" stop="no"/>
+<circle x="0" y="0" radius="0.508" width="0" layer="29"/>
+<circle x="0" y="0" radius="0.889" width="0" layer="30"/>
+</package>
+<package name="1X01-NS-LONG-KIT">
+<pad name="1" x="0" y="0" drill="1" diameter="1.5" shape="offset" stop="no"/>
+<polygon width="0.1524" layer="30">
+<vertex x="2.2" y="0" curve="-90"/>
+<vertex x="1.5" y="-0.7"/>
+<vertex x="0" y="-0.7" curve="-90"/>
+<vertex x="-0.7" y="0" curve="-90"/>
+<vertex x="0" y="0.7"/>
+<vertex x="1.5" y="0.7" curve="-90"/>
+</polygon>
+<circle x="0" y="0" radius="0.5" width="0" layer="29"/>
+</package>
+<package name="1X01-SMD-1X2.5MM-NS">
+<smd name="1" x="0" y="0" dx="1" dy="2.5" layer="1"/>
+</package>
+<package name="1X06-PTH-2MM-NS">
+<pad name="P$1" x="-5" y="0" drill="0.9" diameter="1.4224" shape="octagon"/>
+<pad name="P$2" x="-3" y="0" drill="0.9" diameter="1.4224" shape="octagon"/>
+<pad name="P$3" x="-1" y="0" drill="0.9" diameter="1.4224" shape="octagon"/>
+<pad name="P$4" x="1" y="0" drill="0.9" diameter="1.4224" shape="octagon"/>
+<pad name="P$5" x="3" y="0" drill="0.9" diameter="1.4224" shape="octagon"/>
+<pad name="P$6" x="5" y="0" drill="0.9" diameter="1.4224" shape="octagon"/>
+<text x="0" y="-1" size="0.762" layer="25" font="vector" ratio="12" align="top-center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -7056,6 +7079,22 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <technology name=""/>
 </technologies>
 </device>
+<device name="PTH-NS-KIT-LONG" package="1X01-NS-LONG-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD-1X2.5MM-NS" package="1X01-SMD-1X2.5MM-NS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="M06" prefix="JP">
@@ -7463,6 +7502,19 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <technology name=""/>
 </technologies>
 </device>
+<device name="PTH-2MM-NS" package="1X06-PTH-2MM-NS">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -7492,7 +7544,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="R_PWM" library="A_butts" deviceset="M01" device="PTH-0.9MM" value="M01PTH-0.9MM"/>
 <part name="GND" library="A_butts" deviceset="M01" device="PTH-0.9MM" value="M01PTH-0.9MM"/>
 <part name="B_PWM" library="A_butts" deviceset="M01" device="PTH-0.9MM" value="M01PTH-0.9MM"/>
-<part name="AVRISP" library="A_butts" deviceset="M06" device="" value="M06"/>
+<part name="AVRISP" library="A_butts" deviceset="M06" device="PTH-2MM-NS" value="M06PTH-2MM-NS"/>
 <part name="SUPPLY2" library="A_butts" deviceset="5V" device=""/>
 <part name="GND2" library="A_butts" deviceset="GND" device=""/>
 </parts>

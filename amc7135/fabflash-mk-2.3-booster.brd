@@ -154,18 +154,18 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="4" x2="0" y2="2.5" width="0" layer="20"/>
-<wire x1="0" y1="2.5" x2="2.5" y2="0" width="0" layer="20" curve="90"/>
-<wire x1="2.5" y1="0" x2="17.5" y2="0" width="0" layer="20"/>
-<wire x1="17.5" y1="0" x2="20" y2="2.5" width="0" layer="20" curve="90"/>
-<wire x1="20" y1="2.5" x2="20" y2="17.5" width="0" layer="20"/>
-<wire x1="20" y1="17.5" x2="17.5" y2="20" width="0" layer="20" curve="90"/>
-<wire x1="17.5" y1="20" x2="2.5" y2="20" width="0" layer="20"/>
-<wire x1="2.5" y1="20" x2="0" y2="17.5" width="0" layer="20" curve="90"/>
-<wire x1="0" y1="17.5" x2="0" y2="16.5" width="0" layer="20"/>
-<wire x1="0" y1="16.5" x2="2.5" y2="14" width="0" layer="20" curve="-90"/>
-<wire x1="2.5" y1="14" x2="2.5" y2="6.5" width="0" layer="20"/>
-<wire x1="2.5" y1="6.5" x2="0" y2="4" width="0" layer="20" curve="-90"/>
+<wire x1="18" y1="0" x2="2" y2="0" width="0" layer="20"/>
+<wire x1="2" y1="0" x2="0" y2="2" width="0" layer="20" curve="-90"/>
+<wire x1="0" y1="2" x2="2" y2="4" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="4" x2="3" y2="5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="5" x2="3" y2="15" width="0" layer="20"/>
+<wire x1="18" y1="0" x2="20" y2="2" width="0" layer="20" curve="90"/>
+<wire x1="20" y1="2" x2="20" y2="18" width="0" layer="20"/>
+<wire x1="20" y1="18" x2="18" y2="20" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="15" x2="2" y2="16" width="0" layer="20" curve="90"/>
+<wire x1="2" y1="16" x2="0" y2="18" width="0" layer="20" curve="-90"/>
+<wire x1="0" y1="18" x2="2" y2="20" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="20" x2="18" y2="20" width="0" layer="20"/>
 <hole x="6" y="18" drill="2.5"/>
 <hole x="14" y="2" drill="2.5"/>
 </plain>
@@ -585,10 +585,12 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="PROD_ID" value="TRANS-11153" x="41.17" y="-3.64" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="8.372" y="3.75" size="0.4064" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 </element>
-<element name="D2" library="A_butts" package="SOD123-ZENER" value="10V" x="6" y="2"/>
-<element name="R4" library="A_butts" package="R0603" value="100k" x="4.6" y="4.25" smashed="yes">
-<attribute name="NAME" x="3.1268" y="4.25" size="0.4064" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="6.0732" y="4.25" size="0.4064" layer="21" font="vector" ratio="12" rot="R90" align="top-center"/>
+<element name="D2" library="A_butts" package="SOD123-ZENER" value="10V" x="6" y="2" smashed="yes">
+<attribute name="NAME" x="6" y="1.111" size="0.4064" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
+</element>
+<element name="R4" library="A_butts" package="R0603" value="100k" x="4.8" y="4.1" smashed="yes">
+<attribute name="NAME" x="4.8" y="3.4" size="0.4064" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="4.8" y="4.8" size="0.4064" layer="21" font="vector" ratio="12" rot="R180" align="top-center"/>
 </element>
 <element name="JP1" library="A_butts" package="1X01-0.9MM-NS" value="M01PTH-0.9MM-NS" x="2" y="18"/>
 <element name="JP2" library="A_butts" package="1X01-0.9MM-NS" value="M01PTH-0.9MM-NS" x="10" y="18"/>
@@ -596,8 +598,8 @@ Please make sure your boards conform to these design rules.</description>
 <element name="JP3" library="A_butts" package="1X01-0.9MM-NS" value="M01PTH-0.9MM-NS" x="2" y="2" rot="R90"/>
 <element name="JP4" library="A_butts" package="1X01-0.9MM-NS" value="M01PTH-0.9MM-NS" x="10" y="2"/>
 <element name="5V" library="A_butts" package="1X01-0.9MM" value="M01PTH-0.9MM" x="18" y="18" rot="R90"/>
-<element name="JP5" library="A_butts" package="1X04-SMD-SHORT" value="M04SMD-SHORT-NS" x="4.6" y="10" rot="R90"/>
-<element name="JP6" library="A_butts" package="1X04-SMD-SHORT" value="M04SMD-SHORT-NS" x="4.6" y="10" rot="MR90"/>
+<element name="JP5" library="A_butts" package="1X04-SMD-SHORT" value="M04SMD-SHORT-NS" x="4.65" y="10" rot="R90"/>
+<element name="JP6" library="A_butts" package="1X04-SMD-SHORT" value="M04SMD-SHORT-NS" x="4.65" y="10" rot="MR90"/>
 <element name="JP7" library="A_butts" package="1X01_NOSILK_NOSTOP" value="M01NOT-A-VIA-NOPE" x="7" y="6.5"/>
 <element name="U$1" library="A_butts" package="COW" value="" x="13" y="10" rot="MR270"/>
 <element name="U$2" library="A_butts" package="CC-BY-SA-4.0-NO-URL" value="" x="12.5" y="18" rot="MR180"/>
@@ -627,24 +629,20 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R1" pad="1"/>
 <contactref element="R4" pad="1"/>
 <polygon width="0.1524" layer="1" rank="6">
-<vertex x="17.5" y="0"/>
-<vertex x="2.5" y="0" curve="-90"/>
-<vertex x="0" y="2.5"/>
-<vertex x="0" y="17.5" curve="-90"/>
-<vertex x="2.5" y="20"/>
-<vertex x="17.5" y="20" curve="-90"/>
-<vertex x="20" y="17.5"/>
-<vertex x="20" y="2.5" curve="-90"/>
+<vertex x="0" y="20"/>
+<vertex x="18" y="20" curve="-90"/>
+<vertex x="20" y="18"/>
+<vertex x="20" y="2" curve="-90"/>
+<vertex x="18" y="0"/>
+<vertex x="0" y="0"/>
 </polygon>
 <polygon width="0.1524" layer="16" rank="6">
-<vertex x="17.5" y="0"/>
-<vertex x="2.5" y="0" curve="-90"/>
-<vertex x="0" y="2.5"/>
-<vertex x="0" y="17.5" curve="-90"/>
-<vertex x="2.5" y="20"/>
-<vertex x="17.5" y="20" curve="-90"/>
-<vertex x="20" y="17.5"/>
-<vertex x="20" y="2.5" curve="-90"/>
+<vertex x="0" y="20"/>
+<vertex x="18" y="20" curve="-90"/>
+<vertex x="20" y="18"/>
+<vertex x="20" y="2" curve="-90"/>
+<vertex x="18" y="0"/>
+<vertex x="0" y="0"/>
 </polygon>
 <contactref element="GND" pad="1"/>
 <contactref element="JP6" pad="4"/>
@@ -705,9 +703,10 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R4" pad="2"/>
 <contactref element="Q1" pad="1"/>
 <contactref element="D2" pad="A"/>
-<wire x1="7.2" y1="4.25" x2="5.45" y2="4.25" width="0.3048" layer="1"/>
-<wire x1="4.1" y1="2" x2="5.45" y2="3.35" width="0.3048" layer="1"/>
-<wire x1="5.45" y1="3.35" x2="5.45" y2="4.25" width="0.3048" layer="1"/>
+<wire x1="5.65" y1="4.1" x2="5.65" y2="3.55" width="0.3048" layer="1"/>
+<wire x1="5.65" y1="3.55" x2="4.1" y2="2" width="0.3048" layer="1"/>
+<wire x1="7.2" y1="4.25" x2="5.8" y2="4.25" width="0.3048" layer="1"/>
+<wire x1="5.8" y1="4.25" x2="5.65" y2="4.1" width="0.3048" layer="1"/>
 </signal>
 <signal name="5V">
 <contactref element="R2" pad="2"/>
@@ -727,19 +726,19 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="BATT+">
 <contactref element="Q1" pad="3"/>
 <contactref element="JP5" pad="2"/>
-<via x="4.6" y="10" extent="1-16" drill="0.3302"/>
+<via x="4.65" y="10" extent="1-16" drill="0.3302"/>
 <contactref element="JP5" pad="3"/>
 <contactref element="JP6" pad="3"/>
 <contactref element="JP6" pad="2"/>
 <contactref element="JP7" pad="P$1"/>
-<wire x1="7" y1="6.5" x2="7" y2="7.6" width="0.8128" layer="16"/>
-<wire x1="7" y1="7.6" x2="4.6" y2="10" width="0.8128" layer="16"/>
 <wire x1="8.15" y1="6.35" x2="7.15" y2="6.35" width="0.8128" layer="1"/>
 <wire x1="7.15" y1="6.35" x2="7" y2="6.5" width="0.8128" layer="1"/>
-<wire x1="4.6" y1="11.27" x2="4.6" y2="10" width="0.8128" layer="1"/>
-<wire x1="4.6" y1="8.73" x2="4.6" y2="10" width="0.8128" layer="1"/>
-<wire x1="4.6" y1="11.27" x2="4.6" y2="10" width="0.8128" layer="16"/>
-<wire x1="4.6" y1="8.73" x2="4.6" y2="10" width="0.8128" layer="16"/>
+<wire x1="4.65" y1="11.27" x2="4.65" y2="10" width="0.8128" layer="1"/>
+<wire x1="4.65" y1="8.73" x2="4.65" y2="10" width="0.8128" layer="1"/>
+<wire x1="4.65" y1="11.27" x2="4.65" y2="10" width="0.8128" layer="16"/>
+<wire x1="4.65" y1="8.73" x2="4.65" y2="10" width="0.8128" layer="16"/>
+<wire x1="4.65" y1="10" x2="7" y2="7.65" width="0.8128" layer="16"/>
+<wire x1="7" y1="7.65" x2="7" y2="6.5" width="0.8128" layer="16"/>
 </signal>
 </signals>
 </board>

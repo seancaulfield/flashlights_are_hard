@@ -154,14 +154,14 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="17.5" x2="0" y2="2.5" width="0" layer="20"/>
-<wire x1="0" y1="2.5" x2="2.5" y2="0" width="0" layer="20" curve="90"/>
-<wire x1="2.5" y1="0" x2="17.5" y2="0" width="0" layer="20"/>
-<wire x1="17.5" y1="0" x2="20" y2="2.5" width="0" layer="20" curve="90"/>
-<wire x1="20" y1="2.5" x2="20" y2="17.5" width="0" layer="20"/>
-<wire x1="20" y1="17.5" x2="17.5" y2="20" width="0" layer="20" curve="90"/>
-<wire x1="17.5" y1="20" x2="2.5" y2="20" width="0" layer="20"/>
-<wire x1="2.5" y1="20" x2="0" y2="17.5" width="0" layer="20" curve="90"/>
+<wire x1="0" y1="18" x2="0" y2="2" width="0" layer="20"/>
+<wire x1="0" y1="2" x2="2" y2="0" width="0" layer="20" curve="90"/>
+<wire x1="2" y1="0" x2="18" y2="0" width="0" layer="20"/>
+<wire x1="18" y1="0" x2="20" y2="2" width="0" layer="20" curve="90"/>
+<wire x1="20" y1="2" x2="20" y2="18" width="0" layer="20"/>
+<wire x1="20" y1="18" x2="18" y2="20" width="0" layer="20" curve="90"/>
+<wire x1="18" y1="20" x2="2" y2="20" width="0" layer="20"/>
+<wire x1="2" y1="20" x2="0" y2="18" width="0" layer="20" curve="90"/>
 <hole x="6" y="2" drill="2.5"/>
 <hole x="14" y="18" drill="2.5"/>
 <text x="15" y="6" size="0.762" layer="25" font="vector" ratio="12" align="center-left">+</text>
@@ -474,14 +474,14 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="WHITE" pad="2"/>
 <contactref element="WHITE" pad="4"/>
 <polygon width="0.1524" layer="1">
-<vertex x="17.5" y="0"/>
-<vertex x="2.5" y="0" curve="-90"/>
-<vertex x="0" y="2.5"/>
-<vertex x="0" y="17.5" curve="-90"/>
-<vertex x="2.5" y="20"/>
-<vertex x="17.5" y="20" curve="-90"/>
-<vertex x="20" y="17.5"/>
-<vertex x="20" y="2.5" curve="-90"/>
+<vertex x="2" y="20"/>
+<vertex x="18" y="20" curve="-90"/>
+<vertex x="20" y="18"/>
+<vertex x="20" y="2" curve="-90"/>
+<vertex x="18" y="0"/>
+<vertex x="2" y="0" curve="-90"/>
+<vertex x="0" y="2"/>
+<vertex x="0" y="18" curve="-90"/>
 </polygon>
 <contactref element="GND" pad="1"/>
 </signal>
