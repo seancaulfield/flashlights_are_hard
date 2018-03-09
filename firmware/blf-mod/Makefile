@@ -1,5 +1,5 @@
-PRG            = demo
-OBJ            = demo.o
+PRG            = driver
+OBJ            = driver.o
 #MCU_TARGET     = at90s2313
 #MCU_TARGET     = at90s2333
 #MCU_TARGET     = at90s4414
@@ -52,8 +52,10 @@ OBJ            = demo.o
 #MCU_TARGET     = attiny84
 #MCU_TARGET     = attiny85
 #MCU_TARGET     = attiny861
+MCU_TARGET     = attiny13a
 OPTIMIZE       = -O2
-DEFS           =
+CPU_SPEED      = 1200000L
+DEFS           = -std=gnu99 -DF_CPU=$(CPU_SPEED)
 LIBS           =
 # You should not have to change anything below here.
 CC             = avr-gcc
@@ -66,7 +68,7 @@ all: $(PRG).elf lst text eeprom
 $(PRG).elf: $(OBJ)
 	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $^ $(LIBS)
 # dependency:
-demo.o: demo.c iocompat.h
+driver.o: driver.c iocompat.h
 clean:
 	rm -rf *.o $(PRG).elf *.eps *.png *.pdf *.bak 
 	rm -rf *.lst *.map $(EXTRA_CLEAN_FILES)
