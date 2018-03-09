@@ -53,7 +53,7 @@ OBJ            = driver.o
 #MCU_TARGET     = attiny85
 #MCU_TARGET     = attiny861
 MCU_TARGET     = attiny13a
-OPTIMIZE       = -O2
+OPTIMIZE       = -Os -flto -fpack-struct -fshort-enums -funsigned-char -funsigned-bitfields
 CPU_SPEED      = 1200000L
 DEFS           = -std=gnu99 -DF_CPU=$(CPU_SPEED)
 LIBS           =
@@ -91,26 +91,16 @@ eeprom: ehex ebin esrec
 ehex:  $(PRG)_eeprom.hex
 ebin:  $(PRG)_eeprom.bin
 esrec: $(PRG)_eeprom.srec
+
 %_eeprom.hex: %.elf
-	$(OBJCOPY) -j .eeprom --change-section-lma .eeprom=0 -O ihex $< $@ \
-	|| { echo empty $@ not generated; exit 0; }
+	$(OBJCOPY) -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O \
+		ihex $< $@ || { echo empty $@ not generated; exit 0; }
 %_eeprom.srec: %.elf
-	$(OBJCOPY) -j .eeprom --change-section-lma .eeprom=0 -O srec $< $@ \
-	|| { echo empty $@ not generated; exit 0; }
+	$(OBJCOPY) -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O \
+		srec $< $@ || { echo empty $@ not generated; exit 0; }
 %_eeprom.bin: %.elf
-	$(OBJCOPY) -j .eeprom --change-section-lma .eeprom=0 -O binary $< $@ \
-	|| { echo empty $@ not generated; exit 0; }
-# Every thing below here is used by avr-libc's build system and can be ignored
-# by the casual user.
-FIG2DEV                 = fig2dev
-EXTRA_CLEAN_FILES       = *.hex *.bin *.srec
-dox: eps png pdf
-eps: $(PRG).eps
-png: $(PRG).png
-pdf: $(PRG).pdf
-%.eps: %.fig
-	$(FIG2DEV) -L eps $< $@
-%.pdf: %.fig
-	$(FIG2DEV) -L pdf $< $@
-%.png: %.fig
-	$(FIG2DEV) -L png $< $@
+	$(OBJCOPY) -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O \
+		binary $< $@ || { echo empty $@ not generated; exit 0; }
+
+upload: hex ehex
+	avrdude -v -pattiny13 -cusbtiny -Uflash:w:$(PRG).hex:i -Ueeprom:w:$(PRG)_eeprom.hex:a

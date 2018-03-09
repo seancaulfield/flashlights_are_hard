@@ -42,14 +42,14 @@
 //#define PROGRAMMABLE        // user can re-program the mode slots
 //#define PROGHELPER          // indicate programming timing by short flashes
 //#define NOMEMORY            // #define to disable mode memory
-//#define FUNC_STROBE         // #define to compile in strobe mode
+#define FUNC_STROBE         // #define to compile in strobe mode
 //#define FUNC_SOS            // #define to compile in SOS signal
 //#define FUNC_ALPINE         // #define to compile in alpine distress signal
 //#define FUNC_FADE           // #define to compile in fade in-out mode
 
 // Config for battery monitoring
-#define MONITOR_BAT       // enable battery monitoring
-#define LOWBAT_TRIG 110     // XXX Lower for LiFePO4 chemistry XXX
+//#define MONITOR_BAT       // enable battery monitoring
+#define LOWBAT_TRIG 100     // XXX Lower for LiFePO4 chemistry XXX
 #define LOWBAT_RAMPDOWN     // decrease output gradually when battery fails
 #define LOWBAT_MIN_LVL 0x04 // minimal PWM level to use in low battery situation
 #define LOWBAT_MAX_LVL 0x40 // maximum PWM level to start ramping down from
@@ -192,14 +192,9 @@ const uint8_t EEMEM eeprom[64] =
     0x03, 0x06, 0x08, 0x00, 0x00,
     // mode configuration starts here. Format is:
     // offset in mode_func_arr, func data1, func data2, func data3
-
-    //MODE_LVL032,    // 0x00
-    //MODE_LVL128,    // 0x01
-    //MODE_LVL255,    // 0x02
     MODE_LVL001,    // 0x00
     MODE_LVL002,    // 0x01
     MODE_LVL004,    // 0x02
-
     MODE_LVL008,    // 0x03
     MODE_LVL016,    // 0x04
     MODE_LVL032,    // 0x05
