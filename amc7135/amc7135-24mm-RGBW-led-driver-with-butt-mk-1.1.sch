@@ -7118,12 +7118,12 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="GND1" library="a_parts" deviceset="GND" device=""/>
 <part name="U2" library="a_parts" deviceset="AMC7135" device="SOT-89" value="AMC7135"/>
 <part name="GND2" library="a_parts" deviceset="GND" device=""/>
-<part name="+" library="a_parts" deviceset="M01" device="NOSTOP-CANTSTOP-DONTKNOWHOWTOSTOP" value="M01NOSTOP-CANTSTOP-DONTKNOWHOWTOSTOP"/>
+<part name="+1" library="a_parts" deviceset="M01" device="NOSTOP-CANTSTOP-DONTKNOWHOWTOSTOP" value="M01NOSTOP-CANTSTOP-DONTKNOWHOWTOSTOP"/>
 <part name="-" library="a_parts" deviceset="M01" device="NOT-A-VIA-NOPE" value="M01NOT-A-VIA-NOPE"/>
 <part name="SUPPLY2" library="a_parts" deviceset="VBAT" device=""/>
 <part name="GND3" library="a_parts" deviceset="GND" device=""/>
-<part name="C1" library="a_parts" deviceset="CAPACITOR-CERAMIC" device="C0402" value="1u"/>
-<part name="R1" library="a_parts" deviceset="RESISTOR" device="R0402" value="10K"/>
+<part name="C1" library="a_parts" deviceset="CAPACITOR-CERAMIC" device="C0603-TIGHTER" value="1u"/>
+<part name="R1" library="a_parts" deviceset="RESISTOR" device="R0603-TIGHTER" value="10K"/>
 <part name="U3" library="a_parts" deviceset="AMC7135" device="SOT-89" value="AMC7135"/>
 <part name="U4" library="a_parts" deviceset="AMC7135" device="SOT-89" value="AMC7135"/>
 <part name="U5" library="a_parts" deviceset="AMC7135" device="SOT-89" value="AMC7135"/>
@@ -7132,7 +7132,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="G" library="a_parts" deviceset="M01" device="SMD-1.25MM-DIA" value="M01SMD-1.25MM-DIA"/>
 <part name="B" library="a_parts" deviceset="M01" device="SMD-1.25MM-DIA" value="M01SMD-1.25MM-DIA"/>
 <part name="W" library="a_parts" deviceset="M01" device="SMD-1.25MM-DIA" value="M01SMD-1.25MM-DIA"/>
-<part name="BAT+" library="a_parts" deviceset="M01" device="PTH-1.2MM-NS" value="M01PTH-1.2MM-NS"/>
+<part name="+" library="a_parts" deviceset="M01" device="PTH-1.2MM-NS" value="M01PTH-1.2MM-NS"/>
 <part name="SUPPLY4" library="a_parts" deviceset="VBAT" device=""/>
 <part name="U1" library="a_parts" deviceset="ATTINY45" device="TINY85-20-SOICW" value="Tiny85-20-SMT"/>
 <part name="BUTT" library="a_parts" deviceset="SPST-NO-TACT" device="3MM-RA"/>
@@ -7149,7 +7149,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="GND1" gate="1" x="25.4" y="152.4"/>
 <instance part="U2" gate="G$1" x="187.96" y="137.16"/>
 <instance part="GND2" gate="1" x="208.28" y="55.88"/>
-<instance part="+" gate="G$1" x="15.24" y="162.56"/>
+<instance part="+1" gate="G$1" x="15.24" y="162.56"/>
 <instance part="-" gate="G$1" x="15.24" y="157.48"/>
 <instance part="SUPPLY2" gate="G$1" x="63.5" y="129.54"/>
 <instance part="GND3" gate="1" x="63.5" y="106.68"/>
@@ -7163,7 +7163,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="G" gate="G$1" x="220.98" y="116.84" rot="R180"/>
 <instance part="B" gate="G$1" x="220.98" y="93.98" rot="R180"/>
 <instance part="W" gate="G$1" x="220.98" y="71.12" rot="R180"/>
-<instance part="BAT+" gate="G$1" x="220.98" y="162.56" rot="MR0"/>
+<instance part="+" gate="G$1" x="220.98" y="162.56" rot="MR0"/>
 <instance part="SUPPLY4" gate="G$1" x="210.82" y="165.1"/>
 <instance part="U1" gate="G$1" x="86.36" y="119.38"/>
 <instance part="BUTT" gate="G$1" x="139.7" y="119.38"/>
@@ -7174,7 +7174,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <nets>
 <net name="VBAT" class="0">
 <segment>
-<pinref part="+" gate="G$1" pin="1"/>
+<pinref part="+1" gate="G$1" pin="1"/>
 <wire x1="22.86" y1="162.56" x2="25.4" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="VBAT"/>
 <wire x1="25.4" y1="162.56" x2="25.4" y2="165.1" width="0.1524" layer="91"/>
@@ -7196,7 +7196,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="SUPPLY4" gate="G$1" pin="VBAT"/>
 <wire x1="210.82" y1="165.1" x2="210.82" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="BAT+" gate="G$1" pin="1"/>
+<pinref part="+" gate="G$1" pin="1"/>
 <wire x1="210.82" y1="162.56" x2="213.36" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>

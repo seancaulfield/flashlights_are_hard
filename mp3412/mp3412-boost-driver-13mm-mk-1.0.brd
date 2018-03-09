@@ -525,6 +525,12 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="13" y="13"/>
 <vertex x="13" y="0"/>
 </polygon>
+<polygon width="0.1524" layer="16" isolate="0.3048" rank="6">
+<vertex x="0" y="0"/>
+<vertex x="0" y="13"/>
+<vertex x="13" y="13"/>
+<vertex x="13" y="0"/>
+</polygon>
 </signal>
 <signal name="SW">
 <contactref element="L1" pad="P$2"/>
