@@ -193,13 +193,12 @@ const uint8_t EEMEM eeprom[64] =
     // mode configuration starts here. Format is:
     // offset in mode_func_arr, func data1, func data2, func data3
 
-    MODE_LVL032,    // 0x00
-    MODE_LVL128,    // 0x01
-    MODE_LVL255,    // 0x02
-
-    //MODE_LVL001,    // 0x00
-    //MODE_LVL002,    // 0x01
-    //MODE_LVL004,    // 0x02
+    //MODE_LVL032,    // 0x00
+    //MODE_LVL128,    // 0x01
+    //MODE_LVL255,    // 0x02
+    MODE_LVL001,    // 0x00
+    MODE_LVL002,    // 0x01
+    MODE_LVL004,    // 0x02
 
     MODE_LVL008,    // 0x03
     MODE_LVL016,    // 0x04
