@@ -79,3 +79,4 @@ firmware/**/*.bin
 firmware/**/*.lst
 firmware/**/*.map
 firmware/**/*.srec
+firmware/**/*.eep
