@@ -110,9 +110,11 @@
 						// because of their chemistry.
 
 #ifdef LIFEPO4
+#warning "Compiling for LiFePO4 low batt level (2.8V)"
 #define ADC_LOW			110	// (LiFePO4 3.2V) When do we start ramping
 #define ADC_CRIT			100	// (LiFePO4 3.2V) When do we turn off
 #else
+#warning "Compiling for Li-ion low batt level (3.2V)"
 #define ADC_LOW			130	// (Li-ion 3.7V) When do we start ramping
 #define ADC_CRIT			120	// (Li-ion 3.7V) When do we turn off
 #endif
