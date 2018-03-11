@@ -41,12 +41,13 @@ void setup() {
   GTCCR = 0;
   */
 
+  //pinMode(PIN_TRIM, INPUT);
   pinMode(PIN_PWM, OUTPUT);
-  pinMode(PIN_TRIM, INPUT);
+  analogWrite(PIN_PWM, pwm_curr);
 }
 
 void loop() {
-  reading = analogRead(PIN_TRIM);
+  //reading = analogRead(PIN_TRIM);
 
   /*
   if (reading == 1023) {
@@ -58,11 +59,11 @@ void loop() {
   }
   */
 
-  pwm_curr = map(reading, ADC_MIN, ADC_MAX, PWM_MIN, PWM_MAX);
+  //pwm_curr = map(reading, ADC_MIN, ADC_MAX, PWM_MIN, PWM_MAX);
 
-  if (pwm_curr != pwm_last) {
-    analogWrite(PIN_PWM, pwm_curr);
-    //OCR0B = pwm_curr;
-    pwm_last = pwm_curr;
-  }
+  //if (pwm_curr != pwm_last) {
+  //  analogWrite(PIN_PWM, pwm_curr);
+  //  //OCR0B = pwm_curr;
+  //  pwm_last = pwm_curr;
+  //}
 }
