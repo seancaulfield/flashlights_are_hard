@@ -38,11 +38,11 @@
  */
 #define NUM_MODES 3         // how many modes should the flashlight have (1-5)
 #define NUM_EXT_CLICKS 6    // how many clicks to enter programming mode
-//#define EXTENDED_MODES      // enable to make all mode lines available
-//#define PROGRAMMABLE        // user can re-program the mode slots
-//#define PROGHELPER          // indicate programming timing by short flashes
+#define EXTENDED_MODES      // enable to make all mode lines available
+#define PROGRAMMABLE        // user can re-program the mode slots
+#define PROGHELPER          // indicate programming timing by short flashes
 //#define NOMEMORY            // #define to disable mode memory
-#define FUNC_STROBE         // #define to compile in strobe mode
+//#define FUNC_STROBE         // #define to compile in strobe mode
 //#define FUNC_SOS            // #define to compile in SOS signal
 //#define FUNC_ALPINE         // #define to compile in alpine distress signal
 //#define FUNC_FADE           // #define to compile in fade in-out mode
@@ -55,8 +55,7 @@
 #define LOWBAT_MAX_LVL 0x40 // maximum PWM level to start ramping down from
 #define ADC_MUX 0x01        // ADC channel to use, see README
 #define ADC_DIDR ADC1D      // digital input to disable, see README
-//#define ADC_PRSCL 0x06      // ADC prescaler of 64
-#define ADC_PRSCL 0x05      // ADC prescaler of 32 (for 1.2MHz fuses)
+#define ADC_PRSCL 0x06      // ADC prescaler of 64
 
 /*
  * PWM specifics can be configured here. You only need to change this if
@@ -201,9 +200,9 @@ const uint8_t EEMEM eeprom[64] =
     MODE_LVL064,    // 0x06
     MODE_LVL128,    // 0x07
     MODE_LVL255,    // 0x08
-    MODE_STROBE,    // 0x09
-    MODE_POLICE,    // 0x0A
-    MODE_BEACON     // 0x0B
+    MODE_EMPTY ,    // 0x09
+    MODE_EMPTY ,    // 0x0A
+    MODE_EMPTY      // 0x0B
 };
 
 /*
@@ -574,6 +573,7 @@ static inline void lowbat_mode()
 }
 #endif
 
+#ifdef FUNC_STROBE
 /*
  * Delay for ms milliseconds
  * Calling the avr-libc _delay_ms() with a variable argument will pull in the
@@ -598,6 +598,7 @@ static void inline sleep_sec(uint16_t sec)
         --sec;
     }
 }
+#endif
 
 /*
  * Constant light level

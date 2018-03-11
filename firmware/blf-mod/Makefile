@@ -53,9 +53,10 @@ OBJ            = driver.o
 #MCU_TARGET     = attiny85
 #MCU_TARGET     = attiny861
 MCU_TARGET     = attiny13a
-OPTIMIZE       = -Os -flto -fpack-struct -fshort-enums -funsigned-char -funsigned-bitfields
-CPU_SPEED      = 1200000L
-DEFS           = -std=gnu99 -DF_CPU=$(CPU_SPEED)
+OPTIMIZE       = -Os -fpack-struct -fshort-enums -funsigned-char -funsigned-bitfields
+#CPU_SPEED      = -DF_CPU=1200000L
+CPU_SPEED      = -DF_CPU=8000000L
+DEFS           = -std=gnu99 $(CPU_SPEED)
 LIBS           =
 # You should not have to change anything below here.
 CC             = avr-gcc
@@ -64,43 +65,53 @@ override CFLAGS        = -g -Wall $(OPTIMIZE) -mmcu=$(MCU_TARGET) $(DEFS)
 override LDFLAGS       = -Wl,-Map,$(PRG).map
 OBJCOPY        = avr-objcopy
 OBJDUMP        = avr-objdump
+AVRDUDE        = /home/sean/.arduino15/packages/arduino/tools/avrdude/6.3.0-arduino9/bin/avrdude -C/home/sean/.arduino15/packages/MicroCore/hardware/avr/1.0.3/avrdude.conf
+
+.PHONY: all
 all: $(PRG).elf lst text eeprom
 $(PRG).elf: $(OBJ)
 	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $^ $(LIBS)
+
 # dependency:
 driver.o: driver.c iocompat.h
 clean:
-	rm -rf *.o $(PRG).elf *.eps *.png *.pdf *.bak 
-	rm -rf *.lst *.map $(EXTRA_CLEAN_FILES)
+	rm -rf *.o *.lst *.map $(PRG).elf $(PRG).hex $(PRG).bin $(PRG).eep
+.PHONY: clean
 lst:  $(PRG).lst
 %.lst: %.elf
 	$(OBJDUMP) -h -S $< > $@
+
 # Rules for building the .text rom images
-text: hex bin srec
+text: hex bin
 hex:  $(PRG).hex
 bin:  $(PRG).bin
-srec: $(PRG).srec
+#srec: $(PRG).srec
 %.hex: %.elf
 	$(OBJCOPY) -j .text -j .data -O ihex $< $@
-%.srec: %.elf
-	$(OBJCOPY) -j .text -j .data -O srec $< $@
+#%.srec: %.elf
+#	$(OBJCOPY) -j .text -j .data -O srec $< $@
 %.bin: %.elf
 	$(OBJCOPY) -j .text -j .data -O binary $< $@
+
 # Rules for building the .eeprom rom images
-eeprom: ehex ebin esrec
-ehex:  $(PRG)_eeprom.hex
-ebin:  $(PRG)_eeprom.bin
-esrec: $(PRG)_eeprom.srec
+eeprom: ehex
+#ehex:  $(PRG)_eeprom.hex
+#ebin:  $(PRG)_eeprom.bin
+#esrec: $(PRG)_eeprom.srec
+ehex:  $(PRG).eep
 
-%_eeprom.hex: %.elf
-	$(OBJCOPY) -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O \
+%.eep: %.elf
+	$(OBJCOPY) -j .eeprom --change-section-lma .eeprom=0 -O \
 		ihex $< $@ || { echo empty $@ not generated; exit 0; }
-%_eeprom.srec: %.elf
-	$(OBJCOPY) -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O \
-		srec $< $@ || { echo empty $@ not generated; exit 0; }
-%_eeprom.bin: %.elf
-	$(OBJCOPY) -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O \
-		binary $< $@ || { echo empty $@ not generated; exit 0; }
+#%_eeprom.srec: %.elf
+#	$(OBJCOPY) -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O \
+#		srec $< $@ || { echo empty $@ not generated; exit 0; }
+#%_eeprom.bin: %.elf
+#	$(OBJCOPY) -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O \
+#		binary $< $@ || { echo empty $@ not generated; exit 0; }
 
-upload: hex ehex
-	avrdude -v -pattiny13 -cusbtiny -Uflash:w:$(PRG).hex:i -Ueeprom:w:$(PRG)_eeprom.hex:a
+upload: all
+	#avrdude -v -p attiny13 -cusbtiny -u -Uflash:w:$(PRG).hex:a -Ulfuse:w:0x79:m -Uhfuse:w:0xED:m
+	#$(AVRDUDE) -p t13 -cusbtiny -Uflash:w:$(PRG).hex:a -Ueeprom:w:$(PRG).eep:i -Ulfuse:w:0x75:m -Uhfuse:w:0xff:m
+	$(AVRDUDE) -p t13 -cusbtiny -Uflash:w:$(PRG).hex:a -Ulfuse:w:0x79:m -Uhfuse:w:0xed:m
+
