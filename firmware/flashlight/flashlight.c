@@ -71,25 +71,51 @@
 
 #define MEMORY				// Comment out to disable
 
-//#define TICKS_250MS		// If enabled, ticks are every 250 ms. If disabled, ticks are every 500 ms
-							// Affects turbo timeout/rampdown timing
+//#define TICKS_250MS			//If enabled, ticks are every 250 ms. If
+						// disabled, ticks are every 500 ms Affects turbo
+						// timeout/rampdown timing
 
-//#define MODE_MOON			3	// Can comment out to remove mode, but should be set through soldering stars
-#define MODE_LOW			16  // Can comment out to remove mode
-#define MODE_MED			64	// Can comment out to remove mode
-#define MODE_HIGH			255	// Can comment out to remove mode
-//#define MODE_TURBO			255	// Can comment out to remove mode
-//#define MODE_TURBO_LOW		140	// Level turbo ramps down to if turbo enabled
-//#define TURBO_TIMEOUT		240 // How many WTD ticks before before dropping down.  If ticks set for 500 ms, then 240 x .5 = 120 seconds.  Max value of 255 unless you change "ticks"
-								// variable to uint8_t
-//#define TURBO_RAMP_DOWN			// By default we will start to gradually ramp down, once TURBO_TIMEOUT ticks are reached, 1 PWM_LVL each tick until reaching MODE_TURBO_LOW PWM_LVL
-								// If commented out, we will step down to MODE_TURBO_LOW once TURBO_TIMEOUT ticks are reached
+#define MODE_MOON			7	//Can comment out to remove mode, but
+						// should be set through soldering stars
+#define MODE_LOW			31	//Can comment out to remove mode
+#define MODE_MED			127	//Can comment out to remove mode
+#define MODE_HIGH			255	//Can comment out to remove mode
+//#define MODE_TURBO		255	//Can comment out to remove mode
 
-#define FAST_PWM_START	    8 // Above what output level should we switch from phase correct to fast-PWM?
-//#define DUAL_PWM_START		8 // Above what output level should we switch from the alternate PWM output to both PWM outputs?  Comment out to disable alternate PWM output
+//#define MODE_TURBO_LOW	140	//Level turbo ramps down to if turbo enabled
+//#define TURBO_TIMEOUT		240	//How many WTD ticks before before dropping
+						// down. If ticks set for 500 ms, then 240
+						// x .5 = 120 seconds.  Max value of 255
+						// unless you change "ticks" variable to
+						// int16_t/uint16_t
+//#define TURBO_RAMP_DOWN		//By default we will start to gradually
+						// ramp down, once TURBO_TIMEOUT ticks are
+						// reached, 1 PWM_LVL each tick until
+						// reaching MODE_TURBO_LOW PWM_LVL. If
+						// commented out, we will step down to
+						// MODE_TURBO_LOW once TURBO_TIMEOUT ticks
+						// are reached
 
-#define ADC_LOW				110	// When do we start ramping
-#define ADC_CRIT			100 // When do we shut the light off
+#define FAST_PWM_START		8	//Above what output level should we switch
+						// from phase correct to fast-PWM?
+
+//#define DUAL_PWM_START	8	//Above what output level should we switch
+						// from the alternate PWM output to both
+						// PWM outputs?  Comment out to disable
+						// alternate PWM output
+
+#define LIFEPO4 			1	//Changes low voltage detection threshold
+						// from around 3.2V to 2.8V, as LiFePO4
+						// batteries have a slightly lower voltage
+						// because of their chemistry.
+
+#ifdef LIFEPO4
+#define ADC_LOW			110	// (LiFePO4 3.2V) When do we start ramping
+#define ADC_CRIT			100	// (LiFePO4 3.2V) When do we turn off
+#else
+#define ADC_LOW			130	// (Li-ion 3.7V) When do we start ramping
+#define ADC_CRIT			120	// (Li-ion 3.7V) When do we turn off
+#endif
 
 /*
  * =========================================================================
@@ -104,16 +130,17 @@
 #include <avr/sleep.h>
 //#include <avr/power.h>
 
-#define STAR2_PIN   PB0
-#define STAR3_PIN   PB4
-#define PWM_PIN     PB1
-#define VOLTAGE_PIN PB2
-#define ADC_CHANNEL 0x01	// MUX 01 corresponds with PB2
-#define ADC_DIDR 	ADC1D	// Digital input disable bit corresponding with PB2
-#define ADC_PRSCL   0x06	// clk/64
+#define STAR2_PIN		PB0
+#define STAR3_PIN		PB4
+#define PWM_PIN		PB1
+#define VOLTAGE_PIN	PB2
 
-#define PWM_LVL		OCR0B	// OCR0B is the output compare register for PB1
-#define ALT_PWM_LVL OCR0A   // OCR0A is the output compare register for PB0
+#define ADC_CHANNEL	0x01	// MUX 01 corresponds with PB2
+#define ADC_DIDR 		ADC1D	// Digital input disable bit for PB2
+#define ADC_PRSCL		0x06	// Divide ADC clk by 64
+
+#define PWM_LVL		OCR0B	// OCR0B is the PB1 output compare register
+#define ALT_PWM_LVL	OCR0A	// OCR0A is the PB0 output compare register
 
 /*
  * global variables
@@ -128,9 +155,12 @@ uint8_t eep[32];
 uint8_t memory = 0;
 
 // Modes (gets set when the light starts up based on stars)
-static uint8_t modes[10];  // Don't need 10, but keeping it high enough to handle all
+static uint8_t modes[10];		//Don't need 10, but keeping it high enough to
+						// handle all
 volatile uint8_t mode_idx = 0;
-int     mode_dir = 0; // 1 or -1. Determined when checking stars. Do we increase or decrease the idx when moving up to a higher mode.
+int     mode_dir = 0;			//1 or -1. Determined when checking stars. Do we
+						// increase or decrease the idx when moving
+						// up to a higher mode.
 uint8_t mode_cnt = 0;
 
 uint8_t lowbatt_cnt = 0;
@@ -144,6 +174,7 @@ void store_mode_idx(uint8_t lvl) {  //central method for writing (with wear leve
 	// Erase the last mode
 	EEARL=oldpos;           EECR=16+4; EECR=16+4+2;  //ERASE  //16:erase only (no write)  4:enable  2:go
 }
+
 inline void read_mode_idx() {
 	eeprom_read_block(&eep, 0, 32);
 	while((eep[eepos] == 0xff) && (eepos < 32)) eepos++;
