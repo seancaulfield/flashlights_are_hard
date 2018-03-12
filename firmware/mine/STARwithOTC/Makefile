@@ -49,5 +49,5 @@ upload: all
 	#avrdude -v -p attiny13 -cusbtiny -u -Uflash:w:$(PRG).hex:a -Ulfuse:w:0x79:m -Uhfuse:w:0xED:m
 	#$(AVRDUDE) -p t13 -cusbtiny -Uflash:w:$(PRG).hex:a -Ueeprom:w:$(PRG).eep:i -Ulfuse:w:0x75:m -Uhfuse:w:0xff:m
 	#-Ulfuse:w:0x79:m -Uhfuse:w:0xed:m
-	$(AVRDUDE) -v -p t13 -cusbtiny -Uflash:w:$(PRG).hex:a
+	$(AVRDUDE) -v -p t13 -cusbtiny -Uflash:w:$(PRG).hex:a -Ulfuse:w:0x75:m -Uhfuse:w:0xff:m
 
