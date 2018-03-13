@@ -109,7 +109,7 @@
 						// batteries have a slightly lower voltage
 						// because of their chemistry.
 
-#ifdef LIFEPO4
+#if LIFEPO4
 #warning "Compiling for LiFePO4 low batt level (2.8V)"
 #define ADC_LOW			110	// (LiFePO4 3.2V) When do we start ramping
 #define ADC_CRIT			100	// (LiFePO4 3.2V) When do we turn off
