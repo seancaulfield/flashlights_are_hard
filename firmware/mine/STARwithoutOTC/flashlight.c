@@ -77,18 +77,18 @@
 
 #define MODE_MOON			7	//Can comment out to remove mode, but
 						// should be set through soldering stars
-#define MODE_LOW			31	//Can comment out to remove mode
-#define MODE_MED			127	//Can comment out to remove mode
-#define MODE_HIGH			255	//Can comment out to remove mode
-//#define MODE_TURBO		255	//Can comment out to remove mode
+#define MODE_LOW			15	//Can comment out to remove mode
+#define MODE_MED			63	//Can comment out to remove mode
+#define MODE_HIGH			95	//Can comment out to remove mode
+#define MODE_TURBO		255	//Can comment out to remove mode
 
-//#define MODE_TURBO_LOW	140	//Level turbo ramps down to if turbo enabled
-//#define TURBO_TIMEOUT		240	//How many WTD ticks before before dropping
+#define MODE_TURBO_LOW	140	//Level turbo ramps down to if turbo enabled
+#define TURBO_TIMEOUT		240	//How many WTD ticks before before dropping
 						// down. If ticks set for 500 ms, then 240
 						// x .5 = 120 seconds.  Max value of 255
 						// unless you change "ticks" variable to
 						// int16_t/uint16_t
-//#define TURBO_RAMP_DOWN		//By default we will start to gradually
+#define TURBO_RAMP_DOWN		//By default we will start to gradually
 						// ramp down, once TURBO_TIMEOUT ticks are
 						// reached, 1 PWM_LVL each tick until
 						// reaching MODE_TURBO_LOW PWM_LVL. If

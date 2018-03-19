@@ -74,12 +74,13 @@
 						// disabled, ticks are every 500 ms Affects turbo
 						// timeout/rampdown timing
 
-#define MODE_MOON			7	//Can comment out to remove mode, but
+//#define MODE_MOON			7	//Can comment out to remove mode, but
 						// should be set through soldering stars
 #define MODE_LOW			31	//Can comment out to remove mode
 #define MODE_MED			127	//Can comment out to remove mode
 #define MODE_HIGH			255	//Can comment out to remove mode
 //#define MODE_TURBO		255	//Can comment out to remove mode
+#define MODE_ALT_PWM		254	//Special mode for alternate channel
 
 //#define MODE_TURBO_LOW	140	//Level turbo ramps down to if turbo enabled
 //#define TURBO_TIMEOUT		240	//How many WTD ticks before before dropping
@@ -159,6 +160,8 @@
 #define NUM_MODES		10	//Number of slots in the modes[] array.
 					// Don't need 10, but keeping it high enough to
 					// handle all (scaulfield: wat)
+
+#
 
 /*
  * global variables
@@ -244,6 +247,9 @@ static inline void check_stars() {
 #ifdef MODE_TURBO
 	modes[mode_cnt++] = MODE_TURBO;
 #endif
+#ifdef MODE_ALT_PWM
+	modes[mode_cnt++] = MODE_ALT_PWM;
+#endif
 	if ((PINB & (1 << STAR3_PIN)) == 0) {
 		// High to Low
 		mode_dir = -1;
@@ -286,16 +292,18 @@ inline void ADC_off() {
 }
 
 void set_output(uint8_t pwm_lvl) {
-	#ifdef DUAL_PWM_START
-	if (pwm_lvl > DUAL_PWM_START) {
-		// Using the normal output along with the alternate
-		PWM_LVL = pwm_lvl;
-	} else {
+
+#ifdef MODE_ALT_PWM
+	if (pwm_lvl == MODE_ALT_PWM) {
 		PWM_LVL = 0;
+		ALT_PWM_LVL = 255;
+	} else {
+		PWM_LVL = pwm_lvl;
+		ALT_PWM_LVL = 0;
 	}
-	#else
+#else
 	PWM_LVL = pwm_lvl;
-	#endif
+#endif
 
 	//
 	// WAS:
@@ -310,9 +318,8 @@ void set_output(uint8_t pwm_lvl) {
 	// That is a really dumb way to try to save a single byte that could
 	// easily be trimmed elsewhere. So just changed it to that global.
 	//
+	//ALT_PWM_LVL	= pwm_lvl;
 	saved_pwm_lvl = pwm_lvl;
-
-	ALT_PWM_LVL	= pwm_lvl;
 }
 
 #ifdef VOLTAGE_MON
@@ -509,4 +516,4 @@ int main(void)
     return 0; // Standard Return Code
 }
 
-// vi: ts=6 noexpandtab
+// vi: ts=6 sw=6 noexpandtab
