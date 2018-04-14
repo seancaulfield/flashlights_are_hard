@@ -72,7 +72,7 @@
 						// disabled, ticks are every 500 ms Affects turbo
 						// timeout/rampdown timing
 
-#define MODE_MOON			7	//Can comment out to remove mode, but
+//#define MODE_MOON			7	//Can comment out to remove mode, but
 						// should be set through soldering stars
 #define MODE_LOW			31	//Can comment out to remove mode
 #define MODE_MED			127	//Can comment out to remove mode
