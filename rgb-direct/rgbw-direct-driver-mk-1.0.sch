@@ -3027,6 +3027,32 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <text x="-2" y="0" size="0.8" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center">&gt;NAME</text>
 <text x="2" y="0" size="0.7" layer="27" font="vector" ratio="10" rot="R90" align="top-center">&gt;VALUE</text>
 </package>
+<package name="SOT23-CLOSER">
+<description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
+<wire x1="1.46" y1="0.65" x2="1.46" y2="-0.65" width="0.1524" layer="51"/>
+<wire x1="1.46" y1="-0.65" x2="-1.46" y2="-0.65" width="0.1524" layer="51"/>
+<wire x1="-1.46" y1="-0.65" x2="-1.46" y2="0.65" width="0.1524" layer="51"/>
+<wire x1="-1.46" y1="0.65" x2="1.46" y2="0.65" width="0.1524" layer="51"/>
+<smd name="3" x="0" y="1" dx="0.8" dy="1" layer="1" stop="no" cream="no"/>
+<smd name="2" x="0.95" y="-1" dx="0.8" dy="1" layer="1" stop="no" cream="no"/>
+<smd name="1" x="-0.95" y="-1" dx="0.8" dy="1" layer="1" stop="no" cream="no"/>
+<text x="0" y="1.55" size="0.8" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+<text x="0" y="-1.55" size="0.6" layer="27" font="vector" ratio="12" align="top-center">&gt;VALUE</text>
+<rectangle x1="-1.5" y1="0.5738" x2="-0.43" y2="0.7262" layer="21"/>
+<rectangle x1="-0.52" y1="-0.7262" x2="0.52" y2="-0.5738" layer="21"/>
+<rectangle x1="0.43" y1="0.5738" x2="1.5" y2="0.7262" layer="21"/>
+<rectangle x1="-1.5362" y1="-0.7262" x2="-1.3838" y2="0.7262" layer="21"/>
+<rectangle x1="1.3838" y1="-0.7262" x2="1.5362" y2="0.7262" layer="21"/>
+<rectangle x1="-0.425" y1="0.475" x2="0.425" y2="1.525" layer="29"/>
+<rectangle x1="-1.375" y1="-1.525" x2="-0.525" y2="-0.475" layer="29"/>
+<rectangle x1="0.525" y1="-1.525" x2="1.375" y2="-0.475" layer="29"/>
+<rectangle x1="-0.3" y1="0.6" x2="0.3" y2="1.4" layer="31"/>
+<rectangle x1="-1.25" y1="-1.4" x2="-0.65" y2="-0.6" layer="31"/>
+<rectangle x1="0.65" y1="-1.4" x2="1.25" y2="-0.6" layer="31"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LETTER_L">
@@ -4977,6 +5003,16 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <technology name=""/>
 </technologies>
 </device>
+<device name="IRLML2502-SMOL" package="SOT23-CLOSER">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="DIODE-SCHOTTKY" prefix="D" uservalue="yes">
@@ -5214,10 +5250,10 @@ Generic symbol for the battery input to a system.</description>
 <part name="D1" library="a_parts" deviceset="DIODE-SCHOTTKY" device="SOD323" value="BAT165"/>
 <part name="G" library="a_parts" deviceset="M01" device="SMD-1.25MM-DIA" value="M01SMD-1.25MM-DIA"/>
 <part name="B" library="a_parts" deviceset="M01" device="SMD-1.25MM-DIA" value="M01SMD-1.25MM-DIA"/>
-<part name="Q1" library="a_parts" deviceset="MOSFET-NCHANNEL" device="IRLML2502" value="IRLM2502"/>
-<part name="Q2" library="a_parts" deviceset="MOSFET-NCHANNEL" device="IRLML2502" value="IRLM2502"/>
-<part name="Q3" library="a_parts" deviceset="MOSFET-NCHANNEL" device="IRLML2502" value="IRLM2502"/>
-<part name="Q4" library="a_parts" deviceset="MOSFET-NCHANNEL" device="IRLML2502" value="IRLM2502"/>
+<part name="Q1" library="a_parts" deviceset="MOSFET-NCHANNEL" device="IRLML2502-SMOL" value="IRLM2502"/>
+<part name="Q2" library="a_parts" deviceset="MOSFET-NCHANNEL" device="IRLML2502-SMOL" value="IRLM2502"/>
+<part name="Q3" library="a_parts" deviceset="MOSFET-NCHANNEL" device="IRLML2502-SMOL" value="IRLM2502"/>
+<part name="Q4" library="a_parts" deviceset="MOSFET-NCHANNEL" device="IRLML2502-SMOL" value="IRLM2502"/>
 <part name="R1" library="a_parts" deviceset="RESISTOR-ARRAY-4" device="YC164" value="10K"/>
 </parts>
 <sheets>
@@ -5249,10 +5285,10 @@ capacitor</text>
 <instance part="Q2" gate="G$1" x="81.28" y="68.58"/>
 <instance part="Q3" gate="G$1" x="121.92" y="68.58"/>
 <instance part="Q4" gate="G$1" x="165.1" y="68.58"/>
-<instance part="R1" gate="A" x="71.12" y="60.96" rot="R90"/>
-<instance part="R1" gate="B" x="111.76" y="60.96" rot="R90"/>
-<instance part="R1" gate="C" x="30.48" y="60.96" rot="R90"/>
-<instance part="R1" gate="D" x="154.94" y="60.96" rot="R90"/>
+<instance part="R1" gate="A" x="30.48" y="60.96" rot="R90"/>
+<instance part="R1" gate="B" x="154.94" y="60.96" rot="R90"/>
+<instance part="R1" gate="C" x="71.12" y="60.96" rot="R90"/>
+<instance part="R1" gate="D" x="111.76" y="60.96" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -5323,16 +5359,16 @@ capacitor</text>
 <wire x1="165.1" y1="53.34" x2="165.1" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="53.34" x2="40.64" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="R1" gate="D" pin="1"/>
-<wire x1="154.94" y1="55.88" x2="154.94" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="53.34" x2="111.76" y2="55.88" width="0.1524" layer="91"/>
+<junction x="111.76" y="53.34"/>
+<pinref part="R1" gate="B" pin="1"/>
+<wire x1="154.94" y1="53.34" x2="154.94" y2="55.88" width="0.1524" layer="91"/>
 <junction x="154.94" y="53.34"/>
 <pinref part="R1" gate="C" pin="1"/>
-<wire x1="30.48" y1="55.88" x2="30.48" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="R1" gate="A" pin="1"/>
 <wire x1="71.12" y1="55.88" x2="71.12" y2="53.34" width="0.1524" layer="91"/>
 <junction x="71.12" y="53.34"/>
-<pinref part="R1" gate="B" pin="1"/>
-<wire x1="111.76" y1="55.88" x2="111.76" y2="53.34" width="0.1524" layer="91"/>
-<junction x="111.76" y="53.34"/>
+<pinref part="R1" gate="A" pin="1"/>
+<wire x1="30.48" y1="53.34" x2="30.48" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RED" class="0">
@@ -5349,7 +5385,7 @@ capacitor</text>
 <label x="27.94" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="Q1" gate="G$1" pin="G"/>
 <wire x1="27.94" y1="68.58" x2="30.48" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="R1" gate="C" pin="2"/>
+<pinref part="R1" gate="A" pin="2"/>
 <wire x1="30.48" y1="68.58" x2="33.02" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="68.58" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
 <junction x="30.48" y="68.58"/>
@@ -5374,9 +5410,9 @@ capacitor</text>
 <label x="152.4" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="Q4" gate="G$1" pin="G"/>
 <wire x1="152.4" y1="68.58" x2="154.94" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="R1" gate="D" pin="2"/>
+<pinref part="R1" gate="B" pin="2"/>
 <wire x1="154.94" y1="68.58" x2="157.48" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="68.58" x2="154.94" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="66.04" x2="154.94" y2="68.58" width="0.1524" layer="91"/>
 <junction x="154.94" y="68.58"/>
 </segment>
 <segment>
@@ -5414,7 +5450,7 @@ capacitor</text>
 <label x="68.58" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="Q2" gate="G$1" pin="G"/>
 <wire x1="68.58" y1="68.58" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="R1" gate="A" pin="2"/>
+<pinref part="R1" gate="C" pin="2"/>
 <wire x1="71.12" y1="68.58" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="68.58" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
 <junction x="71.12" y="68.58"/>
@@ -5430,7 +5466,7 @@ capacitor</text>
 <label x="109.22" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="Q3" gate="G$1" pin="G"/>
 <wire x1="109.22" y1="68.58" x2="111.76" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="R1" gate="B" pin="2"/>
+<pinref part="R1" gate="D" pin="2"/>
 <wire x1="111.76" y1="68.58" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="68.58" x2="111.76" y2="66.04" width="0.1524" layer="91"/>
 <junction x="111.76" y="68.58"/>
