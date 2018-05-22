@@ -37,6 +37,7 @@ class ButtTokenizer
         int long_press_interval_ms  // How often to return button-held-down
                                     // events after the initial timeout
       );
+    
   protected:
     Button myButt;
     butt_state_t myState;
