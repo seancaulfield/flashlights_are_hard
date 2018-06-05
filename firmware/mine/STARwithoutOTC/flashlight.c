@@ -75,12 +75,12 @@
 						// disabled, ticks are every 500 ms Affects turbo
 						// timeout/rampdown timing
 
-#define MODE_MOON			7	//Can comment out to remove mode, but
+#define MODE_MOON			3	//Can comment out to remove mode, but
 						// should be set through soldering stars
-#define MODE_LOW			15	//Can comment out to remove mode
-#define MODE_MED			63	//Can comment out to remove mode
-#define MODE_HIGH			95	//Can comment out to remove mode
-#define MODE_TURBO		255	//Can comment out to remove mode
+#define MODE_LOW			31	//Can comment out to remove mode
+#define MODE_MED			127	//Can comment out to remove mode
+#define MODE_HIGH			255	//Can comment out to remove mode
+//#define MODE_TURBO		255	//Can comment out to remove mode
 
 #define MODE_TURBO_LOW	140	//Level turbo ramps down to if turbo enabled
 #define TURBO_TIMEOUT		240	//How many WTD ticks before before dropping
