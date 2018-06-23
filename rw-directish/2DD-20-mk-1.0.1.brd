@@ -179,8 +179,8 @@
 <circle x="6" y="16.7" radius="0.4472125" width="0" layer="30"/>
 <circle x="6" y="16.7" radius="0.4472125" width="0" layer="29"/>
 <text x="5" y="16.5" size="0.8" layer="21" font="vector" ratio="12" align="top-left">~</text>
-<text x="13.5" y="2.5" size="1" layer="21" font="vector" ratio="12" rot="R25" align="center">2LD-24</text>
-<text x="16.5" y="10" size="1.27" layer="22" font="vector" ratio="12" rot="MR90" align="center">2LD-24</text>
+<text x="13.5" y="2.5" size="1" layer="21" font="vector" ratio="12" rot="R25" align="center">2DD-20</text>
+<text x="16.5" y="10" size="1.27" layer="22" font="vector" ratio="12" rot="MR90" align="center">2DD-20</text>
 <text x="2" y="5.5" size="0.8" layer="25" font="vector" ratio="12" rot="SR300" align="bottom-center">1</text>
 <text x="2.4" y="13.6" size="0.8" layer="25" font="vector" ratio="12" rot="SR235" align="top-right">L2</text>
 <text x="3.3" y="13" size="0.762" layer="22" font="vector" ratio="12" rot="MR270" align="top-center">LED2-</text>
