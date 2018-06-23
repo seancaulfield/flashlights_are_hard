@@ -422,7 +422,7 @@ chip</description>
 </library>
 </libraries>
 <attributes>
-<attribute name="VERSION" value="v1.0"/>
+<attribute name="VERSION" value="v1.0.1"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -608,7 +608,7 @@ Please make sure your boards conform to these design rules.</description>
 <elements>
 <element name="FRAME1" library="a_parts" package="DUMMY" value="FRAME-LETTERNO_PACKAGE" x="0" y="0" smashed="yes">
 <attribute name="DESIGNER" value="sean@yak.net" x="0" y="0" size="0.8" layer="27" ratio="12" display="off"/>
-<attribute name="VERSION" value="v1.1" x="0" y="0" size="0.8" layer="27" ratio="12" display="off"/>
+<attribute name="VERSION" value="v1.0.1" x="0" y="0" size="0.8" layer="27" ratio="12" display="off"/>
 </element>
 <element name="L2-" library="a_parts" package="1X01-0.8MM-CIR" value="M01PTH-0.8MM-CIR" x="2.5" y="13" smashed="yes" rot="R90"/>
 <element name="L1-" library="a_parts" package="1X01-0.9MM-CIR" value="M011X01-0.9MM-CIR" x="2.9" y="6.7" smashed="yes" rot="R270"/>
