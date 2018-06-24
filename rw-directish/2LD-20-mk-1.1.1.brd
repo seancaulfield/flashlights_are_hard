@@ -41,11 +41,11 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="5" fill="1" visible="yes" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -62,7 +62,7 @@
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
-<layer number="100" name="Muster" color="7" fill="1" visible="no" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
@@ -356,6 +356,11 @@ chip</description>
 <rectangle x1="-1.15" y1="-1.4" x2="-0.75" y2="-0.8" layer="51"/>
 <rectangle x1="-0.2" y1="-1.4" x2="0.2" y2="-0.8" layer="51"/>
 <rectangle x1="0.75" y1="-1.4" x2="1.15" y2="-0.8" layer="51"/>
+<rectangle x1="-1.2" y1="0.8" x2="-0.7" y2="1.6" layer="31"/>
+<rectangle x1="0.7" y1="0.8" x2="1.2" y2="1.6" layer="31"/>
+<rectangle x1="-1.2" y1="-1.6" x2="-0.7" y2="-0.8" layer="31"/>
+<rectangle x1="0.7" y1="-1.6" x2="1.2" y2="-0.8" layer="31"/>
+<rectangle x1="-0.25" y1="-1.6" x2="0.25" y2="-0.8" layer="31"/>
 </package>
 <package name="C0603-TIGHTER">
 <wire x1="-1.4" y1="0.8" x2="1.4" y2="0.8" width="0.1524" layer="39"/>
@@ -604,7 +609,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="2.7" y="12.8" size="0.8" layer="25" font="vector" ratio="12" align="center-left"/>
 </element>
 <element name="U15" library="a_parts" package="SOT89-NOTHERM-ROUNDED-LESS" value="AMC7135" x="2.9" y="10" smashed="yes" rot="R90"/>
-<element name="U16" library="a_parts" package="SOT23-5" value="V_REG_SOT-23-5AP2112" x="11" y="8.4" smashed="yes"/>
+<element name="U16" library="a_parts" package="SOT23-5" value="" x="11" y="8.4" smashed="yes"/>
 <element name="C2" library="a_parts" package="C0402" value="1u" x="8.5" y="8" smashed="yes" rot="R90">
 <attribute name="NAME" x="8.50000625" y="9.250003125" size="0.8" layer="25" font="vector" ratio="10" align="bottom-center"/>
 </element>
