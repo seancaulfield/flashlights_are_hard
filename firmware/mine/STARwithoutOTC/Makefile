@@ -46,7 +46,7 @@ ehex:  $(PRG).eep
 		ihex $< $@ || { echo empty $@ not generated; exit 0; }
 
 fuses:
-	#$(AVRDUDE) -v -p t13 -cusbtiny -Ulfuse:w:0x79:m -Uhfuse:w:0xED:m
+	$(AVRDUDE) -v -p t13 -cusbtiny -Ulfuse:w:0x79:m -Uhfuse:w:0xED:m
 	#$(AVRDUDE) -v -p t13 -cusbtiny -Ulfuse:w:0x75:m -Uhfuse:w:0xFF:m
 
 upload: all

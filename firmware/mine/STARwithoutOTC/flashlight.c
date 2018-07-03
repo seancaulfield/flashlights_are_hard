@@ -75,7 +75,7 @@
 						// disabled, ticks are every 500 ms Affects turbo
 						// timeout/rampdown timing
 
-#define MODE_MOON			3	//Can comment out to remove mode, but
+//#define MODE_MOON			3	//Can comment out to remove mode, but
 						// should be set through soldering stars
 #define MODE_LOW			31	//Can comment out to remove mode
 #define MODE_MED			127	//Can comment out to remove mode
@@ -104,7 +104,7 @@
 						// PWM outputs?  Comment out to disable
 						// alternate PWM output
 
-#define LIFEPO4 			1	//Changes low voltage detection threshold
+#define LIFEPO4 			0	//Changes low voltage detection threshold
 						// from around 3.2V to 2.8V, as LiFePO4
 						// batteries have a slightly lower voltage
 						// because of their chemistry.
