@@ -1,0 +1,110 @@
+define abs(x) {
+  if (x>0) {
+    return x;
+  } else {
+  return -x;
+  }
+}
+
+vload=3.15
+vd=.5
+
+define vout(vin) {
+  return vload+vin;
+}
+
+define duty(vin) {
+  return (vout(vin)+vd-vin)/(vout(vin)+vd);
+}
+
+duty(4.2)
+duty(3.7)
+duty(3.0)
+
+define iin(vin, iled) {
+  return iled/(1-duty(vin));
+}
+
+iin(4.2, 3)
+iin(3.7, 3)
+iin(3.0, 3)
+
+iin(4.2, 6)
+iin(3.7, 6)
+iin(3.0, 6)
+
+iin(4.2, 12)
+iin(3.7, 12)
+iin(3.0, 12)
+
+define iinpeak(vin, iled, ripple) {
+  return (1+ripple/2) * iin(vin, iled);
+}
+
+iinpeak(4.2, 3, 0.2)
+iinpeak(4.2, 3, 0.4)
+iinpeak(3.0, 3, 0.2)
+iinpeak(3.0, 3, 0.4)
+
+iinpeak(4.2, 12, 0.2)
+iinpeak(4.2, 12, 0.4)
+iinpeak(3.0, 12, 0.2)
+iinpeak(3.0, 12, 0.4)
+
+define deltali(vin, iled, ripple) {
+  return ripple * iin(vin, iled);
+}
+
+deltali(4.2, 3, 0.2)
+deltali(4.2, 3, 0.4)
+deltali(3.0, 3, 0.2)
+deltali(3.0, 3, 0.4)
+
+deltali(4.2, 12, 0.2)
+deltali(4.2, 12, 0.4)
+deltali(3.0, 12, 0.2)
+deltali(3.0, 12, 0.4)
+
+define lvalue(vin, iled, ripple, freq) {
+  return vin / (deltali(vin, iled, ripple) * freq) * duty(vin);
+}
+
+lvalue(4.2, 3, 0.2, 1000000) * 1000000
+lvalue(4.2, 3, 0.4, 1000000) * 1000000
+lvalue(3.0, 3, 0.2, 1000000) * 1000000
+lvalue(3.0, 3, 0.4, 1000000) * 1000000
+
+lvalue(4.2, 12, 0.2, 1000000) * 1000000
+lvalue(4.2, 12, 0.4, 1000000) * 1000000
+lvalue(3.0, 12, 0.2, 1000000) * 1000000
+lvalue(3.0, 12, 0.4, 1000000) * 1000000
+
+lvalue(4.2, 3, 0.2, 300000) * 1000000
+lvalue(4.2, 3, 0.4, 300000) * 1000000
+lvalue(3.0, 3, 0.2, 300000) * 1000000
+lvalue(3.0, 3, 0.4, 300000) * 1000000
+
+lvalue(4.2, 12, 0.2, 300000) * 1000000
+lvalue(4.2, 12, 0.4, 300000) * 1000000
+lvalue(3.0, 12, 0.2, 300000) * 1000000
+lvalue(3.0, 12, 0.4, 300000) * 1000000
+
+define ilsat(vin, iled, ripple) {
+  #return (1 + ripple/2) * iin(vin, iled);
+  return iinpeak(vin, iled, ripple);
+}
+
+ilsat(4.2, 3, 0.2)
+ilsat(4.2, 3, 0.4)
+ilsat(3.0, 3, 0.2)
+ilsat(3.0, 3, 0.4)
+
+ilsat(4.2, 12, 0.2)
+ilsat(4.2, 12, 0.4)
+ilsat(3.0, 12, 0.2)
+ilsat(3.0, 12, 0.4)
+
+define esr(vin, iled, ripple) {
+  #return (1 + ripple/2) * iin(vin, iled);
+  return iinpeak(vin, iled, ripple);
+}

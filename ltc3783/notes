@@ -1,0 +1,42 @@
+For buck-boost, Vout = Vin + Vload
+
+
+                 Vout + Vd - Vin
+duty cycle (D) = ---------------
+                    Vout + Vd
+
+           Vin_min            3
+Vout_max = -------- - Vd = ------- - 0.5 = 29.5V
+           1 - Dmax        1 - 0.9
+
+          Iout_max
+Iin_max = --------
+          1 - Dmax
+
+       Vout + Vd - Vin_min   3.15 + 0.5 - Vin_min
+Dmax = ------------------- = 
+           Vout + Vd
+
+
+                ripple      Iout_max
+In_peak = ( 1 + ------ ) * -----------
+                  2         1 - Dmax
+
+        Vin_min
+L = ---------------- * Dmax
+    delta_Il * freq
+
+           ripple * Iout_max
+delta_Il = -----------------
+               1 - Dmax
+
+
+                            1 - Dmax
+Rds_on < 150mV * -------------------------------
+                      ripple
+                 (1 + ------) * Iout_max * rho_t
+                        2
+
+
+MFToa4XJR2SvQULE2DBt
+XgVFhc1Eel7vLxTOk

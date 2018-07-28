@@ -1,0 +1,96 @@
+define abs(x) {
+  if (x>0) {
+    return x;
+  } else {
+  return -x;
+  }
+}
+
+vout=3.15
+vd=.5
+toff=10^-6
+ripple=0.3
+
+define iin(vin, vout, iled) {
+  return (vout+vd)*(iled/vin);
+}
+
+iin(4.2, 3.15, 3)
+iin(3.7, 3.15, 3)
+iin(3, 3.15, 3)
+
+iin(4.2, 3.15, 6)
+iin(3.0, 3.15, 6)
+
+iin(4.2, 3.15, 8)
+iin(3.0, 3.15, 8)
+
+iin(4.2, 3.15, 12)
+iin(3.0, 3.15, 12)
+
+define lvalue(vin, vout, iled) {
+  if (vin<=vout) {
+    return ((vout-vin)*toff)/(ripple*iin(vin, vout, iled));
+  } else {
+    return ((vin-vout)*toff)/(ripple*iled);
+  }
+}
+
+lvalue(4.2, 3.15, 3)*1000000
+lvalue(3.7, 3.15, 3)*1000000
+lvalue(3.0, 3.15, 3)*1000000
+
+lvalue(4.2, 3.15, 6)*1000000
+lvalue(3.0, 3.15, 6)*1000000
+
+lvalue(4.2, 3.15, 8)*1000000
+lvalue(3.0, 3.15, 8)*1000000
+
+lvalue(4.2, 3.15, 12)*1000000
+lvalue(3.0, 3.15, 12)*1000000
+
+define ipeak(vin, vout, iled) {
+  if (vin<=vout) {
+    return iin(vin, vout, iled) + ((vout - vin)*toff)/(2*lvalue(vin, vout, iled));
+  } else {
+    return iled + ((vin-vout)*toff)/(2*lvalue(vin, vout, iled));
+  }
+}
+
+ipeak(4.2, 3.15, 3)
+ipeak(3.7, 3.15, 3)
+ipeak(3.0, 3.15, 3)
+
+ipeak(4.2, 3.15, 6)
+ipeak(3.0, 3.15, 6)
+
+ipeak(4.2, 3.15, 8)
+ipeak(3.0, 3.15, 8)
+
+ipeak(4.2, 3.15, 12)
+ipeak(3.0, 3.15, 12)
+
+define vfb(vin, vout) {
+  if (vin<=vout) {
+    return (1/(vin-1.9815))*0.202;
+  } else {
+    return .202;
+  }
+}
+
+vfb(4.2, 3.15)
+vfb(3.7, 3.15)
+vfb(3.0, 3.15)
+
+define rcs(vin, vout, iled) {
+  return vfb(vin, vout) / ipeak(vin, vout, iled);
+}
+
+rcs(4.2, 3.15, 3)
+rcs(3.0, 3.15, 3)
+
+rcs(4.2, 3.15, 6)
+rcs(3.0, 3.15, 6)
+
+rcs(4.2, 3.15, 12)
+rcs(3.0, 3.15, 12)
