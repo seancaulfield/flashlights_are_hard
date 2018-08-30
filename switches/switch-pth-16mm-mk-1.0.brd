@@ -170,14 +170,12 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="10" x2="20" y2="10" width="0" layer="20" curve="-180"/>
-<wire x1="20" y1="10" x2="0" y2="10" width="0" layer="20" curve="-180"/>
-<circle x="10" y="10" radius="9.5" width="1" layer="30"/>
-<circle x="10" y="10" radius="9.5" width="1" layer="29"/>
-<circle x="10" y="10" radius="5" width="0" layer="29"/>
-<text x="10" y="2.5" size="0.8" layer="22" font="vector" ratio="12" rot="MR180" align="center">&gt;VERSION</text>
-<circle x="10" y="10" radius="5.25" width="0.1" layer="41"/>
-<text x="10" y="2.5" size="0.8" layer="21" font="vector" ratio="12" rot="R180" align="center">&gt;VERSION</text>
+<wire x1="0" y1="8" x2="16" y2="8" width="0" layer="20" curve="-180"/>
+<wire x1="16" y1="8" x2="0" y2="8" width="0" layer="20" curve="-180"/>
+<circle x="8" y="8" radius="7.5" width="1" layer="29"/>
+<text x="8" y="2" size="0.8" layer="22" font="vector" ratio="12" rot="MR180" align="center">&gt;VERSION</text>
+<text x="8" y="2" size="0.8" layer="21" font="vector" ratio="12" rot="R180" align="center">&gt;VERSION</text>
+<circle x="8" y="8" radius="5" width="0" layer="29"/>
 </plain>
 <libraries>
 <library name="a_parts">
@@ -185,14 +183,14 @@
 <package name="DUMMY">
 <description>NOTHING HERE!!! For when you want a symbol with no package as an option against symbols with a package.</description>
 </package>
-<package name="1X01-1MM-CIR-NS">
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.778" rot="R90"/>
-<text x="0" y="1.397" size="0.6096" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<package name="1X01-1.2MM-NS">
+<pad name="P$1" x="0" y="0" drill="1.2" diameter="1.9304"/>
+<text x="0" y="1.27" size="0.6096" layer="21" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="1X01_NOSILK_NOSTOP">
 <pad name="P$1" x="0" y="0" drill="0.3302" stop="no" thermals="no"/>
 </package>
-<package name="OMTEN-1288-PTH">
+<package name="OMTEN-1288-PTH-NARROWER">
 <wire x1="-4.5" y1="-4" x2="4.5" y2="-4" width="0.1524" layer="51"/>
 <wire x1="-4.5" y1="4" x2="4.5" y2="4" width="0.1524" layer="51"/>
 <wire x1="-4.5" y1="4" x2="4.5" y2="4" width="0.1524" layer="21"/>
@@ -216,16 +214,16 @@
 <circle x="0" y="0" radius="3.5" width="0.1524" layer="21"/>
 <circle x="0" y="0" radius="2.2" width="0.1524" layer="21"/>
 <text x="0" y="5" size="0.8" layer="25" font="vector" ratio="12" align="center">&gt;NAME</text>
-<pad name="1" x="-7" y="0" drill="2.1" diameter="3.1" stop="no"/>
-<pad name="2" x="7" y="0" drill="2.1" diameter="3.1" stop="no"/>
-<wire x1="-4.5" y1="4" x2="-5.9" y2="1.2" width="0.1524" layer="21" curve="30"/>
+<pad name="1" x="-6" y="0" drill="2.1" diameter="3.1" stop="no"/>
+<pad name="2" x="6" y="0" drill="2.1" diameter="3.1" stop="no"/>
+<wire x1="-4.5" y1="4" x2="-5.78" y2="1.65" width="0.1524" layer="21" curve="27"/>
 <wire x1="-4.5" y1="4" x2="-4.5" y2="-4" width="0.1524" layer="51" curve="83"/>
 <wire x1="4.5" y1="-4" x2="4.5" y2="4" width="0.1524" layer="51" curve="83"/>
-<wire x1="-4.5" y1="-4" x2="-5.9" y2="-1.2" width="0.1524" layer="21" curve="-30"/>
-<wire x1="4.5" y1="-4" x2="5.9" y2="-1.2" width="0.1524" layer="21" curve="30"/>
-<wire x1="4.5" y1="4" x2="5.9" y2="1.25" width="0.1524" layer="21" curve="-30"/>
-<circle x="-7" y="0" radius="1.3" width="0.5" layer="29"/>
-<circle x="7" y="0" radius="1.3" width="0.5" layer="29"/>
+<circle x="-6" y="0" radius="1.3" width="0.5" layer="29"/>
+<circle x="6" y="0" radius="1.3" width="0.5" layer="29"/>
+<wire x1="-4.5" y1="-4" x2="-5.78" y2="-1.65" width="0.1524" layer="21" curve="-27"/>
+<wire x1="4.5" y1="4" x2="5.78" y2="1.65" width="0.1524" layer="21" curve="-27"/>
+<wire x1="4.5" y1="-4" x2="5.78" y2="-1.65" width="0.1524" layer="21" curve="27"/>
 </package>
 </packages>
 </library>
@@ -419,94 +417,66 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="DESIGNER" value="sean@yak.net" x="0" y="0" size="0.8" layer="27" ratio="12" display="off"/>
 <attribute name="VERSION" value="v1.0" x="0" y="0" size="0.8" layer="27" ratio="12" display="off"/>
 </element>
-<element name="GND" library="a_parts" package="1X01_NOSILK_NOSTOP" value="M01NOT-A-VIA-NOPE" x="0.5" y="10" smashed="yes" rot="MR90"/>
-<element name="VBAT-" library="a_parts" package="1X01-1MM-CIR-NS" value="M01PTH-1MM-CIR-NS" x="10" y="10" smashed="yes"/>
-<element name="SW1" library="a_parts" package="OMTEN-1288-PTH" value="SWITCH-SPSTOMTEN-1288-PTH" x="10" y="10" smashed="yes" rot="MR0"/>
+<element name="GND" library="a_parts" package="1X01_NOSILK_NOSTOP" value="M01NOT-A-VIA-NOPE" x="8" y="15.5" smashed="yes" rot="MR90"/>
+<element name="VBAT-" library="a_parts" package="1X01-1.2MM-NS" value="M01PTH-1.2MM-NS" x="8" y="8" smashed="yes"/>
+<element name="SW1" library="a_parts" package="OMTEN-1288-PTH-NARROWER" value="SWITCH-SPSTOMTEN-1288-PTH-NARROWER" x="8" y="8" smashed="yes" rot="MR0"/>
 </elements>
 <signals>
 <signal name="GND">
 <contactref element="SW1" pad="2"/>
 <contactref element="GND" pad="P$1"/>
 <polygon width="0.1524" layer="1" isolate="0.1524" thermals="no" rank="6">
-<vertex x="20" y="10" curve="90"/>
-<vertex x="10" y="20" curve="90"/>
-<vertex x="0" y="10"/>
-<vertex x="1" y="10" curve="-90"/>
-<vertex x="10" y="19" curve="-90"/>
-<vertex x="19" y="10"/>
+<vertex x="16" y="8" curve="90"/>
+<vertex x="8" y="16" curve="90"/>
+<vertex x="0" y="8"/>
+<vertex x="1" y="8" curve="-90"/>
+<vertex x="8" y="15" curve="-90"/>
+<vertex x="15" y="8"/>
 </polygon>
 <polygon width="0.1524" layer="1" isolate="0.1524" thermals="no" rank="6">
-<vertex x="0" y="10" curve="90"/>
-<vertex x="10" y="0" curve="90"/>
-<vertex x="20" y="10"/>
-<vertex x="19" y="10" curve="-90"/>
-<vertex x="10" y="1" curve="-90"/>
-<vertex x="1" y="10"/>
+<vertex x="0" y="8" curve="90"/>
+<vertex x="8" y="0" curve="90"/>
+<vertex x="16" y="8"/>
+<vertex x="15" y="8" curve="-90"/>
+<vertex x="8" y="1" curve="-90"/>
+<vertex x="1" y="8"/>
 </polygon>
-<polygon width="0.1524" layer="16" isolate="0.1524" thermals="no" rank="6">
-<vertex x="20" y="10" curve="90"/>
-<vertex x="10" y="20" curve="90"/>
-<vertex x="0" y="10"/>
-<vertex x="1" y="10" curve="-90"/>
-<vertex x="10" y="19" curve="-90"/>
-<vertex x="19" y="10"/>
+<via x="8" y="0.5" extent="1-16" drill="0.3302"/>
+<via x="0.7" y="6" extent="1-16" drill="0.3302"/>
+<via x="0.7" y="10" extent="1-16" drill="0.3302"/>
+<via x="1" y="5.2" extent="1-16" drill="0.3302"/>
+<via x="1.4" y="4.5" extent="1-16" drill="0.3302"/>
+<via x="1" y="10.8" extent="1-16" drill="0.3302"/>
+<polygon width="0.1524" layer="16" spacing="0.1524" isolate="0.1524" thermals="no">
+<vertex x="0" y="8" curve="30"/>
+<vertex x="1.1" y="4"/>
+<vertex x="3.5" y="4"/>
+<vertex x="3.5" y="12"/>
+<vertex x="1.1" y="12" curve="30"/>
 </polygon>
-<polygon width="0.1524" layer="16" isolate="0.1524" thermals="no" rank="6">
-<vertex x="0" y="10" curve="90"/>
-<vertex x="10" y="0" curve="90"/>
-<vertex x="20" y="10"/>
-<vertex x="19" y="10" curve="-90"/>
-<vertex x="10" y="1" curve="-90"/>
-<vertex x="1" y="10"/>
-</polygon>
-<polygon width="0.1524" layer="16" spacing="0.1524" isolate="0.1524" thermals="no" rank="3">
-<vertex x="5" y="12"/>
-<vertex x="5" y="8"/>
-<vertex x="0.5" y="8"/>
-<vertex x="0.1" y="10"/>
-<vertex x="0.5" y="12"/>
-</polygon>
-<via x="1.5" y="11.5" extent="1-16" drill="0.3302"/>
-<via x="1.5" y="8.5" extent="1-16" drill="0.3302"/>
-<via x="4.5" y="11.5" extent="1-16" drill="0.3302"/>
-<via x="4.5" y="8.5" extent="1-16" drill="0.3302"/>
-<via x="0.5" y="10.8" extent="1-16" drill="0.3302"/>
-<via x="0.5" y="9.2" extent="1-16" drill="0.3302"/>
-<via x="0.6" y="11.6" extent="1-16" drill="0.3302"/>
-<via x="0.6" y="8.4" extent="1-16" drill="0.3302"/>
+<via x="1.4" y="11.5" extent="1-16" drill="0.3302"/>
 </signal>
 <signal name="VBAT">
-<polygon width="0.1524" layer="1" isolate="0.1524" thermals="no">
-<vertex x="5" y="10" curve="-180"/>
-<vertex x="15" y="10" curve="-180"/>
-</polygon>
-<contactref element="VBAT-" pad="1"/>
+<contactref element="VBAT-" pad="P$1"/>
 <contactref element="SW1" pad="1"/>
-<polygon width="0.1524" layer="16" spacing="0.1524" isolate="0.1524" thermals="no" rank="3">
-<vertex x="10" y="13.5" curve="90"/>
-<vertex x="6.5" y="10" curve="90"/>
-<vertex x="10" y="6.5" curve="90"/>
-<vertex x="13.5" y="10" curve="90"/>
+<polygon width="0.1524" layer="16" spacing="0.1524" isolate="0.1524" thermals="no">
+<vertex x="15" y="9.5"/>
+<vertex x="6.5" y="9.5"/>
+<vertex x="6.5" y="6.5"/>
+<vertex x="15" y="6.5"/>
 </polygon>
-<polygon width="0.1524" layer="16" spacing="0.1524" isolate="0.1524" thermals="no" rank="3">
-<vertex x="8.5" y="12"/>
-<vertex x="18" y="12"/>
-<vertex x="18.5" y="11"/>
-<vertex x="18.7" y="10"/>
-<vertex x="18.5" y="9"/>
-<vertex x="18" y="8"/>
-<vertex x="8.5" y="8"/>
+<polygon width="0.1524" layer="1" spacing="0.1524" isolate="0.1524" thermals="no">
+<vertex x="3" y="8" curve="90"/>
+<vertex x="8" y="3" curve="90"/>
+<vertex x="13" y="8" curve="90"/>
+<vertex x="8" y="13" curve="90"/>
 </polygon>
+<via x="11" y="8" extent="1-16" drill="0.3302"/>
+<via x="11" y="9" extent="1-16" drill="0.3302"/>
+<via x="11" y="7" extent="1-16" drill="0.3302"/>
+<via x="12" y="8" extent="1-16" drill="0.3302"/>
 <via x="12" y="9" extent="1-16" drill="0.3302"/>
-<via x="12" y="10" extent="1-16" drill="0.3302"/>
-<via x="12" y="11" extent="1-16" drill="0.3302"/>
-<via x="13" y="10.5" extent="1-16" drill="0.3302"/>
-<via x="13" y="9.5" extent="1-16" drill="0.3302"/>
-<via x="14" y="11" extent="1-16" drill="0.3302"/>
-<via x="14" y="10" extent="1-16" drill="0.3302"/>
-<via x="14" y="9" extent="1-16" drill="0.3302"/>
-<via x="13" y="11.5" extent="1-16" drill="0.3302"/>
-<via x="13" y="8.5" extent="1-16" drill="0.3302"/>
+<via x="12" y="7" extent="1-16" drill="0.3302"/>
 </signal>
 </signals>
 </board>

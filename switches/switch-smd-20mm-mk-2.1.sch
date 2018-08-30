@@ -663,8 +663,8 @@
 <text x="0" y="5" size="0.8" layer="25" font="vector" ratio="12" align="center">&gt;NAME</text>
 </package>
 <package name="OMTEN-1288-LESS">
-<smd name="1" x="-7.3" y="0" dx="2.5" dy="5.25" layer="1" cream="no"/>
-<smd name="2" x="7.3" y="0" dx="2.5" dy="5.25" layer="1" cream="no"/>
+<smd name="1" x="-7.1" y="0" dx="2.2" dy="4.2" layer="1" roundness="50" cream="no"/>
+<smd name="2" x="7.1" y="0" dx="2.2" dy="4.2" layer="1" roundness="50" cream="no"/>
 <wire x1="-4.5" y1="-4" x2="4.5" y2="-4" width="0.1524" layer="49"/>
 <wire x1="-4.5" y1="4" x2="4.5" y2="4" width="0.1524" layer="49"/>
 <wire x1="-4.5" y1="4" x2="-4.5" y2="-4" width="0.1524" layer="49" curve="70"/>
@@ -692,8 +692,8 @@
 <circle x="0" y="0" radius="3.5" width="0.1524" layer="21"/>
 <circle x="0" y="0" radius="2.2" width="0.1524" layer="21"/>
 <text x="0" y="5" size="0.8" layer="25" font="vector" ratio="12" align="center">&gt;NAME</text>
-<rectangle x1="-8.05" y1="-1" x2="-6.55" y2="1" layer="31"/>
-<rectangle x1="6.55" y1="-1" x2="8.05" y2="1" layer="31"/>
+<rectangle x1="-7.9" y1="-1" x2="-6.3" y2="1" layer="31"/>
+<rectangle x1="6.3" y1="-1" x2="7.9" y2="1" layer="31"/>
 </package>
 <package name="OMTEN-1288-PTH">
 <wire x1="-4.5" y1="-4" x2="4.5" y2="-4" width="0.1524" layer="51"/>
@@ -729,6 +729,212 @@
 <wire x1="4.5" y1="4" x2="5.9" y2="1.25" width="0.1524" layer="21" curve="-30"/>
 <circle x="-7" y="0" radius="1.3" width="0.5" layer="29"/>
 <circle x="7" y="0" radius="1.3" width="0.5" layer="29"/>
+</package>
+<package name="OMTEN-1288-LESS2">
+<smd name="1" x="-6.2" y="0" dx="3" dy="3.4" layer="1" roundness="80" cream="no"/>
+<smd name="2" x="6.2" y="0" dx="3" dy="3.4" layer="1" roundness="80" cream="no"/>
+<wire x1="-4.5" y1="-4" x2="4.5" y2="-4" width="0.1524" layer="49"/>
+<wire x1="-4.5" y1="4" x2="4.5" y2="4" width="0.1524" layer="49"/>
+<wire x1="-4.5" y1="4" x2="-4.5" y2="-4" width="0.1524" layer="49" curve="70"/>
+<wire x1="-4.5" y1="4" x2="4.5" y2="4" width="0.1524" layer="21"/>
+<wire x1="-4.5" y1="-4" x2="4.5" y2="-4" width="0.1524" layer="21"/>
+<wire x1="4.5" y1="-4" x2="4.5" y2="4" width="0.1524" layer="49" curve="70"/>
+<wire x1="-6.8" y1="2.1" x2="-5.5" y2="2.1" width="0.1524" layer="49"/>
+<wire x1="-6.8" y1="-2.1" x2="-5.5" y2="-2.1" width="0.1524" layer="49"/>
+<wire x1="-6.8" y1="2.1" x2="-6.8" y2="1" width="0.1524" layer="49"/>
+<wire x1="-6.8" y1="-1" x2="-6.8" y2="-2.1" width="0.1524" layer="49"/>
+<wire x1="6.8" y1="-2.1" x2="5.5" y2="-2.1" width="0.1524" layer="49"/>
+<wire x1="6.8" y1="2.1" x2="5.5" y2="2.1" width="0.1524" layer="49"/>
+<wire x1="6.8" y1="-2.1" x2="6.8" y2="-1" width="0.1524" layer="49"/>
+<wire x1="6.8" y1="1" x2="6.8" y2="2.1" width="0.1524" layer="49"/>
+<wire x1="-7.6" y1="1" x2="-6.8" y2="1" width="0.1524" layer="49"/>
+<wire x1="-7.6" y1="-1" x2="-6.8" y2="-1" width="0.1524" layer="49"/>
+<wire x1="-7.6" y1="1" x2="-7.6" y2="-1" width="0.1524" layer="49"/>
+<wire x1="7.6" y1="-1" x2="6.8" y2="-1" width="0.1524" layer="49"/>
+<wire x1="7.6" y1="1" x2="6.8" y2="1" width="0.1524" layer="49"/>
+<wire x1="7.6" y1="-1" x2="7.6" y2="1" width="0.1524" layer="49"/>
+<circle x="0" y="0" radius="3.5" width="0.1524" layer="49"/>
+<circle x="0" y="0" radius="2.2" width="0.1524" layer="49"/>
+<circle x="0" y="0" radius="3.5" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="2.2" width="0.1524" layer="21"/>
+<text x="0" y="5" size="0.8" layer="25" font="vector" ratio="12" align="center">&gt;NAME</text>
+<rectangle x1="-7.5" y1="-1" x2="-5.9" y2="1" layer="31"/>
+<rectangle x1="5.9" y1="-1" x2="7.5" y2="1" layer="31"/>
+<wire x1="-4.5" y1="4" x2="-5.5" y2="1.9" width="0.1524" layer="21" curve="20"/>
+<wire x1="4.5" y1="-4" x2="5.5" y2="-1.9" width="0.1524" layer="21" curve="20"/>
+<wire x1="-4.5" y1="-4" x2="-5.5" y2="-1.9" width="0.1524" layer="21" curve="-20"/>
+<wire x1="4.5" y1="4" x2="5.5" y2="1.9" width="0.1524" layer="21" curve="-20"/>
+</package>
+<package name="OMTEN-1288-PTH-NARROWER">
+<wire x1="-4.5" y1="-4" x2="4.5" y2="-4" width="0.1524" layer="51"/>
+<wire x1="-4.5" y1="4" x2="4.5" y2="4" width="0.1524" layer="51"/>
+<wire x1="-4.5" y1="4" x2="4.5" y2="4" width="0.1524" layer="21"/>
+<wire x1="-4.5" y1="-4" x2="4.5" y2="-4" width="0.1524" layer="21"/>
+<wire x1="-6.8" y1="2.1" x2="-5.7" y2="2.1" width="0.1524" layer="51"/>
+<wire x1="-6.8" y1="-2.1" x2="-5.7" y2="-2.1" width="0.1524" layer="51"/>
+<wire x1="-6.8" y1="2.1" x2="-6.8" y2="1" width="0.1524" layer="51"/>
+<wire x1="-6.8" y1="-1" x2="-6.8" y2="-2.1" width="0.1524" layer="51"/>
+<wire x1="6.8" y1="-2.1" x2="5.7" y2="-2.1" width="0.1524" layer="51"/>
+<wire x1="6.8" y1="2.1" x2="5.7" y2="2.1" width="0.1524" layer="51"/>
+<wire x1="6.8" y1="-2.1" x2="6.8" y2="-1" width="0.1524" layer="51"/>
+<wire x1="6.8" y1="1" x2="6.8" y2="2.1" width="0.1524" layer="51"/>
+<wire x1="-7.5" y1="1" x2="-6.8" y2="1" width="0.1524" layer="51"/>
+<wire x1="-7.5" y1="-1" x2="-6.8" y2="-1" width="0.1524" layer="51"/>
+<wire x1="-7.5" y1="1" x2="-7.5" y2="-1" width="0.1524" layer="51"/>
+<wire x1="7.5" y1="-1" x2="6.8" y2="-1" width="0.1524" layer="51"/>
+<wire x1="7.5" y1="1" x2="6.8" y2="1" width="0.1524" layer="51"/>
+<wire x1="7.5" y1="-1" x2="7.5" y2="1" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="3.5" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="2.2" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="3.5" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="2.2" width="0.1524" layer="21"/>
+<text x="0" y="5" size="0.8" layer="25" font="vector" ratio="12" align="center">&gt;NAME</text>
+<pad name="1" x="-6" y="0" drill="2.1" diameter="3.1" stop="no"/>
+<pad name="2" x="6" y="0" drill="2.1" diameter="3.1" stop="no"/>
+<wire x1="-4.5" y1="4" x2="-5.78" y2="1.65" width="0.1524" layer="21" curve="27"/>
+<wire x1="-4.5" y1="4" x2="-4.5" y2="-4" width="0.1524" layer="51" curve="83"/>
+<wire x1="4.5" y1="-4" x2="4.5" y2="4" width="0.1524" layer="51" curve="83"/>
+<circle x="-6" y="0" radius="1.3" width="0.5" layer="29"/>
+<circle x="6" y="0" radius="1.3" width="0.5" layer="29"/>
+<wire x1="-4.5" y1="-4" x2="-5.78" y2="-1.65" width="0.1524" layer="21" curve="-27"/>
+<wire x1="4.5" y1="4" x2="5.78" y2="1.65" width="0.1524" layer="21" curve="-27"/>
+<wire x1="4.5" y1="-4" x2="5.78" y2="-1.65" width="0.1524" layer="21" curve="27"/>
+</package>
+<package name="KAN-9">
+<wire x1="-6.5" y1="-6.5" x2="6.5" y2="-6.5" width="0.1524" layer="49"/>
+<wire x1="-6.5" y1="6.5" x2="6.5" y2="6.5" width="0.1524" layer="49"/>
+<wire x1="-6.5" y1="6.5" x2="-6.5" y2="-6.5" width="0.1524" layer="49" curve="70"/>
+<wire x1="-6.5" y1="6.5" x2="6.5" y2="6.5" width="0.1524" layer="21"/>
+<wire x1="-6.5" y1="-6.5" x2="6.5" y2="-6.5" width="0.1524" layer="21"/>
+<wire x1="6.5" y1="-6.5" x2="6.5" y2="6.5" width="0.1524" layer="49" curve="70"/>
+<wire x1="-9.2" y1="2.5" x2="-8.3" y2="2.5" width="0.1524" layer="49"/>
+<wire x1="-9.2" y1="-2.5" x2="-8.3" y2="-2.5" width="0.1524" layer="49"/>
+<wire x1="-9.2" y1="2.5" x2="-9.2" y2="1.75" width="0.1524" layer="49"/>
+<wire x1="-9.2" y1="-1.75" x2="-9.2" y2="-2.5" width="0.1524" layer="49"/>
+<wire x1="-9.7" y1="1.75" x2="-9.2" y2="1.75" width="0.1524" layer="49"/>
+<wire x1="-9.7" y1="-1.75" x2="-9.2" y2="-1.75" width="0.1524" layer="49"/>
+<wire x1="-9.7" y1="1.75" x2="-9.7" y2="-1.75" width="0.1524" layer="49"/>
+<circle x="0" y="0" radius="5.25" width="0.1524" layer="49"/>
+<circle x="0" y="0" radius="3.7" width="0.1524" layer="49"/>
+<circle x="0" y="0" radius="5.25" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="3.7" width="0.1524" layer="21"/>
+<text x="0" y="7.5" size="0.8" layer="25" font="vector" ratio="12" align="center">&gt;NAME</text>
+<wire x1="9.2" y1="-2.5" x2="8.3" y2="-2.5" width="0.1524" layer="49"/>
+<wire x1="9.2" y1="2.5" x2="8.3" y2="2.5" width="0.1524" layer="49"/>
+<wire x1="9.2" y1="-2.5" x2="9.2" y2="-1.75" width="0.1524" layer="49"/>
+<wire x1="9.2" y1="1.75" x2="9.2" y2="2.5" width="0.1524" layer="49"/>
+<wire x1="9.7" y1="-1.75" x2="9.2" y2="-1.75" width="0.1524" layer="49"/>
+<wire x1="9.7" y1="1.75" x2="9.2" y2="1.75" width="0.1524" layer="49"/>
+<wire x1="9.7" y1="-1.75" x2="9.7" y2="1.75" width="0.1524" layer="49"/>
+<pad name="1" x="-9.45" y="0" drill="3.6" diameter="4.6"/>
+<pad name="2" x="9.45" y="0" drill="3.6" diameter="4.6"/>
+<wire x1="-6.5" y1="6.5" x2="-8.3" y2="2.3" width="0.1524" layer="21" curve="25"/>
+<wire x1="-6.5" y1="-6.5" x2="-8.3" y2="-2.3" width="0.1524" layer="21" curve="-25"/>
+<wire x1="6.5" y1="6.5" x2="8.3" y2="2.3" width="0.1524" layer="21" curve="-25"/>
+<wire x1="6.5" y1="-6.5" x2="8.3" y2="-2.3" width="0.1524" layer="21" curve="25"/>
+</package>
+<package name="KAN-9-SMD">
+<wire x1="-6.5" y1="-6.5" x2="6.5" y2="-6.5" width="0.1524" layer="49"/>
+<wire x1="-6.5" y1="6.5" x2="6.5" y2="6.5" width="0.1524" layer="49"/>
+<wire x1="-6.5" y1="6.5" x2="-6.5" y2="-6.5" width="0.1524" layer="49" curve="70"/>
+<wire x1="-6.5" y1="6.5" x2="6.5" y2="6.5" width="0.1524" layer="21"/>
+<wire x1="-6.5" y1="-6.5" x2="6.5" y2="-6.5" width="0.1524" layer="21"/>
+<wire x1="6.5" y1="-6.5" x2="6.5" y2="6.5" width="0.1524" layer="49" curve="70"/>
+<wire x1="-9.2" y1="2.5" x2="-8.3" y2="2.5" width="0.1524" layer="49"/>
+<wire x1="-9.2" y1="-2.5" x2="-8.3" y2="-2.5" width="0.1524" layer="49"/>
+<wire x1="-9.2" y1="2.5" x2="-9.2" y2="1.75" width="0.1524" layer="49"/>
+<wire x1="-9.2" y1="-1.75" x2="-9.2" y2="-2.5" width="0.1524" layer="49"/>
+<wire x1="-9.7" y1="1.75" x2="-9.2" y2="1.75" width="0.1524" layer="49"/>
+<wire x1="-9.7" y1="-1.75" x2="-9.2" y2="-1.75" width="0.1524" layer="49"/>
+<wire x1="-9.7" y1="1.75" x2="-9.7" y2="-1.75" width="0.1524" layer="49"/>
+<circle x="0" y="0" radius="5.25" width="0.1524" layer="49"/>
+<circle x="0" y="0" radius="3.7" width="0.1524" layer="49"/>
+<circle x="0" y="0" radius="5.25" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="3.7" width="0.1524" layer="21"/>
+<text x="0" y="7.5" size="0.8" layer="25" font="vector" ratio="12" align="center">&gt;NAME</text>
+<wire x1="9.2" y1="-2.5" x2="8.3" y2="-2.5" width="0.1524" layer="49"/>
+<wire x1="9.2" y1="2.5" x2="8.3" y2="2.5" width="0.1524" layer="49"/>
+<wire x1="9.2" y1="-2.5" x2="9.2" y2="-1.75" width="0.1524" layer="49"/>
+<wire x1="9.2" y1="1.75" x2="9.2" y2="2.5" width="0.1524" layer="49"/>
+<wire x1="9.7" y1="-1.75" x2="9.2" y2="-1.75" width="0.1524" layer="49"/>
+<wire x1="9.7" y1="1.75" x2="9.2" y2="1.75" width="0.1524" layer="49"/>
+<wire x1="9.7" y1="-1.75" x2="9.7" y2="1.75" width="0.1524" layer="49"/>
+<wire x1="-6.5" y1="6.5" x2="-8.4" y2="1.9" width="0.1524" layer="21" curve="25"/>
+<wire x1="-6.5" y1="-6.5" x2="-8.4" y2="-1.9" width="0.1524" layer="21" curve="-25"/>
+<wire x1="6.5" y1="6.5" x2="8.4" y2="1.9" width="0.1524" layer="21" curve="-25"/>
+<wire x1="6.5" y1="-6.5" x2="8.4" y2="-1.9" width="0.1524" layer="21" curve="25"/>
+<smd name="1" x="-9.5" y="0" dx="2" dy="4" layer="1"/>
+<smd name="2" x="9.5" y="0" dx="2" dy="4" layer="1"/>
+</package>
+<package name="KAN-9-SMD-SMOL">
+<wire x1="-6.5" y1="-6.5" x2="6.5" y2="-6.5" width="0.1524" layer="49"/>
+<wire x1="-6.5" y1="6.5" x2="6.5" y2="6.5" width="0.1524" layer="49"/>
+<wire x1="-6.5" y1="6.5" x2="-6.5" y2="-6.5" width="0.1524" layer="49" curve="70"/>
+<wire x1="-6.5" y1="6.5" x2="6.5" y2="6.5" width="0.1524" layer="21"/>
+<wire x1="-6.5" y1="-6.5" x2="6.5" y2="-6.5" width="0.1524" layer="21"/>
+<wire x1="6.5" y1="-6.5" x2="6.5" y2="6.5" width="0.1524" layer="49" curve="70"/>
+<wire x1="-9.2" y1="2.5" x2="-8.3" y2="2.5" width="0.1524" layer="49"/>
+<wire x1="-9.2" y1="-2.5" x2="-8.3" y2="-2.5" width="0.1524" layer="49"/>
+<wire x1="-9.2" y1="2.5" x2="-9.2" y2="1.75" width="0.1524" layer="49"/>
+<wire x1="-9.2" y1="-1.75" x2="-9.2" y2="-2.5" width="0.1524" layer="49"/>
+<wire x1="-9.7" y1="1.75" x2="-9.2" y2="1.75" width="0.1524" layer="49"/>
+<wire x1="-9.7" y1="-1.75" x2="-9.2" y2="-1.75" width="0.1524" layer="49"/>
+<wire x1="-9.7" y1="1.75" x2="-9.7" y2="-1.75" width="0.1524" layer="49"/>
+<circle x="0" y="0" radius="5.25" width="0.1524" layer="49"/>
+<circle x="0" y="0" radius="3.7" width="0.1524" layer="49"/>
+<circle x="0" y="0" radius="3.7" width="0.1524" layer="21"/>
+<text x="0" y="7.5" size="0.8" layer="25" font="vector" ratio="12" align="center">&gt;NAME</text>
+<wire x1="9.2" y1="-2.5" x2="8.3" y2="-2.5" width="0.1524" layer="49"/>
+<wire x1="9.2" y1="2.5" x2="8.3" y2="2.5" width="0.1524" layer="49"/>
+<wire x1="9.2" y1="-2.5" x2="9.2" y2="-1.75" width="0.1524" layer="49"/>
+<wire x1="9.2" y1="1.75" x2="9.2" y2="2.5" width="0.1524" layer="49"/>
+<wire x1="9.7" y1="-1.75" x2="9.2" y2="-1.75" width="0.1524" layer="49"/>
+<wire x1="9.7" y1="1.75" x2="9.2" y2="1.75" width="0.1524" layer="49"/>
+<wire x1="9.7" y1="-1.75" x2="9.7" y2="1.75" width="0.1524" layer="49"/>
+<wire x1="-6.5" y1="6.5" x2="-8.4" y2="1.9" width="0.1524" layer="21" curve="25"/>
+<wire x1="-6.5" y1="-6.5" x2="-8.4" y2="-1.9" width="0.1524" layer="21" curve="-25"/>
+<wire x1="6.5" y1="6.5" x2="8.4" y2="1.9" width="0.1524" layer="21" curve="-25"/>
+<wire x1="6.5" y1="-6.5" x2="8.4" y2="-1.9" width="0.1524" layer="21" curve="25"/>
+<smd name="1" x="-6.5" y="0" dx="3.4" dy="3.4" layer="1" thermals="no" cream="no"/>
+<smd name="2" x="6.5" y="0" dx="3.4" dy="3.4" layer="1" thermals="no" cream="no"/>
+<wire x1="-4.9" y1="1.9" x2="4.9" y2="1.9" width="0.1524" layer="21" curve="-137"/>
+<wire x1="4.9" y1="-1.9" x2="-4.9" y2="-1.9" width="0.1524" layer="21" curve="-137"/>
+</package>
+<package name="KAN-9-SMD-SMOL-TWO-SIDES">
+<wire x1="-6.5" y1="-6.5" x2="6.5" y2="-6.5" width="0.1524" layer="49"/>
+<wire x1="-6.5" y1="6.5" x2="6.5" y2="6.5" width="0.1524" layer="49"/>
+<wire x1="-6.5" y1="6.5" x2="-6.5" y2="-6.5" width="0.1524" layer="49" curve="70"/>
+<wire x1="-6.5" y1="6.5" x2="6.5" y2="6.5" width="0.1524" layer="21"/>
+<wire x1="-6.5" y1="-6.5" x2="6.5" y2="-6.5" width="0.1524" layer="21"/>
+<wire x1="6.5" y1="-6.5" x2="6.5" y2="6.5" width="0.1524" layer="49" curve="70"/>
+<wire x1="-9.2" y1="2.5" x2="-8.3" y2="2.5" width="0.1524" layer="49"/>
+<wire x1="-9.2" y1="-2.5" x2="-8.3" y2="-2.5" width="0.1524" layer="49"/>
+<wire x1="-9.2" y1="2.5" x2="-9.2" y2="1.75" width="0.1524" layer="49"/>
+<wire x1="-9.2" y1="-1.75" x2="-9.2" y2="-2.5" width="0.1524" layer="49"/>
+<wire x1="-9.7" y1="1.75" x2="-9.2" y2="1.75" width="0.1524" layer="49"/>
+<wire x1="-9.7" y1="-1.75" x2="-9.2" y2="-1.75" width="0.1524" layer="49"/>
+<wire x1="-9.7" y1="1.75" x2="-9.7" y2="-1.75" width="0.1524" layer="49"/>
+<circle x="0" y="0" radius="5.25" width="0.1524" layer="49"/>
+<circle x="0" y="0" radius="3.7" width="0.1524" layer="49"/>
+<circle x="0" y="0" radius="3.7" width="0.1524" layer="21"/>
+<text x="0" y="7.5" size="0.8" layer="25" font="vector" ratio="12" align="center">&gt;NAME</text>
+<wire x1="9.2" y1="-2.5" x2="8.3" y2="-2.5" width="0.1524" layer="49"/>
+<wire x1="9.2" y1="2.5" x2="8.3" y2="2.5" width="0.1524" layer="49"/>
+<wire x1="9.2" y1="-2.5" x2="9.2" y2="-1.75" width="0.1524" layer="49"/>
+<wire x1="9.2" y1="1.75" x2="9.2" y2="2.5" width="0.1524" layer="49"/>
+<wire x1="9.7" y1="-1.75" x2="9.2" y2="-1.75" width="0.1524" layer="49"/>
+<wire x1="9.7" y1="1.75" x2="9.2" y2="1.75" width="0.1524" layer="49"/>
+<wire x1="9.7" y1="-1.75" x2="9.7" y2="1.75" width="0.1524" layer="49"/>
+<wire x1="-6.5" y1="6.5" x2="-8.4" y2="1.9" width="0.1524" layer="21" curve="25"/>
+<wire x1="-6.5" y1="-6.5" x2="-8.4" y2="-1.9" width="0.1524" layer="21" curve="-25"/>
+<wire x1="6.5" y1="6.5" x2="8.4" y2="1.9" width="0.1524" layer="21" curve="-25"/>
+<wire x1="6.5" y1="-6.5" x2="8.4" y2="-1.9" width="0.1524" layer="21" curve="25"/>
+<smd name="1" x="-8" y="0" dx="1" dy="3.4" layer="16" rot="R180" stop="no" thermals="no" cream="no"/>
+<smd name="2" x="8" y="0" dx="1" dy="3.4" layer="16" rot="R180" stop="no" thermals="no" cream="no"/>
+<wire x1="-4.9" y1="1.9" x2="4.9" y2="1.9" width="0.1524" layer="21" curve="-137"/>
+<wire x1="4.9" y1="-1.9" x2="-4.9" y2="-1.9" width="0.1524" layer="21" curve="-137"/>
+<rectangle x1="-8.5" y1="-1.7" x2="-7.5" y2="1.7" layer="30"/>
+<rectangle x1="7.5" y1="-1.7" x2="8.5" y2="1.7" layer="30"/>
 </package>
 </packages>
 <symbols>
@@ -1508,6 +1714,60 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <technology name=""/>
 </technologies>
 </device>
+<device name="OMTEN-1288-LESS2" package="OMTEN-1288-LESS2">
+<connects>
+<connect gate="SW$1" pin="COM" pad="1"/>
+<connect gate="SW$1" pin="NO" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="OMTEN-1288-PTH-NARROWER" package="OMTEN-1288-PTH-NARROWER">
+<connects>
+<connect gate="SW$1" pin="COM" pad="1"/>
+<connect gate="SW$1" pin="NO" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="KAN-9-PTH" package="KAN-9">
+<connects>
+<connect gate="SW$1" pin="COM" pad="1"/>
+<connect gate="SW$1" pin="NO" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="KAN-9-SMD" package="KAN-9-SMD">
+<connects>
+<connect gate="SW$1" pin="COM" pad="1"/>
+<connect gate="SW$1" pin="NO" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="KAN-9-SMD-SMOL" package="KAN-9-SMD-SMOL">
+<connects>
+<connect gate="SW$1" pin="COM" pad="1"/>
+<connect gate="SW$1" pin="NO" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="KAN-9-SMD-SMOL-TWO-SIDES" package="KAN-9-SMD-SMOL-TWO-SIDES">
+<connects>
+<connect gate="SW$1" pin="COM" pad="1"/>
+<connect gate="SW$1" pin="NO" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -1527,10 +1787,10 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="VERSION" value="v1.0"/>
 </part>
 <part name="GND1" library="a_parts" deviceset="GND" device=""/>
-<part name="GND" library="a_parts" deviceset="M01" device="NOT-A-VIA-NOPE" value="M01NOT-A-VIA-NOPE"/>
+<part name="GND" library="a_parts" deviceset="M01" device="SMD_ANCHOR" value="M01SMD_ANCHOR"/>
 <part name="U$1" library="a_parts" deviceset="VBATT-" device=""/>
 <part name="VBAT-" library="a_parts" deviceset="M01" device="PTH-1MM-CIR-NS" value="M01PTH-1MM-CIR-NS"/>
-<part name="SW1" library="a_parts" deviceset="SWITCH-SPST" device="OMTEN-1288-PTH" value="SWITCH-SPSTOMTEN-1288-PTH"/>
+<part name="SW1" library="a_parts" deviceset="SWITCH-SPST" device="KAN-9-PTH" value="SWITCH-SPSTKAN-9-PTH"/>
 </parts>
 <sheets>
 <sheet>
@@ -1574,7 +1834,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,50.8,58.42,U2,VIN,VBAT,,,"/>
+<approved hash="102,1,114.3,101.6,VBATT-,VBAT,,,,"/>
 </errors>
 </schematic>
 </drawing>

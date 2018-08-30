@@ -47,8 +47,8 @@ ehex:  $(PRG).eep
 
 
 fuses:
-	$(AVRDUDE) -v -p t13 -cusbtiny -Ulfuse:w:0x79:m -Uhfuse:w:0xED:m
-	#$(AVRDUDE) -v -p t13 -cusbtiny -Ulfuse:w:0x75:m -Uhfuse:w:0xFF:m
+	#$(AVRDUDE) -v -p t13 -cusbtiny -Ulfuse:w:0x79:m -Uhfuse:w:0xED:m
+	$(AVRDUDE) -v -p t13 -cusbtiny -Ulfuse:w:0x75:m -Uhfuse:w:0xFF:m
 
 upload: all
 	#$(AVRDUDE) -v -p t13 -cusbtiny -Uflash:w:$(PRG).hex:a -Ueeprom:w:$(PRG).eep:i
