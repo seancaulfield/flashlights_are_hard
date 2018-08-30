@@ -99,6 +99,9 @@
 #elif defined(FSM_TKSABER_DRIVER)
 #include "hwdef-TK_Saber.h"
 
+#elif defined(FSM_2XD_DRIVER)
+#include "hwdef-2xD.h"
+
 #else
 #error Hey, you need to define an I/O pin layout.
 
