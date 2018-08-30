@@ -2,9 +2,10 @@ PRG            = alfredo
 OBJ            = alfredo.o
 MCU_TARGET     = attiny25
 OPTIMIZE       = -Os -fpack-struct -fshort-enums -funsigned-char -funsigned-bitfields
-DEFS           = -std=gnu99 -DATTINY=25 $(CPU_SPEED)
+DEFS           = -std=gnu99 -DATTINY=25 -DFSM_2XD_DRIVER $(CPU_SPEED)
 LIBS           =
-INCLUDES       = -I../shared/
+INCLUDES       = -I../ -I../shared/
+OBJCOPYFLAGS   = -j .eeprom --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0 -O ihex 
 
 
 CC             = avr-gcc
@@ -44,14 +45,15 @@ eeprom: ehex
 ehex:  $(PRG).eep
 
 %.eep: %.elf
-	$(OBJCOPY) -j .eeprom --change-section-lma .eeprom=0 -O \
-		ihex $< $@ || { echo empty $@ not generated; exit 0; }
+	$(OBJCOPY) $(OBJCOPYFLAGS)  $< $@ \
+		|| { echo empty $@ not generated; exit 0; }
 
 
 fuses:
-	$(AVRDUDE) -v -p t13 -cusbtiny -Ulfuse:w:0x79:m -Uhfuse:w:0xED:m
+	#$(AVRDUDE) -v -p t13 -cusbtiny -Ulfuse:w:0x79:m -Uhfuse:w:0xED:m
 	#$(AVRDUDE) -v -p t13 -cusbtiny -Ulfuse:w:0x75:m -Uhfuse:w:0xFF:m
+	$(AVRDUDE) -v -p t25 -cusbtiny -u -Ulfuse:w:0xD2:m -Uhfuse:w:0xDF:m -Uefuse:w:0xFF:m
 
 upload: all
 	#$(AVRDUDE) -v -p t13 -cusbtiny -Uflash:w:$(PRG).hex:a -Ueeprom:w:$(PRG).eep:i
-	$(AVRDUDE) -v -p t13 -cusbtiny -Uflash:w:$(PRG).hex:a
+	$(AVRDUDE) -v -p t25 -cusbtiny -Uflash:w:$(PRG).hex:a
