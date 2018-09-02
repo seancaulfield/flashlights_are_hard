@@ -67,55 +67,54 @@
  * Settings to modify per driver
  */
 
-#define VOLTAGE_MON			// Comment out to disable
+#define VOLTAGE_MON				// Comment out to disable
 
-#define MEMORY				// Comment out to disable
+#define MEMORY					// Comment out to disable
 
 //#define TICKS_250MS			//If enabled, ticks are every 250 ms. If
-						// disabled, ticks are every 500 ms Affects turbo
-						// timeout/rampdown timing
+								// disabled, ticks are every 500 ms Affects
+								// turbo timeout/rampdown timing
 
-//#define MODE_MOON			3	//Can comment out to remove mode, but
-						// should be set through soldering stars
+#define MODE_MOON			7	//Can comment out to remove mode, but
+								// should be set through soldering stars
 #define MODE_LOW			31	//Can comment out to remove mode
-#define MODE_MED			127	//Can comment out to remove mode
-#define MODE_HIGH			255	//Can comment out to remove mode
-//#define MODE_TURBO		255	//Can comment out to remove mode
+#define MODE_MED			95	//Can comment out to remove mode
+#define MODE_HIGH			191	//Can comment out to remove mode
+#define MODE_TURBO			255	//Can comment out to remove mode
+#define MODE_TURBO_LOW		255	//Level turbo ramps down to if turbo enabled
+#define MODE_COUNT			5	//Number of modes
 
-#define MODE_TURBO_LOW	140	//Level turbo ramps down to if turbo enabled
 #define TURBO_TIMEOUT		240	//How many WTD ticks before before dropping
-						// down. If ticks set for 500 ms, then 240
-						// x .5 = 120 seconds.  Max value of 255
-						// unless you change "ticks" variable to
-						// int16_t/uint16_t
-#define TURBO_RAMP_DOWN		//By default we will start to gradually
-						// ramp down, once TURBO_TIMEOUT ticks are
-						// reached, 1 PWM_LVL each tick until
-						// reaching MODE_TURBO_LOW PWM_LVL. If
-						// commented out, we will step down to
-						// MODE_TURBO_LOW once TURBO_TIMEOUT ticks
-						// are reached
+								// down. If ticks set for 500 ms, then 240 x .5
+								// = 120 seconds.  Max value of 255 unless you
+								// change "ticks" variable to int16_t/uint16_t
+//#define TURBO_RAMP_DOWN		//By default we will start to gradually
+								// ramp down, once TURBO_TIMEOUT ticks are
+								// reached, 1 PWM_LVL each tick until reaching
+								// MODE_TURBO_LOW PWM_LVL. If commented out, we
+								// will step down to MODE_TURBO_LOW once
+								// TURBO_TIMEOUT ticks are reached
 
 #define FAST_PWM_START		8	//Above what output level should we switch
-						// from phase correct to fast-PWM?
+								// from phase correct to fast-PWM?
 
 //#define DUAL_PWM_START	8	//Above what output level should we switch
-						// from the alternate PWM output to both
-						// PWM outputs?  Comment out to disable
-						// alternate PWM output
+								// from the alternate PWM output to both PWM
+								// outputs?  Comment out to disable alternate
+								// PWM output
 
 #define LIFEPO4 			0	//Changes low voltage detection threshold
-						// from around 3.2V to 2.8V, as LiFePO4
-						// batteries have a slightly lower voltage
-						// because of their chemistry.
+								// from around 3.2V to 2.8V, as LiFePO4
+								// batteries have a slightly lower voltage
+								// because of their chemistry.
 
 #if LIFEPO4
 #warning "Compiling for LiFePO4 low batt level (2.8V)"
-#define ADC_LOW			110	// (LiFePO4 3.2V) When do we start ramping
+#define ADC_LOW				110	// (LiFePO4 3.2V) When do we start ramping
 #define ADC_CRIT			100	// (LiFePO4 3.2V) When do we turn off
 #else
 #warning "Compiling for Li-ion low batt level (3.2V)"
-#define ADC_LOW			130	// (Li-ion 3.7V) When do we start ramping
+#define ADC_LOW				130	// (Li-ion 3.7V) When do we start ramping
 #define ADC_CRIT			120	// (Li-ion 3.7V) When do we turn off
 #endif
 
@@ -132,17 +131,17 @@
 #include <avr/sleep.h>
 //#include <avr/power.h>
 
-#define STAR2_PIN		PB0
-#define STAR3_PIN		PB4
-#define PWM_PIN		PB1
-#define VOLTAGE_PIN	PB2
+#define STAR2_PIN			PB0
+#define STAR3_PIN			PB4
+#define PWM_PIN				PB1
+#define VOLTAGE_PIN			PB2
 
-#define ADC_CHANNEL	0x01	// MUX 01 corresponds with PB2
-#define ADC_DIDR 		ADC1D	// Digital input disable bit for PB2
-#define ADC_PRSCL		0x06	// Divide ADC clk by 64
+#define ADC_CHANNEL			0x01	// MUX 01 corresponds with PB2
+#define ADC_DIDR 			ADC1D	// Digital input disable bit for PB2
+#define ADC_PRSCL			0x06	// Divide ADC clk by 64
 
-#define PWM_LVL		OCR0B	// OCR0B is the PB1 output compare register
-#define ALT_PWM_LVL	OCR0A	// OCR0A is the PB0 output compare register
+#define PWM_LVL				OCR0B	// OCR0B is the PB1 output compare register
+#define ALT_PWM_LVL			OCR0A	// OCR0A is the PB0 output compare register
 
 /*
  * global variables
@@ -157,14 +156,12 @@ uint8_t eep[32];
 uint8_t memory = 0;
 
 // Modes (gets set when the light starts up based on stars)
-static uint8_t modes[10];		//Don't need 10, but keeping it high enough to
-						// handle all
+static uint8_t modes[MODE_COUNT];
 volatile uint8_t mode_idx = 0;
 int     mode_dir = 0;			//1 or -1. Determined when checking stars. Do we
 						// increase or decrease the idx when moving
 						// up to a higher mode.
 uint8_t mode_cnt = 0;
-
 uint8_t lowbatt_cnt = 0;
 
 void store_mode_idx(uint8_t lvl) {  //central method for writing (with wear leveling)
@@ -352,24 +349,24 @@ int main(void)
 		store_mode_idx(mode_idx);
 	} else {
 		// Didn't have a short press, keep the same mode
-	#ifndef MEMORY
+		#ifndef MEMORY
 		// Reset to the first mode
 		mode_idx = ((mode_dir == 1) ? 0 : (mode_cnt - 1));
 		store_mode_idx(mode_idx);
-	#endif
+		#endif
 	}
 	// set noinit data for next boot
 	noinit_decay = 0;  // will decay to non-zero after being off for a while
 
-    // Set PWM pin to output
-    DDRB |= (1 << PWM_PIN);
+	// Set PWM pin to output
+	DDRB |= (1 << PWM_PIN);
 	#ifdef DUAL_PWM_START
 	DDRB |= (1 << STAR2_PIN);
 	#endif
 
-    // Set timer to do PWM for correct output pin and set prescaler timing
-    TCCR0A = 0x23; // phase corrected PWM is 0x21 for PB1, fast-PWM is 0x23
-    TCCR0B = 0x01; // pre-scaler for timer (1 => 1, 2 => 8, 3 => 64...)
+	// Set timer to do PWM for correct output pin and set prescaler timing
+	TCCR0A = 0x23; // phase corrected PWM is 0x21 for PB1, fast-PWM is 0x23
+	TCCR0B = 0x01; // pre-scaler for timer (1 => 1, 2 => 8, 3 => 64...)
 	
 	// Turn features on or off as needed
 	#ifdef VOLTAGE_MON
@@ -388,7 +385,7 @@ int main(void)
 	WDT_on();
 	
 	// Now just fire up the mode
-    // Set timer to do PWM for correct output pin and set prescaler timing
+	// Set timer to do PWM for correct output pin and set prescaler timing
 	if (modes[mode_idx] > FAST_PWM_START) {
 		#ifdef DUAL_PWM_START
 		TCCR0A = 0b10100011; // fast-PWM both outputs
@@ -460,5 +457,7 @@ int main(void)
 		sleep_mode();
 	}
 
-    return 0; // Standard Return Code
+	return 0; // Standard Return Code
 }
+
+// vi: syntax=cpp ts=4 sw=4 noexpandtab
