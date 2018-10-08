@@ -232,6 +232,10 @@ static inline void check_stars() {
 }
 
 inline void WDT_on() {
+  // Make compile for attiny25 etc.
+#ifndef WDTIE
+#define WDTIE WDIE
+#endif
 	// Setup watchdog timer to only interrupt, not reset
 	cli();							// Disable interrupts
 	wdt_reset();					// Reset the WDT
