@@ -1,6 +1,6 @@
 PRG            = flashlight
 OBJ            = flashlight.o
-MCU_TARGET     = attiny25
+MCU_TARGET     = attiny13a
 
 # Target Dependent Variables
 ifeq ($(MCU_TARGET), attiny13a)
@@ -64,5 +64,5 @@ fuses:
 	$(AVRDUDE) -v -cusbtiny -p $(AVRDUDE_MCU) $(AVRDUDE_FUSES)
 
 upload: all
-	#$(AVRDUDE) -v -p t13 -cusbtiny -Uflash:w:$(PRG).hex:a -Ueeprom:w:$(PRG).eep:i
-	$(AVRDUDE) -v -p t25 -cusbtiny -Uflash:w:$(PRG).hex:a
+	#$(AVRDUDE) -v -cusbtiny -p $(AVRDUDE_MCU) -Uflash:w:$(PRG).hex:a -Ueeprom:w:$(PRG).eep:i
+	$(AVRDUDE) -v -cusbtiny -p $(AVRDUDE_MCU) -Uflash:w:$(PRG).hex:a
