@@ -57,7 +57,7 @@
  *			value = (V * 4700 * 255) / (23800 * 1.1)
  *      
  */
-#define F_CPU 4800000UL
+#define F_CPU 8000000UL
 
 /*
  * =========================================================================
@@ -239,6 +239,10 @@ static inline void check_stars() {
 }
 
 inline void WDT_on() {
+  // Make compile for attiny25 etc
+#ifndef WDTIE
+#define WDTIE WDIE
+#endif
 	// Setup watchdog timer to only interrupt, not reset
 	cli();							// Disable interrupts
 	wdt_reset();					// Reset the WDT
