@@ -7,7 +7,8 @@ ifeq ($(MCU_TARGET), attiny13a)
 #CPU_SPEED      = 9600000UL
 CPU_SPEED      = 4800000UL
 AVRDUDE_MCU    = t13
-AVRDUDE_FUSES  = -Ulfuse:w:0x75:m -Uhfuse:w:0xFF:m
+#AVRDUDE_FUSES  = -Ulfuse:w:0x75:m -Uhfuse:w:0xFF:m
+AVRDUDE_FUSES  = -Ulfuse:w:0x79:m -Uhfuse:w:0xED:m
 else ifeq ($(MCU_TARGET), attiny25)
 CPU_SPEED      = 8000000UL
 AVRDUDE_MCU    = t25
