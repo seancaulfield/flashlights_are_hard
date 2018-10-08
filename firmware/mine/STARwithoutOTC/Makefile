@@ -1,8 +1,21 @@
 PRG            = flashlight
 OBJ            = flashlight.o
-MCU_TARGET     = attiny13a
+MCU_TARGET     = attiny25
+
+# Target Dependent Variables
+ifeq ($(MCU_TARGET), attiny13a)
+#CPU_SPEED      = 9600000UL
+CPU_SPEED      = 4800000UL
+AVRDUDE_MCU    = t13
+AVRDUDE_FUSES  = -Ulfuse:w:0x75:m -Uhfuse:w:0xFF:m
+else ifeq ($(MCU_TARGET), attiny25)
+CPU_SPEED      = 8000000UL
+AVRDUDE_MCU    = t25
+AVRDUDE_FUSES  = -Ulfuse:w:0xD2:m -Uhfuse:w:0xDF:m -Uefuse:w:0xFF:m
+endif
+
 OPTIMIZE       = -Os -fpack-struct -fshort-enums -funsigned-char -funsigned-bitfields
-DEFS           = -std=gnu99 $(CPU_SPEED)
+DEFS           = -std=gnu99 -DF_CPU=$(CPU_SPEED)
 LIBS           =
 
 CC             = avr-gcc
@@ -11,7 +24,9 @@ override CFLAGS        = -g -Wall $(OPTIMIZE) -mmcu=$(MCU_TARGET) $(DEFS)
 override LDFLAGS       = -Wl,-Map,$(PRG).map
 OBJCOPY        = avr-objcopy
 OBJDUMP        = avr-objdump
-AVRDUDE        = /home/sean/.arduino15/packages/arduino/tools/avrdude/6.3.0-arduino9/bin/avrdude -C/home/sean/.arduino15/packages/MicroCore/hardware/avr/1.0.3/avrdude.conf
+#AVRDUDE        = /home/sean/.arduino15/packages/arduino/tools/avrdude/6.3.0-arduino9/bin/avrdude -C/home/sean/.arduino15/packages/MicroCore/hardware/avr/1.0.3/avrdude.conf
+#AVRDUDE        = avrdude -C/home/sean/arduino/arduino-current/hardware/tools/avr/etc/avrdude.conf
+AVRDUDE        = avrdude
 
 .PHONY: all
 all: $(PRG).elf lst text eeprom
@@ -46,10 +61,8 @@ ehex:  $(PRG).eep
 		ihex $< $@ || { echo empty $@ not generated; exit 0; }
 
 fuses:
-	$(AVRDUDE) -v -p t13 -cusbtiny -Ulfuse:w:0x79:m -Uhfuse:w:0xED:m
-	#$(AVRDUDE) -v -p t13 -cusbtiny -Ulfuse:w:0x75:m -Uhfuse:w:0xFF:m
+	$(AVRDUDE) -v -cusbtiny -p $(AVRDUDE_MCU) $(AVRDUDE_FUSES)
 
 upload: all
 	#$(AVRDUDE) -v -p t13 -cusbtiny -Uflash:w:$(PRG).hex:a -Ueeprom:w:$(PRG).eep:i
-	$(AVRDUDE) -v -p t13 -cusbtiny -Uflash:w:$(PRG).hex:a
-
+	$(AVRDUDE) -v -p t25 -cusbtiny -Uflash:w:$(PRG).hex:a

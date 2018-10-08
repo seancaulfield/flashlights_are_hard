@@ -60,7 +60,11 @@
  *			value = (V * 4700 * 255) / (23800 * 1.1)
  *      
  */
+
+#ifndef F_CPU
 #define F_CPU 4800000UL
+#warning "Using fall-back F_CPU of 4.8MHz! This might not match your fuse settings."
+#endif
 
 /*
  * =========================================================================
