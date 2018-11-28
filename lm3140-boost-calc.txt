@@ -1,0 +1,26 @@
+280nm UVC LED
+RVXD-280-SM-071005 / 1807-1021-1-ND
+
+Vout = 8V (max) [7V nom]
+Iout = 100mA (max)
+ripple = 20%
+
+Vin (min) = 3.0V
+Vin (max) = 4.2V
+fsw = 1.6MHz => Ts = .625 us = 625ns
+
+ Vout      1          Vout - Vin
+------ ~= --- => D ~= ----------
+ Vin       D             Vout
+
+ Vout      1          Vout - (e)*Vin
+------ ~= --- => D ~= -------------- where (e)=efficiency (90%)
+ Vin       D               Vout
+
+(8-.9*3)/8 ~= 0.663 ~= 67%
+
+dIpp = ripple * Iout = 20% * 100mA = 20mA
+
+    Vin(min) * Dmax * Ts   3 * .663 * .000000625
+L = -------------------- = --------------------- = 
+         2 * dIpp                 2 * .02

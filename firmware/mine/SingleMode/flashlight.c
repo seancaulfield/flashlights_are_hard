@@ -58,7 +58,15 @@
  *      
  */
 
+#ifndef F_CPU
 #define F_CPU 4800000UL
+#warning "Using fall-back F_CPU of 4.8MHz! This might not match your fuse settings."
+#endif
+
+// Make compile for attiny25 etc
+#ifndef WDTIE
+#define WDTIE WDIE
+#endif
 
 /*
  * =========================================================================
@@ -67,7 +75,7 @@
 
 #define VOLTAGE_MON				// Comment out to disable
 
-#define LIFEPO4				1	//Changes low voltage detection threshold
+#define LIFEPO4				0	//Changes low voltage detection threshold
 								// from around 3.2V to 2.8V, as LiFePO4
 								// batteries have a slightly lower voltage
 								// because of their chemistry.
@@ -82,8 +90,8 @@
 #define ADC_CRIT			120	// (Li-ion 3.7V) When do we turn off
 #endif
 
-#define MODE_NORMAL			63
-#define MODE_LOW			31
+#define MODE_NORMAL			85 // ~33%
+#define MODE_LOW			42 // ~16% (when low voltage
 
 /*
  * =========================================================================
