@@ -46,18 +46,22 @@
  *            |
  *           GND
  *
- *		ADC = ((V_bat - V_diode) * R2   * 255) / ((R1    + R2  ) * V_ref)
- *		125 = ((3.0   - .25    ) * 4700 * 255) / ((19100 + 4700) * 1.1  )
- *		121 = ((2.9   - .25    ) * 4700 * 255) / ((19100 + 4700) * 1.1  )
- *
- *		Well 125 and 121 were too close, so it shut off right after lowering to low mode, so I went with
- *		130 and 120
- *
  *		To find out what value to use, plug in the target voltage (V) to this equation
- *			value = (V * 4700 * 255) / (23800 * 1.1)
- *      
+ *			value = (V * 4700 * 255) / (40700 * 1.1)
+ *
+ *		V_bat (low)  = 2 x 3.0 = 6.0
+ *		V_bat (crit) = 2 x 2.8 = 5.6
+ *
+ *		ADC = ((V_bat - V_diode) * R2   * 255) / ((R1    + R2  ) * V_ref)
+ *		    = ((6.0   - .25    ) * 4700 * 255) / ((36000 + 4700) * 1.1) = 153.9 ~= 155
+ *		    = ((5.6   - .25    ) * 4700 * 255) / ((36000 + 4700) * 1.1) = 143.2 ~= 145
+ *
  */
+
+#ifndef F_CPU
+#warning "F_CPU not defined already?!?"
 #define F_CPU 4800000UL
+#endif
 
 /*
  * =========================================================================
@@ -168,7 +172,7 @@ inline void next_mode() {
 	}
 }
 
-inline void check_stars() {
+static inline void check_stars() {
 	// Load up the modes based on stars
 	// Always load up the modes array in order of lowest to highest mode
 	// 0 being low for soldered, 1 for pulled-up for not soldered
@@ -365,7 +369,7 @@ int main(void)
 	// Will allow us to go idle between WDT interrupts
 	set_sleep_mode(SLEEP_MODE_IDLE);
 	
-	uint8_t prev_mode_idx = mode_idx;
+	//uint8_t prev_mode_idx = mode_idx;
 	
 	WDT_on();
 	
