@@ -1,0 +1,8 @@
+**********************
+* Autodesk EAGLE - Spice Model File
+* Date: 9/17/17
+* sin function block
+**********************
+.SUBCKT FN_SIN out+ out- in+ in-
+B1 out+ out- v=sin(V(in+,in-))
+.ENDS FN_SIN

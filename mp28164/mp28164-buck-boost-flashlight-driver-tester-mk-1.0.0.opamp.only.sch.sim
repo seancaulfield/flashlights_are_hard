@@ -1,0 +1,41 @@
+Title: * spicenetlist
+Date: Fri Jan  4 19:27:00  2019
+Plotname: Operating Point
+Flags: real
+No. Variables: 16
+No. Points: 1
+Variables:
+	0	lowpass	voltage
+	1	i(b.x_u3.bg1)	current
+	2	i(e.x_u3.ebuffer)	current
+	3	led-	voltage
+	4	n_2	voltage
+	5	opamp-	voltage
+	6	opamp_out	voltage
+	7	i(v_bat1)	current
+	8	i(v_bat2)	current
+	9	vcc	voltage
+	10	vdd	voltage
+	11	x_u3.10	voltage
+	12	x_u3.20	voltage
+	13	x_u3.30	voltage
+	14	x_u3.80	voltage
+	15	x_u3.g1_int1	voltage
+Values:
+ 0	2.493238964442005e+00
+	-5.002042753061553e-17
+	-5.879161777904741e-06
+	5.940594059400009e-02
+	4.994554098635565e-01
+	5.935592016646947e-02
+	4.994663328535758e-01
+	-5.940601394065453e+00
+	-6.761285557995746e-06
+	6.000000000000000e+00
+	2.500000000000000e+00
+	5.001542598801673e-01
+	5.001042494552217e-01
+	5.000542440308239e-01
+	5.000542440308239e-01
+	5.002042753061552e-07
+

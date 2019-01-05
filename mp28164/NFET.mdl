@@ -1,0 +1,6 @@
+**********************
+* Autodesk EAGLE - Spice Model File
+* Date: 9/17/17
+* basic nfet intrinsic model
+**********************
+.MODEL NFET NMOS (LEVEL=0.5)

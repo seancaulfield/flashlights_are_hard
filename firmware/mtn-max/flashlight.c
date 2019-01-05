@@ -47,7 +47,7 @@
  *           GND
  *
  *		To find out what value to use, plug in the target voltage (V) to this equation
- *			value = (V * 4700 * 255) / (40700 * 1.1)
+ *			value = (V * 4700 * 255) / ((36000 + 4700) * 1.1)
  *
  *		V_bat (low)  = 2 x 3.0 = 6.0
  *		V_bat (crit) = 2 x 2.8 = 5.6
