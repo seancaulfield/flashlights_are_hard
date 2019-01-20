@@ -9,22 +9,23 @@
  *
  */
 
-#define PIN_PWM  1
-#define PIN_TRIM A2
+#define PIN_CHAN0  0
+#define PIN_CHAN1  1
+//#define PIN_TRIM A2
 
-#define ADC_MIN  0
-#define ADC_MAX  1023
+//#define ADC_MIN  0
+//#define ADC_MAX  1023
 
-#define PWM_MIN     0
-#define PWM_MAX     64
+//#define PWM_MIN     0
+//#define PWM_MAX     64
 #define PWM_DEFAULT 64
-#define PWM_INVERT  1
+//#define PWM_INVERT  1
 
 #include <Arduino.h>
 
-uint16_t reading = 0;
+//uint16_t reading = 0;
 uint8_t pwm_curr = PWM_DEFAULT;
-uint8_t pwm_last = PWM_DEFAULT;
+uint8_t pwm_alt = 255;
 
 void setup() {
 
@@ -42,8 +43,13 @@ void setup() {
   */
 
   //pinMode(PIN_TRIM, INPUT);
+
   pinMode(PIN_PWM, OUTPUT);
   analogWrite(PIN_PWM, pwm_curr);
+
+  pinMode(PIN_ALTPWM, OUTPUT);
+  analogWrite(PIN_ALTPWM, pwm_alt);
+
 }
 
 void loop() {
