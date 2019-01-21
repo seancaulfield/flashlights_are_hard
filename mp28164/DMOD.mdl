@@ -3,4 +3,4 @@
 * Date: 9/17/17
 * basic diode intrinsic model
 **********************
-.MODEL DMOD D
+.MODEL DMOD D (IS=1 RS=1.9 N=2)

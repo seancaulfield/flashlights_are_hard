@@ -1,0 +1,84 @@
+* SpiceNetList
+* 
+* Exported from mp28164-buck-boost-flashlight-driver-tester-mk-1.1.0.opamp.only.sch at 1/18/19 12:17 PM
+* 
+* EAGLE Version 9.2.2 Copyright (c) 1988-2018 Autodesk, Inc.
+* 
+.TEMP=25.000000
+* --------- .OPTIONS ---------
+* --------- .PARAMS ---------
+
+* --------- devices ---------
+C_C14 LOWPASS 0 0.000001 
+R_R12 MIX1 OPAMP_OUT 47000 
+R_R9 LOWPASS PWM 10000 
+V_V1 VCC 0 DC 6 AC 0 
+R_R11 0 MIX1 150000 
+X_X2 MIX1 MIX2 VDD 0 FB OPAMP 
+V_V2 VDD 0 DC 2.5 AC 0 
+R_R10 OPAMP- 0 10000 
+D_LED1 VCC LED- DMOD 
+R_R13 MIX1 VCC 750000 
+R_R14 MIX2 LOWPASS 360000 
+X_X1 LED- OPAMP- VDD 0 OPAMP_OUT OPAMP 
+V_V3 PWM 0 DC 0.5 AC 0 
+R_R1 0 LED- .01 
+R_R2 OPAMP_OUT OPAMP- 91000 
+
+* --------- models ---------
+
+* model file: /home/sean/eagle/projects/flashlights_are_hard/mp28164/OPAMP.mdl
+* BASIC OP AMP MODEL
+* Device Pins In+ In- vdd vss Vout
+* vdd vss unused in this model!!
+.SUBCKT opamp 1 2 vdd vss vout
+*
+* INPUT
+RIN   1   2   1e9
+*
+*  AMPLIFIER STAGE: GAIN, POLE, SLEW
+*   Aol=10000, fu=1000000 Hz
+G1   0    10  VALUE = { 1e-2 * V(1,2)  }
+R1   10   0   1e6
+C1   10   0   1.59e-9
+*
+* 2ND POLE
+G2   0 20   10 0  1e-6
+R2   20       0     1e6
+C2   20       0     3.3e-14
+*
+* 3RD POLE
+G3   0 30   20 0 1e-6
+R3   30       0     1e6
+C3   30       0     3.3e-14
+*
+* OUTPUT STAGE
+EBUFFER 80 0  30  0    1
+ROUT 80 vout 100
+.ENDS opamp
+
+
+* model file: /home/sean/eagle/projects/flashlights_are_hard/mp28164/DMOD.mdl
+**********************
+* Autodesk EAGLE - Spice Model File
+* Date: 9/17/17
+* basic diode intrinsic model
+**********************
+.MODEL DMOD D (IS=1 RS=1.9 N=2)
+
+
+* --------- simulation ---------
+.print DC V(OPAMP-) V(OPAMP_OUT) V(LOWPASS) V(LED-) V(MIX1) V(VDD) V(VCC) V(PWM) V(FB) V(MIX2) I(V_V3) I(V_V2) I(V_V1)
+.print AC V(OPAMP-) V(OPAMP_OUT) V(LOWPASS) V(LED-) V(MIX1) V(VDD) V(VCC) V(PWM) V(FB) V(MIX2) I(V_V3) I(V_V2) I(V_V1)
+.print TRAN V(OPAMP-) V(OPAMP_OUT) V(LOWPASS) V(LED-) V(MIX1) V(VDD) V(VCC) V(PWM) V(FB) V(MIX2) I(V_V3) I(V_V2) I(V_V1)
+.END
+
+
+
+
+
+
+
+
+
+

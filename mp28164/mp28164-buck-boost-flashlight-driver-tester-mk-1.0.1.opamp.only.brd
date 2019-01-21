@@ -227,8 +227,8 @@ chip</description>
 <smd name="3" x="0.65" y="-1.1" dx="0.4" dy="0.9" layer="1" cream="no"/>
 <smd name="4" x="0.65" y="1.1" dx="0.4" dy="0.9" layer="1" cream="no"/>
 <smd name="5" x="-0.65" y="1.1" dx="0.4" dy="0.9" layer="1" cream="no"/>
-<text x="-1.2" y="0" size="0.6" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
-<circle x="-1.175" y="-0.98" radius="0.15" width="0" layer="21"/>
+<text x="-1.2" y="0" size="0.8" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center">&gt;NAME</text>
+<circle x="-1.175" y="-0.98" radius="0.1" width="0.1524" layer="21"/>
 <rectangle x1="-1.1124" y1="-0.7" x2="-0.96" y2="0.7" layer="21"/>
 <rectangle x1="0.96" y1="-0.7" x2="1.1124" y2="0.7" layer="21"/>
 <rectangle x1="-0.35" y1="0.5488" x2="0.35" y2="0.7012" layer="21"/>
@@ -242,7 +242,7 @@ chip</description>
 <rectangle x1="-0.8" y1="-1.2" x2="-0.5" y2="-0.65" layer="51"/>
 <rectangle x1="0.5" y1="-1.2" x2="0.8" y2="-0.65" layer="51"/>
 <rectangle x1="-0.15" y1="-1.2" x2="0.15" y2="-0.65" layer="51"/>
-<circle x="-0.65" y="-0.3" radius="0.15" width="0" layer="21"/>
+<circle x="-0.65" y="-0.3" radius="0.1" width="0.1524" layer="21"/>
 </package>
 <package name="BATTCON_9V">
 <pad name="+" x="0" y="0" drill="1.905"/>
@@ -257,17 +257,58 @@ chip</description>
 <circle x="-12.2936" y="4.7498" radius="1.27" width="0.127" layer="51"/>
 <circle x="-25.781" y="-17.6022" radius="1.27" width="0.127" layer="51"/>
 </package>
-<package name="0204V">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
-type 0204, grid 2.5 mm</description>
-<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.508" layer="51"/>
-<wire x1="-0.127" y1="0" x2="0.127" y2="0" width="0.508" layer="21"/>
-<circle x="-1.27" y="0" radius="0.889" width="0.1524" layer="51"/>
-<circle x="-1.27" y="0" radius="0.635" width="0.0508" layer="51"/>
-<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="-2.1336" y="1.1684" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.1336" y="-2.3114" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<package name="DIL04">
+<wire x1="-3.175" y1="1.016" x2="-3.175" y2="-1.016" width="0.1524" layer="21" curve="-150"/>
+<pad name="1" x="-1.27" y="-3.81" drill="0.9" diameter="1.6" shape="octagon" rot="R90"/>
+<pad name="2" x="1.27" y="-3.81" drill="0.9" diameter="1.6" shape="octagon" rot="R90"/>
+<pad name="3" x="1.27" y="3.81" drill="0.9" diameter="1.6" shape="octagon" rot="R90"/>
+<pad name="4" x="-1.27" y="3.81" drill="0.9" diameter="1.6" shape="octagon" rot="R90"/>
+<text x="-3.385" y="0" size="0.8128" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="0" y="0" size="0.8" layer="27" font="vector" ratio="12" rot="R90" align="center">&gt;VALUE</text>
+<wire x1="-3.175" y1="3.81" x2="-2.25" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="1.016" x2="-3.175" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="-0.29" y1="3.81" x2="0.29" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="2.25" y1="3.81" x2="3.175" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="-0.29" y1="-3.81" x2="0.29" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="2.25" y1="-3.81" x2="3.175" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="3.81" x2="3.175" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="-3.81" x2="-2.25" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="-1.016" x2="-3.175" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="3.81" x2="3.175" y2="3.81" width="0.1524" layer="51"/>
+<wire x1="3.175" y1="3.81" x2="3.175" y2="-3.81" width="0.1524" layer="51"/>
+<wire x1="3.175" y1="-3.81" x2="-3.175" y2="-3.81" width="0.1524" layer="51"/>
+<wire x1="-3.175" y1="-3.81" x2="-3.175" y2="-1.016" width="0.1524" layer="51"/>
+<wire x1="-3.175" y1="1.016" x2="-3.175" y2="3.81" width="0.1524" layer="51"/>
+<wire x1="-3.175" y1="1.016" x2="-3.175" y2="-1.016" width="0.1524" layer="51" curve="-150"/>
+</package>
+<package name="LED3MM">
+<description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
+3 mm, round</description>
+<wire x1="1.5748" y1="-1.27" x2="1.5748" y2="1.27" width="0.254" layer="51"/>
+<wire x1="-1.524" y1="0" x2="-1.1708" y2="0.9756" width="0.1524" layer="51" curve="-39.80361" cap="flat"/>
+<wire x1="-1.524" y1="0" x2="-1.1391" y2="-1.0125" width="0.1524" layer="51" curve="41.633208" cap="flat"/>
+<wire x1="1.1571" y1="0.9918" x2="1.524" y2="0" width="0.1524" layer="51" curve="-40.601165" cap="flat"/>
+<wire x1="1.1708" y1="-0.9756" x2="1.524" y2="0" width="0.1524" layer="51" curve="39.80361" cap="flat"/>
+<wire x1="0" y1="1.524" x2="1.2401" y2="0.8858" width="0.1524" layer="21" curve="-54.461337" cap="flat"/>
+<wire x1="-1.2192" y1="0.9144" x2="0" y2="1.524" width="0.1524" layer="21" curve="-53.130102" cap="flat"/>
+<wire x1="0" y1="-1.524" x2="1.203" y2="-0.9356" width="0.1524" layer="21" curve="52.126876" cap="flat"/>
+<wire x1="-1.203" y1="-0.9356" x2="0" y2="-1.524" width="0.1524" layer="21" curve="52.126876" cap="flat"/>
+<wire x1="-0.635" y1="0" x2="0" y2="0.635" width="0.1524" layer="51" curve="-90" cap="flat"/>
+<wire x1="-1.016" y1="0" x2="0" y2="1.016" width="0.1524" layer="51" curve="-90" cap="flat"/>
+<wire x1="0" y1="-0.635" x2="0.635" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="-1.016" x2="1.016" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.032" x2="1.561" y2="1.3009" width="0.254" layer="21" curve="-50.193108" cap="flat"/>
+<wire x1="-1.7929" y1="0.9562" x2="0" y2="2.032" width="0.254" layer="21" curve="-61.926949" cap="flat"/>
+<wire x1="0" y1="-2.032" x2="1.5512" y2="-1.3126" width="0.254" layer="21" curve="49.763022" cap="flat"/>
+<wire x1="-1.7643" y1="-1.0082" x2="0" y2="-2.032" width="0.254" layer="21" curve="60.255215" cap="flat"/>
+<wire x1="-2.032" y1="0" x2="-1.7891" y2="0.9634" width="0.254" layer="51" curve="-28.301701" cap="flat"/>
+<wire x1="-2.032" y1="0" x2="-1.7306" y2="-1.065" width="0.254" layer="51" curve="31.60822" cap="flat"/>
+<wire x1="-2.5908" y1="1.7272" x2="-1.8542" y2="1.7272" width="0.127" layer="21"/>
+<wire x1="-2.2352" y1="1.3208" x2="-2.2352" y2="2.1082" width="0.127" layer="21"/>
+<pad name="A" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="K" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<text x="1.905" y="0.381" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="1.905" y="-1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -488,7 +529,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="-15.6" y="-68.1" size="0.7" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
 <attribute name="SPICEPREFIX" value="R" x="-14.5" y="-68.1" size="1.016" layer="27" ratio="12" display="off"/>
 </element>
-<element name="BAT1" library="a_parts" package="BATTCON_9V" value="6.25" x="22.4" y="-169.6" smashed="yes">
+<element name="BAT1" library="a_parts" package="BATTCON_9V" value="DC 6.25 AC 0" x="22.4" y="-169.6" smashed="yes">
 <attribute name="NAME" x="19.86" y="-179.76" size="1.27" layer="25" rot="R90"/>
 <attribute name="SPICEPREFIX" value="V" x="22.4" y="-169.6" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="21.765" y="-179.76" size="1.27" layer="27" rot="R90"/>
@@ -510,20 +551,29 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="-39.1" y="-219.5" size="0.7" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
 <attribute name="SPICEPREFIX" value="R" x="-38" y="-219.5" size="1.016" layer="27" ratio="12" display="off"/>
 </element>
-<element name="R2" library="a_parts" package="0204V" value="2" x="-49.5" y="-262.6" smashed="yes">
-<attribute name="NAME" x="-51.6336" y="-261.4316" size="1.27" layer="25" ratio="10"/>
-<attribute name="SPICEPREFIX" value="R" x="-49.5" y="-262.6" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-51.6336" y="-264.9114" size="1.27" layer="27" ratio="10"/>
+<element name="U1" library="a_parts" package="DIL04" value="" x="-55.4" y="-260.7" smashed="yes">
+<attribute name="NAME" x="-58.785" y="-260.7" size="0.8128" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="SPICEMODEL" value="VSMOD" x="-55.4" y="-260.7" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="S" x="-55.4" y="-260.7" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-55.4" y="-260.7" size="0.8" layer="27" font="vector" ratio="12" rot="R90" align="center"/>
+</element>
+<element name="LED1" library="a_parts" package="LED3MM" value="LED3MM" x="-57.2" y="-267.6" smashed="yes">
+<attribute name="NAME" x="-55.295" y="-267.219" size="1.27" layer="25" ratio="10"/>
+<attribute name="SPICEMODEL" value="DMOD" x="-57.2" y="-267.6" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="D" x="-57.2" y="-267.6" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-55.295" y="-269.251" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R2" library="a_parts" package="R0402" value="1000000" x="-61" y="-267.9" smashed="yes">
+<attribute name="NAME" x="-62.1" y="-267.9" size="0.7" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="SPICEPREFIX" value="R" x="-61" y="-267.9" size="0.8" layer="27" ratio="12" display="off"/>
 </element>
 </elements>
 <signals>
 <signal name="VCC">
 <contactref element="U3" pad="5"/>
 <contactref element="BAT1" pad="+"/>
-<contactref element="R8" pad="2"/>
-<contactref element="R2" pad="1"/>
-<wire x1="-50.77" y1="-262.6" x2="-34.4" y2="-219.5" width="0" layer="19" extent="1-1"/>
-<wire x1="22.4" y1="-169.6" x2="-34.4" y2="-219.5" width="0" layer="19" extent="1-1"/>
+<contactref element="U1" pad="3"/>
+<wire x1="-54.13" y1="-256.89" x2="22.4" y2="-169.6" width="0" layer="19" extent="1-1"/>
 <wire x1="10.9" y1="2.35" x2="22.4" y2="-169.6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
@@ -546,8 +596,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="BAT1" pad="-"/>
 <contactref element="BAT2" pad="-"/>
 <contactref element="R9" pad="1"/>
+<contactref element="U1" pad="2"/>
 <wire x1="22.4" y1="-182.554" x2="22.4" y2="-212.854" width="0" layer="19" extent="1-1"/>
 <wire x1="-38.5" y1="-219.5" x2="22.4" y2="-212.854" width="0" layer="19" extent="1-1"/>
+<wire x1="-54.13" y1="-264.51" x2="-38.5" y2="-219.5" width="0" layer="19" extent="1-1"/>
 <wire x1="15" y1="1.7" x2="22.4" y2="-182.554" width="0" layer="19" extent="1-1"/>
 <wire x1="13.1" y1="3" x2="15" y2="1.7" width="0" layer="19" extent="1-1"/>
 <wire x1="15.5" y1="5" x2="13.1" y2="3" width="0" layer="19" extent="1-1"/>
@@ -579,21 +631,34 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="LED-">
 <contactref element="U3" pad="1"/>
 <contactref element="R1" pad="2"/>
-<contactref element="R2" pad="2"/>
-<wire x1="13.1" y1="2.35" x2="-48.23" y2="-262.6" width="0" layer="19" extent="1-1"/>
+<contactref element="LED1" pad="K"/>
+<wire x1="13.1" y1="2.35" x2="-55.93" y2="-267.6" width="0" layer="19" extent="1-1"/>
 <wire x1="15" y1="3.3" x2="13.1" y2="2.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VDD">
 <contactref element="R5" pad="2"/>
 <contactref element="BAT2" pad="+"/>
+<contactref element="R2" pad="2"/>
+<wire x1="-60.5" y1="-267.9" x2="22.4" y2="-199.9" width="0" layer="19" extent="1-1"/>
 <wire x1="28.9" y1="13.1" x2="22.4" y2="-199.9" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$2">
+<signal name="FB">
 <contactref element="R7" pad="1"/>
 <contactref element="R8" pad="1"/>
 <contactref element="R9" pad="2"/>
+<contactref element="U1" pad="1"/>
+<contactref element="R2" pad="1"/>
 <wire x1="-37.5" y1="-219.5" x2="-35.4" y2="-219.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-56.67" y1="-264.51" x2="-37.5" y2="-219.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-61.5" y1="-267.9" x2="-56.67" y2="-264.51" width="0" layer="19" extent="1-1"/>
 <wire x1="-15" y1="-68.1" x2="-35.4" y2="-219.5" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="VOUT">
+<contactref element="R8" pad="2"/>
+<contactref element="U1" pad="4"/>
+<contactref element="LED1" pad="A"/>
+<wire x1="-56.67" y1="-256.89" x2="-34.4" y2="-219.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-58.47" y1="-267.6" x2="-56.67" y2="-256.89" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
