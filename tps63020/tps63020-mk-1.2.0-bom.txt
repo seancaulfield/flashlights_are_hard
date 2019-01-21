@@ -1,0 +1,31 @@
+TPS63020 Buck-Boost Flashlight Driver 17mm Mk 1.2
+TPS63020 based buck-boost LED driver in 17mm / 4 layers, with 1.27mm ISP pogo header on bottom side for in-flashlight programming.
+
+#### Bill of Materials (BOM)
+U1	TPS63020DSJR  
+U2	ATTINY13A-MMU  
+U3	INA190A1IRSWR [1]  
+U4	TLV70025DCKR [2]  
+C1	100nF 0402  
+C2	22uF 16V 0805  
+C3	1uF 0402  
+C4	47uF 25V 1206  
+C5	1nF 0402  
+C6	1uF 0402  
+C7	1uF 0402  
+R2	13mOhm 1206 [3]  
+R3	6.8K 0402  
+R4	4.7K 0402  
+R5	19.1K 0402  
+
+1) Make sure to get the A1 version, as others have different gain which changes the power output.  
+2) Any 2-3V LDO should do.  
+3) Current sense resistor, 13mOhm is for about 1.5A out.  
+
+Rsense = 0.5V / (Iout \* gain) = 0.5V / (Iout \* 25)
+
+| Iout (mA) | Rsense (mOhm) |
+|-----------|---------------|
+|      1000 |            20 |
+|      1500 |            13 |
+|      2000 |            10 |
