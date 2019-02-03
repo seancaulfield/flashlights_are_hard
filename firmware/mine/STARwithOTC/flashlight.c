@@ -76,14 +76,14 @@
 						// disabled, ticks are every 500 ms Affects turbo
 						// timeout/rampdown timing
 
-//#define MODE_MOON			7	//Can comment out to remove mode, but
+//#define MODE_MOON			9	//Can comment out to remove mode, but
 						// should be set through soldering stars
-#define MODE_LOW			31	//Can comment out to remove mode
+#define MODE_LOW			15	//Can comment out to remove mode
 #define MODE_MED			127	//Can comment out to remove mode
 #define MODE_HIGH			255	//Can comment out to remove mode
 //#define MODE_TURBO		255	//Can comment out to remove mode
 
-//#define MODE_TURBO_LOW	255	//Level turbo ramps down to if turbo enabled
+//#define MODE_TURBO_LOW	140	//Level turbo ramps down to if turbo enabled
 //#define TURBO_TIMEOUT		240	//How many WTD ticks before before dropping
 						// down. If ticks set for 500 ms, then 240
 						// x .5 = 120 seconds.  Max value of 255
@@ -97,10 +97,10 @@
 						// MODE_TURBO_LOW once TURBO_TIMEOUT ticks
 						// are reached
 
-#define FAST_PWM_START		0	//Above what output level should we switch
+#define FAST_PWM_START		8	//Above what output level should we switch
 						// from phase correct to fast-PWM?
 
-#define DUAL_PWM_START	7	//Above what output level should we switch
+#define DUAL_PWM_START	8	//Above what output level should we switch
 						// from the alternate PWM output to both
 						// PWM outputs?  Comment out to disable
 						// alternate PWM output
@@ -128,17 +128,6 @@
 						// value of 70 and a 1uF cap, it seemed to
 						// switch sometimes
 								 // even when waiting 10 seconds between presses.
-
-// Set clock prescaler, to alter PWM frequency. Needed for some drivers due to
-// using power converter chips that have built-in start modes that don't place
-// nice with flipping them on and off a lot.
-// 0 => CLOCK OFF (don't do this)
-// 1 => clk/1
-// 2 => clk/8
-// 3 => clk/64
-// 4 => clk/256
-// 5 => clk/1024
-#define PRESCALER 2
 
 /*
  * =========================================================================
@@ -407,7 +396,7 @@ int main(void)
 
     // Set timer to do PWM for correct output pin and set prescaler timing
     TCCR0A = 0x23; // phase corrected PWM is 0x21 for PB1, fast-PWM is 0x23
-    TCCR0B = PRESCALER; // pre-scaler for timer (1 => 1, 2 => 8, 3 => 64...)
+    TCCR0B = 0x01; // pre-scaler for timer (1 => 1, 2 => 8, 3 => 64...)
 	
 	// Turn features on or off as needed
 	#ifdef VOLTAGE_MON
@@ -440,8 +429,7 @@ int main(void)
 		TCCR0A = 0b00100001; // phase corrected PWM normal output
 		#endif
 	}
-	TCCR0B = PRESCALER; // pre-scaler for timer
-                 // 1 => 1, 2 => 8, 3 => 64, 4 => 256, 5 => 1024
+	TCCR0B = 0x01; // pre-scaler for timer (1 => 1, 2 => 8, 3 => 64...)
 	
 	set_output(modes[mode_idx]);
 	
