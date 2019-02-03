@@ -9,22 +9,22 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -33,8 +33,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -42,19 +42,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="5" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="5" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="5" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="5" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -550,10 +550,10 @@
 </package>
 <package name="C1206">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-2.2" y1="-1.1" x2="-2.2" y2="1.1" width="0.1524" layer="21"/>
-<wire x1="-2.2" y1="1.1" x2="2.2" y2="1.1" width="0.1524" layer="21"/>
-<wire x1="2.2" y1="1.1" x2="2.2" y2="-1.1" width="0.1524" layer="21"/>
-<wire x1="2.2" y1="-1.1" x2="-2.2" y2="-1.1" width="0.1524" layer="21"/>
+<wire x1="-2.2" y1="-1.08" x2="-2.2" y2="1.08" width="0.1524" layer="21"/>
+<wire x1="-2.2" y1="1.08" x2="2.2" y2="1.08" width="0.1524" layer="21"/>
+<wire x1="2.2" y1="1.08" x2="2.2" y2="-1.08" width="0.1524" layer="21"/>
+<wire x1="2.2" y1="-1.08" x2="-2.2" y2="-1.08" width="0.1524" layer="21"/>
 <rectangle x1="-1.6" y1="-0.8" x2="1.6" y2="0.8" layer="51"/>
 <smd name="1" x="-1.4" y="0" dx="1.2" dy="1.8" layer="1"/>
 <smd name="2" x="1.4" y="0" dx="1.2" dy="1.8" layer="1"/>
@@ -4873,8 +4873,8 @@ Keying posts into board</description>
 <wire x1="4.25" y1="4.25" x2="4.25" y2="-4.25" width="0.1524" layer="51"/>
 <wire x1="4.25" y1="-4.25" x2="-4.25" y2="-4.25" width="0.1524" layer="51"/>
 <wire x1="-4.25" y1="-4.25" x2="-4.25" y2="4.25" width="0.1524" layer="51"/>
-<rectangle x1="-4.25" y1="-3.25" x2="-2.25" y2="3.25" layer="51"/>
-<rectangle x1="2.25" y1="-3.25" x2="4.25" y2="3.25" layer="51"/>
+<rectangle x1="-4.25" y1="-3.25" x2="-2.25" y2="3.25" layer="49"/>
+<rectangle x1="2.25" y1="-3.25" x2="4.25" y2="3.25" layer="49"/>
 <rectangle x1="-4.2" y1="-4.2" x2="4.2" y2="4.2" layer="43"/>
 <smd name="P$1" x="-4" y="0" dx="1" dy="7.5" layer="1"/>
 <smd name="P$2" x="4" y="0" dx="1" dy="7.5" layer="1"/>
@@ -5041,21 +5041,24 @@ Keying posts into board</description>
 <text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="C1210" urn="urn:adsk.eagle:footprint:13202/1">
+<package name="C1210" urn="urn:adsk.eagle:footprint:13202/1" locally_modified="yes">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-2.473" y1="1.483" x2="2.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-1.483" x2="-2.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-1.483" x2="-2.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="-0.9652" y1="1.2446" x2="0.9652" y2="1.2446" width="0.1016" layer="51"/>
 <wire x1="-0.9652" y1="-1.2446" x2="0.9652" y2="-1.2446" width="0.1016" layer="51"/>
-<wire x1="2.473" y1="1.483" x2="2.473" y2="-1.483" width="0.0508" layer="39"/>
-<rectangle x1="-1.7018" y1="-1.2954" x2="-0.9517" y2="1.3045" layer="51"/>
-<rectangle x1="0.9517" y1="-1.3045" x2="1.7018" y2="1.2954" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="2.7" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="2.7" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.6" y1="-1.25" x2="-1" y2="1.25" layer="51"/>
+<rectangle x1="1" y1="-1.25" x2="1.6" y2="1.25" layer="51"/>
+<smd name="1" x="-1.4" y="0" dx="1.4" dy="2.7" layer="1" cream="no"/>
+<smd name="2" x="1.4" y="0" dx="1.4" dy="2.7" layer="1" cream="no"/>
+<text x="-2.4" y="0" size="0.8" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center">&gt;NAME</text>
+<wire x1="-1.6" y1="1.2" x2="1.6" y2="1.2" width="0.1524" layer="51"/>
+<wire x1="1.6" y1="1.2" x2="1.6" y2="-1.2" width="0.1524" layer="51"/>
+<wire x1="1.6" y1="-1.2" x2="-1.6" y2="-1.2" width="0.1524" layer="51"/>
+<wire x1="-1.6" y1="-1.2" x2="-1.6" y2="1.2" width="0.1524" layer="51"/>
+<wire x1="-2.3" y1="1.55" x2="-2.3" y2="-1.55" width="0.1524" layer="21"/>
+<wire x1="-2.3" y1="-1.55" x2="2.3" y2="-1.55" width="0.1524" layer="21"/>
+<wire x1="2.3" y1="-1.55" x2="2.3" y2="1.55" width="0.1524" layer="21"/>
+<wire x1="2.3" y1="1.55" x2="-2.3" y2="1.55" width="0.1524" layer="21"/>
+<rectangle x1="-1.9" y1="-1.3" x2="-0.9" y2="1.3" layer="31"/>
+<rectangle x1="0.9" y1="-1.3" x2="1.9" y2="1.3" layer="31"/>
 </package>
 <package name="C1310" urn="urn:adsk.eagle:footprint:13203/1">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
@@ -9805,14 +9808,14 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="D1" library="a_parts" deviceset="DIODE-SCHOTTKY" device="SOD323" value="BAT165"/>
 <part name="R2" library="a_parts" deviceset="RESISTOR" device="R0402" value="19.1K"/>
 <part name="R3" library="a_parts" deviceset="RESISTOR" device="R0402" value="4.7K"/>
-<part name="L1" library="a_parts" deviceset="INDUCTOR" device="XAL7070" value="1uH"/>
-<part name="LED-" library="a_parts" deviceset="M01" device="PTH-1.2MM-NS" value="M01PTH-1.2MM-NS"/>
-<part name="LED+" library="a_parts" deviceset="M01" device="PTH-1.2MM-NS" value="M01PTH-1.2MM-NS"/>
-<part name="C2" library="a_parts" deviceset="CAPACITOR-CERAMIC" device="C0402" value="4.7uF"/>
+<part name="L1" library="a_parts" deviceset="INDUCTOR" device="XAR7030" value="1.5uH"/>
+<part name="LED-" library="a_parts" deviceset="M01" device="SMD-1.6MMX3.2MM" value="M01SMD-1.6MMX3.2MM"/>
+<part name="LED+" library="a_parts" deviceset="M01" device="SMD-1.6MMX3.2MM" value="M01SMD-1.6MMX3.2MM"/>
+<part name="C4" library="a_parts" deviceset="CAPACITOR-CERAMIC" device="C0402" value="4.7uF"/>
 <part name="R1" library="a_parts" deviceset="RESISTOR" device="R1206" value="10mOhm"/>
 <part name="SUPPLY4" library="a_parts" deviceset="VBAT" device=""/>
 <part name="GND2" library="a_parts" deviceset="GND" device=""/>
-<part name="C3" library="a_parts" deviceset="CAPACITOR-CERAMIC" device="C1206" value="47uF"/>
+<part name="C8" library="a_parts" deviceset="CAPACITOR-CERAMIC" device="C1206" value="47uF"/>
 <part name="GND8" library="a_parts" deviceset="GND" device=""/>
 <part name="U3" library="a_parts" deviceset="V_REG_EN" device="TLV700"/>
 <part name="SUPPLY1" library="a_parts" deviceset="VCC" device=""/>
@@ -9822,37 +9825,35 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="SUPPLY6" library="a_parts" deviceset="VCC" device=""/>
 <part name="GND4" library="a_parts" deviceset="GND" device=""/>
 <part name="C1" library="a_parts" deviceset="CAPACITOR-CERAMIC" device="C1206" value="68uF"/>
-<part name="C8" library="a_parts" deviceset="CAPACITOR-CERAMIC" device="C0402" value="1uF"/>
+<part name="C16" library="a_parts" deviceset="CAPACITOR-CERAMIC" device="C0402" value="1uF"/>
 <part name="GND6" library="a_parts" deviceset="GND" device=""/>
-<part name="C5" library="a_parts" deviceset="CAPACITOR-CERAMIC" device="C0402" value="1uF"/>
+<part name="C12" library="a_parts" deviceset="CAPACITOR-CERAMIC" device="C0402" value="1uF"/>
 <part name="U2" library="a_parts" deviceset="INA190" device="RSW"/>
 <part name="GND5" library="a_parts" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="a_parts" deviceset="VCC" device=""/>
 <part name="R5" library="a_parts" deviceset="RESISTOR" device="R0402" value="1k"/>
 <part name="GND7" library="a_parts" deviceset="GND" device=""/>
 <part name="R4" library="a_parts" deviceset="RESISTOR" device="R0402" value="6.8k"/>
-<part name="C7" library="a_parts" deviceset="CAPACITOR-CERAMIC" device="C0402" value="1nF"/>
+<part name="C15" library="a_parts" deviceset="CAPACITOR-CERAMIC" device="C0402" value="1nF"/>
 <part name="GND9" library="a_parts" deviceset="GND" device=""/>
 <part name="R6" library="a_parts" deviceset="RESISTOR" device="R0402" value="75K"/>
 <part name="R7" library="a_parts" deviceset="RESISTOR" device="R0402" value="15K"/>
 <part name="U4" library="a_parts" deviceset="ATTINY45" device="TINY85-20-QFN"/>
 <part name="U1" library="a_parts" deviceset="MP3431" device=""/>
-<part name="C4" library="a_parts" deviceset="CAPACITOR-CERAMIC" device="C1206" value="47uF"/>
+<part name="C9" library="a_parts" deviceset="CAPACITOR-CERAMIC" device="C1206" value="47uF"/>
 <part name="C6" library="a_parts" deviceset="CAPACITOR-CERAMIC" device="C0402" value="0.1uF"/>
-<part name="C9" library="a_parts" deviceset="CAPACITOR-CERAMIC" device="C0402" value="22nF"/>
+<part name="C5" library="a_parts" deviceset="CAPACITOR-CERAMIC" device="C0402" value="22nF"/>
 <part name="GND10" library="a_parts" deviceset="GND" device=""/>
 <part name="MODE" library="a_parts" deviceset="JUMPER-PAD-3-NO" device="SMALL_BOX_SILK"/>
 <part name="ENABLE" library="a_parts" deviceset="JUMPER-PAD-3-NO" device="SMALL_BOX_SILK"/>
-<part name="C10" library="a_parts" deviceset="CAPACITOR-CERAMIC" device="C0402" value="???"/>
-<part name="R10" library="a_parts" deviceset="RESISTOR" device="R0402" value="???"/>
+<part name="C7" library="a_parts" deviceset="CAPACITOR-CERAMIC" device="C0402" value="???"/>
+<part name="R8" library="a_parts" deviceset="RESISTOR" device="R0402" value="???"/>
 <part name="GND11" library="a_parts" deviceset="GND" device=""/>
-<part name="R8" library="a_parts" deviceset="RESISTOR" device="R0402" value="130k"/>
-<part name="R9" library="a_parts" deviceset="RESISTOR" device="R0402" value="20k"/>
+<part name="C2" library="a_parts" deviceset="CAPACITOR-CERAMIC" device="C1206" value="68uF"/>
+<part name="SUPPLY7" library="a_parts" deviceset="VCC" device=""/>
 <part name="GND12" library="a_parts" deviceset="GND" device=""/>
-<part name="SUPPLY7" library="a_parts" deviceset="VBAT" device=""/>
-<part name="GND13" library="a_parts" deviceset="GND" device=""/>
-<part name="VIN+" library="a_parts" deviceset="M01" device="PTH-1.2MM-NS" value="M01PTH-1.2MM-NS"/>
-<part name="VIN-" library="a_parts" deviceset="M01" device="PTH-1.2MM-NS" value="M01PTH-1.2MM-NS"/>
+<part name="C14" library="a_parts" deviceset="CAPACITOR-CERAMIC" device="C0402" value="1uF"/>
+<part name="C3" library="a_parts" deviceset="CAPACITOR-CERAMIC" device="C0402" value="4.7uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -9873,9 +9874,9 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <instance part="GND3" gate="1" x="167.64" y="43.18" smashed="yes">
 <attribute name="VALUE" x="165.1" y="40.64" size="1.778" layer="96"/>
 </instance>
-<instance part="D1" gate="G$1" x="170.18" y="139.7" smashed="yes" rot="MR270">
-<attribute name="NAME" x="167.64" y="139.7" size="1.778" layer="95" rot="MR270" align="bottom-center"/>
-<attribute name="VALUE" x="172.72" y="139.7" size="1.778" layer="96" rot="MR270" align="top-center"/>
+<instance part="D1" gate="G$1" x="182.88" y="170.18" smashed="yes" rot="MR270">
+<attribute name="NAME" x="180.34" y="170.18" size="1.778" layer="95" rot="MR270" align="bottom-center"/>
+<attribute name="VALUE" x="185.42" y="170.18" size="1.778" layer="96" rot="MR270" align="top-center"/>
 </instance>
 <instance part="R2" gate="G$1" x="220.98" y="78.74" smashed="yes" rot="MR270">
 <attribute name="NAME" x="219.71" y="78.74" size="1.778" layer="95" rot="MR270" align="bottom-center"/>
@@ -9885,48 +9886,48 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="NAME" x="219.71" y="60.96" size="1.778" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="222.25" y="60.96" size="1.778" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="L1" gate="G$1" x="66.04" y="154.94" smashed="yes">
-<attribute name="NAME" x="66.04" y="157.48" size="1.778" layer="95" rot="R180" align="top-center"/>
-<attribute name="VALUE" x="66.04" y="153.67" size="1.27" layer="96" rot="R180" align="bottom-center"/>
+<instance part="L1" gate="G$1" x="83.82" y="157.48" smashed="yes">
+<attribute name="NAME" x="83.82" y="160.02" size="1.778" layer="95" rot="R180" align="top-center"/>
+<attribute name="VALUE" x="83.82" y="156.21" size="1.27" layer="96" rot="R180" align="bottom-center"/>
 </instance>
-<instance part="LED-" gate="G$1" x="144.78" y="111.76" smashed="yes" rot="R180">
-<attribute name="NAME" x="147.828" y="111.76" size="1.778" layer="95" rot="R180" align="center-right"/>
+<instance part="LED-" gate="G$1" x="160.02" y="114.3" smashed="yes" rot="R180">
+<attribute name="NAME" x="163.068" y="114.3" size="1.778" layer="95" rot="R180" align="center-right"/>
 </instance>
-<instance part="LED+" gate="G$1" x="144.78" y="127" smashed="yes" rot="R180">
-<attribute name="NAME" x="147.828" y="127" size="1.778" layer="95" rot="R180" align="center-right"/>
+<instance part="LED+" gate="G$1" x="160.02" y="129.54" smashed="yes" rot="R180">
+<attribute name="NAME" x="163.068" y="129.54" size="1.778" layer="95" rot="R180" align="center-right"/>
 </instance>
-<instance part="C2" gate="G$1" x="22.86" y="121.92" smashed="yes" rot="R180">
-<attribute name="NAME" x="21.59" y="119.38" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="21.59" y="124.46" size="1.778" layer="96" rot="R180" align="top-left"/>
+<instance part="C4" gate="G$1" x="48.26" y="124.46" smashed="yes" rot="R180">
+<attribute name="NAME" x="46.99" y="121.92" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="46.99" y="127" size="1.778" layer="96" rot="R180" align="top-left"/>
 </instance>
-<instance part="R1" gate="G$1" x="127" y="127" smashed="yes">
-<attribute name="NAME" x="127" y="128.27" size="1.778" layer="95" align="bottom-center"/>
-<attribute name="VALUE" x="127" y="125.73" size="1.778" layer="96" align="top-center"/>
+<instance part="R1" gate="G$1" x="142.24" y="129.54" smashed="yes">
+<attribute name="NAME" x="142.24" y="130.81" size="1.778" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="142.24" y="128.27" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SUPPLY4" gate="G$1" x="170.18" y="144.78" smashed="yes">
-<attribute name="VALUE" x="170.18" y="147.955" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY4" gate="G$1" x="182.88" y="175.26" smashed="yes">
+<attribute name="VALUE" x="182.88" y="178.435" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND2" gate="1" x="12.7" y="109.22" smashed="yes">
-<attribute name="VALUE" x="10.16" y="106.68" size="1.778" layer="96"/>
+<instance part="GND2" gate="1" x="12.7" y="111.76" smashed="yes">
+<attribute name="VALUE" x="10.16" y="109.22" size="1.778" layer="96"/>
 </instance>
-<instance part="C3" gate="G$1" x="106.68" y="119.38" smashed="yes" rot="R180">
-<attribute name="NAME" x="105.41" y="116.84" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="105.41" y="121.92" size="1.778" layer="96" rot="R180" align="top-left"/>
+<instance part="C8" gate="G$1" x="121.92" y="121.92" smashed="yes" rot="R180">
+<attribute name="NAME" x="120.65" y="119.38" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="120.65" y="124.46" size="1.778" layer="96" rot="R180" align="top-left"/>
 </instance>
-<instance part="GND8" gate="1" x="106.68" y="104.14" smashed="yes">
-<attribute name="VALUE" x="104.14" y="101.6" size="1.778" layer="96"/>
+<instance part="GND8" gate="1" x="121.92" y="106.68" smashed="yes">
+<attribute name="VALUE" x="119.38" y="104.14" size="1.778" layer="96"/>
 </instance>
-<instance part="U3" gate="G$1" x="185.42" y="127" smashed="yes">
-<attribute name="NAME" x="185.42" y="136.144" size="1.778" layer="95" align="bottom-center"/>
+<instance part="U3" gate="G$1" x="198.12" y="157.48" smashed="yes">
+<attribute name="NAME" x="198.12" y="166.624" size="1.778" layer="95" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY1" gate="G$1" x="198.12" y="134.62" smashed="yes">
-<attribute name="VALUE" x="198.12" y="137.795" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY1" gate="G$1" x="210.82" y="165.1" smashed="yes">
+<attribute name="VALUE" x="210.82" y="168.275" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND1" gate="1" x="172.72" y="109.22" smashed="yes">
-<attribute name="VALUE" x="170.18" y="106.68" size="1.778" layer="96"/>
+<instance part="GND1" gate="1" x="185.42" y="139.7" smashed="yes">
+<attribute name="VALUE" x="182.88" y="137.16" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY5" gate="G$1" x="12.7" y="160.02" smashed="yes">
-<attribute name="VALUE" x="12.7" y="163.195" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY5" gate="G$1" x="12.7" y="162.56" smashed="yes">
+<attribute name="VALUE" x="12.7" y="165.735" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="J1" gate="G$1" x="185.42" y="96.52" smashed="yes">
 <attribute name="NAME" x="185.42" y="102.362" size="1.778" layer="95" align="bottom-center"/>
@@ -9937,20 +9938,20 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <instance part="GND4" gate="1" x="198.12" y="88.9" smashed="yes">
 <attribute name="VALUE" x="195.58" y="86.36" size="1.778" layer="96"/>
 </instance>
-<instance part="C1" gate="G$1" x="12.7" y="129.54" smashed="yes" rot="MR0">
-<attribute name="NAME" x="11.43" y="132.08" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="11.43" y="127" size="1.778" layer="96" rot="MR0" align="top-left"/>
+<instance part="C1" gate="G$1" x="12.7" y="139.7" smashed="yes" rot="MR0">
+<attribute name="NAME" x="11.43" y="142.24" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="11.43" y="137.16" size="1.778" layer="96" rot="MR0" align="top-left"/>
 </instance>
-<instance part="C8" gate="G$1" x="167.64" y="71.12" smashed="yes" rot="MR0">
+<instance part="C16" gate="G$1" x="167.64" y="71.12" smashed="yes" rot="MR0">
 <attribute name="NAME" x="166.37" y="73.66" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="166.37" y="68.58" size="1.778" layer="96" rot="MR0" align="top-left"/>
 </instance>
-<instance part="GND6" gate="1" x="198.12" y="119.38" smashed="yes">
-<attribute name="VALUE" x="195.58" y="116.84" size="1.778" layer="96"/>
+<instance part="GND6" gate="1" x="210.82" y="149.86" smashed="yes">
+<attribute name="VALUE" x="208.28" y="147.32" size="1.778" layer="96"/>
 </instance>
-<instance part="C5" gate="G$1" x="198.12" y="127" smashed="yes" rot="R180">
-<attribute name="NAME" x="196.85" y="124.46" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="196.85" y="129.54" size="1.778" layer="96" rot="R180" align="top-left"/>
+<instance part="C12" gate="G$1" x="210.82" y="157.48" smashed="yes" rot="R180">
+<attribute name="NAME" x="209.55" y="154.94" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="209.55" y="160.02" size="1.778" layer="96" rot="R180" align="top-left"/>
 </instance>
 <instance part="U2" gate="G$1" x="66.04" y="55.88" smashed="yes">
 <attribute name="NAME" x="66.04" y="69.85" size="1.778" layer="95" ratio="12" align="bottom-center"/>
@@ -9973,7 +9974,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="NAME" x="43.18" y="54.61" size="1.778" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="43.18" y="57.15" size="1.778" layer="96" rot="R180" align="top-center"/>
 </instance>
-<instance part="C7" gate="G$1" x="35.56" y="48.26" smashed="yes" rot="MR180">
+<instance part="C15" gate="G$1" x="35.56" y="48.26" smashed="yes" rot="MR180">
 <attribute name="NAME" x="36.83" y="45.72" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="36.83" y="50.8" size="1.778" layer="96" rot="MR180" align="top-left"/>
 </instance>
@@ -9992,66 +9993,61 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="VALUE" x="185.42" y="59.69" size="1.778" layer="96" rot="R180" align="bottom-center"/>
 <attribute name="NAME" x="185.42" y="82.55" size="1.778" layer="95" align="bottom-center"/>
 </instance>
-<instance part="U1" gate="G$1" x="66.04" y="129.54" smashed="yes">
-<attribute name="NAME" x="66.04" y="148.59" size="1.778" layer="95" ratio="12" align="bottom-center"/>
-<attribute name="VALUE" x="66.04" y="110.49" size="1.27" layer="96" ratio="12" align="top-center"/>
+<instance part="U1" gate="G$1" x="83.82" y="132.08" smashed="yes">
+<attribute name="NAME" x="83.82" y="151.13" size="1.778" layer="95" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="83.82" y="113.03" size="1.27" layer="96" ratio="12" align="top-center"/>
 </instance>
-<instance part="C4" gate="G$1" x="111.76" y="119.38" smashed="yes" rot="MR180">
-<attribute name="NAME" x="113.03" y="116.84" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="113.03" y="121.92" size="1.778" layer="96" rot="MR180" align="top-left"/>
+<instance part="C9" gate="G$1" x="127" y="121.92" smashed="yes" rot="MR180">
+<attribute name="NAME" x="128.27" y="119.38" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="128.27" y="124.46" size="1.778" layer="96" rot="MR180" align="top-left"/>
 </instance>
-<instance part="C6" gate="G$1" x="83.82" y="137.16" smashed="yes">
-<attribute name="NAME" x="85.09" y="139.7" size="1.778" layer="95"/>
-<attribute name="VALUE" x="85.09" y="134.62" size="1.778" layer="96" align="top-left"/>
+<instance part="C6" gate="G$1" x="101.6" y="139.7" smashed="yes">
+<attribute name="NAME" x="102.87" y="142.24" size="1.778" layer="95"/>
+<attribute name="VALUE" x="102.87" y="137.16" size="1.778" layer="96" align="top-left"/>
 </instance>
-<instance part="C9" gate="G$1" x="48.26" y="121.92" smashed="yes" rot="R180">
-<attribute name="NAME" x="46.99" y="119.38" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="46.99" y="124.46" size="1.778" layer="96" rot="R180" align="top-left"/>
+<instance part="C5" gate="G$1" x="66.04" y="124.46" smashed="yes" rot="R180">
+<attribute name="NAME" x="64.77" y="121.92" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="64.77" y="127" size="1.778" layer="96" rot="R180" align="top-left"/>
 </instance>
-<instance part="GND10" gate="1" x="81.28" y="106.68" smashed="yes">
-<attribute name="VALUE" x="78.74" y="104.14" size="1.778" layer="96"/>
+<instance part="GND10" gate="1" x="99.06" y="109.22" smashed="yes">
+<attribute name="VALUE" x="96.52" y="106.68" size="1.778" layer="96"/>
 </instance>
-<instance part="MODE" gate="G$1" x="22.86" y="152.4" smashed="yes" rot="MR90">
-<attribute name="NAME" x="23.241" y="154.94" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="20.955" y="154.94" size="1.778" layer="96" rot="MR90"/>
+<instance part="MODE" gate="G$1" x="40.64" y="154.94" smashed="yes" rot="MR90">
+<attribute name="NAME" x="41.021" y="157.48" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="38.735" y="157.48" size="1.778" layer="96" rot="MR90"/>
 </instance>
-<instance part="ENABLE" gate="G$1" x="38.1" y="152.4" smashed="yes" rot="MR90">
-<attribute name="NAME" x="38.481" y="154.94" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="36.195" y="154.94" size="1.778" layer="96" rot="MR90"/>
+<instance part="ENABLE" gate="G$1" x="55.88" y="154.94" smashed="yes" rot="MR90">
+<attribute name="NAME" x="56.261" y="157.48" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="53.975" y="157.48" size="1.778" layer="96" rot="MR90"/>
 </instance>
-<instance part="C10" gate="G$1" x="88.9" y="109.22" smashed="yes" rot="MR180">
-<attribute name="NAME" x="90.17" y="106.68" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="90.17" y="111.76" size="1.778" layer="96" rot="MR180" align="top-left"/>
+<instance part="C7" gate="G$1" x="106.68" y="111.76" smashed="yes" rot="MR180">
+<attribute name="NAME" x="107.95" y="109.22" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="107.95" y="114.3" size="1.778" layer="96" rot="MR180" align="top-left"/>
 </instance>
-<instance part="R10" gate="G$1" x="88.9" y="99.06" smashed="yes" rot="R90">
-<attribute name="NAME" x="87.63" y="99.06" size="1.778" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="90.17" y="99.06" size="1.778" layer="96" rot="R90" align="top-center"/>
+<instance part="R8" gate="G$1" x="106.68" y="101.6" smashed="yes" rot="R90">
+<attribute name="NAME" x="105.41" y="101.6" size="1.778" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="107.95" y="101.6" size="1.778" layer="96" rot="R90" align="top-center"/>
 </instance>
-<instance part="GND11" gate="1" x="88.9" y="91.44" smashed="yes">
-<attribute name="VALUE" x="86.36" y="88.9" size="1.778" layer="96"/>
+<instance part="GND11" gate="1" x="106.68" y="93.98" smashed="yes">
+<attribute name="VALUE" x="104.14" y="91.44" size="1.778" layer="96"/>
 </instance>
-<instance part="R8" gate="G$1" x="30.48" y="124.46" smashed="yes" rot="MR270">
-<attribute name="NAME" x="29.21" y="124.46" size="1.778" layer="95" rot="MR270" align="bottom-center"/>
-<attribute name="VALUE" x="31.75" y="124.46" size="1.778" layer="96" rot="MR270" align="top-center"/>
+<instance part="C2" gate="G$1" x="17.78" y="139.7" smashed="yes">
+<attribute name="NAME" x="19.05" y="142.24" size="1.778" layer="95"/>
+<attribute name="VALUE" x="19.05" y="137.16" size="1.778" layer="96" align="top-left"/>
 </instance>
-<instance part="R9" gate="G$1" x="30.48" y="104.14" smashed="yes" rot="MR90">
-<attribute name="NAME" x="31.75" y="104.14" size="1.778" layer="95" rot="MR90" align="bottom-center"/>
-<attribute name="VALUE" x="29.21" y="104.14" size="1.778" layer="96" rot="MR90" align="top-center"/>
+<instance part="SUPPLY7" gate="G$1" x="35.56" y="76.2" smashed="yes">
+<attribute name="VALUE" x="35.56" y="79.375" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND12" gate="1" x="30.48" y="96.52" smashed="yes">
-<attribute name="VALUE" x="27.94" y="93.98" size="1.778" layer="96"/>
+<instance part="GND12" gate="1" x="35.56" y="60.96" smashed="yes">
+<attribute name="VALUE" x="33.02" y="58.42" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY7" gate="G$1" x="121.92" y="165.1" smashed="yes">
-<attribute name="VALUE" x="121.92" y="168.275" size="1.778" layer="96" align="bottom-center"/>
+<instance part="C14" gate="G$1" x="35.56" y="68.58" smashed="yes" rot="R180">
+<attribute name="NAME" x="34.29" y="66.04" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="34.29" y="71.12" size="1.778" layer="96" rot="R180" align="top-left"/>
 </instance>
-<instance part="GND13" gate="1" x="121.92" y="157.48" smashed="yes">
-<attribute name="VALUE" x="119.38" y="154.94" size="1.778" layer="96"/>
-</instance>
-<instance part="VIN+" gate="G$1" x="129.54" y="165.1" smashed="yes" rot="R180">
-<attribute name="NAME" x="132.588" y="165.1" size="1.778" layer="95" rot="R180" align="center-right"/>
-</instance>
-<instance part="VIN-" gate="G$1" x="129.54" y="160.02" smashed="yes" rot="R180">
-<attribute name="NAME" x="132.588" y="160.02" size="1.778" layer="95" rot="R180" align="center-right"/>
+<instance part="C3" gate="G$1" x="25.4" y="127" smashed="yes">
+<attribute name="NAME" x="26.67" y="129.54" size="1.778" layer="95"/>
+<attribute name="VALUE" x="26.67" y="124.46" size="1.778" layer="96" align="top-left"/>
 </instance>
 </instances>
 <busses>
@@ -10062,18 +10058,18 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
 <wire x1="167.64" y1="81.28" x2="167.64" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="78.74" x2="170.18" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="C16" gate="G$1" pin="1"/>
 <wire x1="167.64" y1="78.74" x2="167.64" y2="76.2" width="0.1524" layer="91"/>
 <junction x="167.64" y="78.74"/>
 <pinref part="U4" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="OUT"/>
-<wire x1="195.58" y1="132.08" x2="198.12" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="162.56" x2="210.82" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
-<wire x1="198.12" y1="132.08" x2="198.12" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="2"/>
-<junction x="198.12" y="132.08"/>
+<wire x1="210.82" y1="162.56" x2="210.82" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+<junction x="210.82" y="162.56"/>
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
@@ -10091,6 +10087,11 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pinref part="U2" gate="G$1" pin="EN"/>
 <wire x1="50.8" y1="60.96" x2="53.34" y2="60.96" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
+<wire x1="35.56" y1="73.66" x2="35.56" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="2"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -10102,51 +10103,59 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="220.98" y1="55.88" x2="220.98" y2="50.8" width="0.1524" layer="91"/>
 <junction x="167.64" y="50.8"/>
 <wire x1="220.98" y1="50.8" x2="167.64" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="C8" gate="G$1" pin="2"/>
+<pinref part="C16" gate="G$1" pin="2"/>
 <wire x1="167.64" y1="63.5" x2="167.64" y2="66.04" width="0.1524" layer="91"/>
 <junction x="167.64" y="63.5"/>
 <pinref part="U4" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="12.7" y1="111.76" x2="12.7" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="114.3" x2="22.86" y2="116.84" width="0.1524" layer="91"/>
-<junction x="22.86" y="114.3"/>
+<wire x1="12.7" y1="114.3" x2="12.7" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="48.26" y1="116.84" x2="48.26" y2="119.38" width="0.1524" layer="91"/>
+<junction x="48.26" y="116.84"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="114.3" x2="22.86" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="124.46" x2="12.7" y2="114.3" width="0.1524" layer="91"/>
-<junction x="12.7" y="114.3"/>
+<wire x1="12.7" y1="116.84" x2="17.78" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="116.84" x2="25.4" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="116.84" x2="48.26" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="134.62" x2="12.7" y2="116.84" width="0.1524" layer="91"/>
+<junction x="12.7" y="116.84"/>
 <pinref part="U1" gate="G$1" pin="PGND"/>
-<wire x1="22.86" y1="114.3" x2="48.26" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="116.84" x2="66.04" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="AGND"/>
-<wire x1="48.26" y1="114.3" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="114.3" x2="53.34" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="116.84" x2="50.8" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="116.84" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
-<junction x="50.8" y="114.3"/>
-<pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="114.3" x2="48.26" y2="116.84" width="0.1524" layer="91"/>
-<junction x="48.26" y="114.3"/>
+<wire x1="66.04" y1="116.84" x2="68.58" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="116.84" x2="71.12" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="119.38" x2="68.58" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="119.38" x2="68.58" y2="116.84" width="0.1524" layer="91"/>
+<junction x="68.58" y="116.84"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="116.84" x2="66.04" y2="119.38" width="0.1524" layer="91"/>
+<junction x="66.04" y="116.84"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="17.78" y1="134.62" x2="17.78" y2="116.84" width="0.1524" layer="91"/>
+<junction x="17.78" y="116.84"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="116.84" x2="25.4" y2="121.92" width="0.1524" layer="91"/>
+<junction x="25.4" y="116.84"/>
 </segment>
 <segment>
-<pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="C8" gate="G$1" pin="1"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="106.68" y1="106.68" x2="106.68" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="111.76" x2="106.68" y2="114.3" width="0.1524" layer="91"/>
-<junction x="106.68" y="111.76"/>
+<wire x1="121.92" y1="109.22" x2="121.92" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="114.3" x2="121.92" y2="116.84" width="0.1524" layer="91"/>
+<junction x="121.92" y="114.3"/>
 <pinref part="LED-" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="111.76" x2="111.76" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="111.76" x2="137.16" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="111.76" x2="111.76" y2="114.3" width="0.1524" layer="91"/>
-<junction x="111.76" y="111.76"/>
+<wire x1="121.92" y1="114.3" x2="127" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="127" y1="114.3" x2="152.4" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="127" y1="114.3" x2="127" y2="116.84" width="0.1524" layer="91"/>
+<junction x="127" y="114.3"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="GND"/>
-<wire x1="175.26" y1="121.92" x2="172.72" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="152.4" x2="185.42" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="172.72" y1="121.92" x2="172.72" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="152.4" x2="185.42" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="GND"/>
@@ -10156,7 +10165,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
-<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="C12" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="GND"/>
@@ -10165,7 +10174,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="C15" gate="G$1" pin="1"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -10175,21 +10184,17 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="ILM"/>
-<wire x1="78.74" y1="114.3" x2="81.28" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="116.84" x2="99.06" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="81.28" y1="114.3" x2="81.28" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="116.84" x2="99.06" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="GND12" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="VIN-" gate="G$1" pin="1"/>
-<pinref part="GND13" gate="1" pin="GND"/>
+<pinref part="C14" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PWM/MISO" class="0">
@@ -10207,7 +10212,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="33.02" y1="55.88" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <label x="33.02" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="C15" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="55.88" x2="38.1" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="55.88" x2="35.56" y2="53.34" width="0.1524" layer="91"/>
 <junction x="35.56" y="55.88"/>
@@ -10217,40 +10222,44 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <segment>
 <pinref part="D1" gate="G$1" pin="A"/>
 <pinref part="SUPPLY4" gate="G$1" pin="VBAT"/>
-<wire x1="170.18" y1="144.78" x2="170.18" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="175.26" x2="182.88" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY5" gate="G$1" pin="VBAT"/>
-<wire x1="12.7" y1="144.78" x2="27.94" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="144.78" x2="43.18" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="144.78" x2="48.26" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="144.78" x2="12.7" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="147.32" x2="17.78" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="147.32" x2="25.4" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="147.32" x2="45.72" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="147.32" x2="60.96" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="147.32" x2="66.04" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="147.32" x2="12.7" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="134.62" x2="12.7" y2="144.78" width="0.1524" layer="91"/>
-<junction x="12.7" y="144.78"/>
-<wire x1="48.26" y1="144.78" x2="48.26" y2="154.94" width="0.1524" layer="91"/>
+<junction x="12.7" y="147.32"/>
+<wire x1="12.7" y1="144.78" x2="12.7" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="147.32" x2="66.04" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="154.94" x2="60.96" y2="154.94" width="0.1524" layer="91"/>
-<label x="53.34" y="154.94" size="1.27" layer="95"/>
-<wire x1="48.26" y1="144.78" x2="53.34" y2="144.78" width="0.1524" layer="91"/>
-<junction x="48.26" y="144.78"/>
+<wire x1="66.04" y1="157.48" x2="78.74" y2="157.48" width="0.1524" layer="91"/>
+<label x="71.12" y="157.48" size="1.27" layer="95"/>
+<wire x1="66.04" y1="147.32" x2="71.12" y2="147.32" width="0.1524" layer="91"/>
+<junction x="66.04" y="147.32"/>
 <pinref part="U1" gate="G$1" pin="VIN"/>
 <pinref part="ENABLE" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="144.78" x2="43.18" y2="152.4" width="0.1524" layer="91"/>
-<junction x="43.18" y="144.78"/>
-<wire x1="43.18" y1="152.4" x2="43.18" y2="154.94" width="0.1524" layer="91"/>
-<junction x="43.18" y="152.4"/>
-<label x="43.18" y="154.94" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="60.96" y1="147.32" x2="60.96" y2="154.94" width="0.1524" layer="91"/>
+<junction x="60.96" y="147.32"/>
+<wire x1="60.96" y1="154.94" x2="60.96" y2="157.48" width="0.1524" layer="91"/>
+<junction x="60.96" y="154.94"/>
+<label x="60.96" y="157.48" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="MODE" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="144.78" x2="27.94" y2="152.4" width="0.1524" layer="91"/>
-<junction x="27.94" y="144.78"/>
-<wire x1="27.94" y1="152.4" x2="27.94" y2="154.94" width="0.1524" layer="91"/>
-<junction x="27.94" y="152.4"/>
-<label x="27.94" y="154.94" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<pinref part="VIN+" gate="G$1" pin="1"/>
-<pinref part="SUPPLY7" gate="G$1" pin="VBAT"/>
+<wire x1="45.72" y1="147.32" x2="45.72" y2="154.94" width="0.1524" layer="91"/>
+<junction x="45.72" y="147.32"/>
+<wire x1="45.72" y1="154.94" x2="45.72" y2="157.48" width="0.1524" layer="91"/>
+<junction x="45.72" y="154.94"/>
+<label x="45.72" y="157.48" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="144.78" x2="17.78" y2="147.32" width="0.1524" layer="91"/>
+<junction x="17.78" y="147.32"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="147.32" x2="25.4" y2="132.08" width="0.1524" layer="91"/>
+<junction x="25.4" y="147.32"/>
 </segment>
 </net>
 <net name="VDIV/SCK" class="0">
@@ -10273,18 +10282,18 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </net>
 <net name="VOUT" class="0">
 <segment>
-<label x="96.52" y="127" size="1.27" layer="95"/>
-<wire x1="106.68" y1="127" x2="78.74" y2="127" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="106.68" y1="127" x2="106.68" y2="124.46" width="0.1524" layer="91"/>
+<label x="114.3" y="129.54" size="1.27" layer="95"/>
+<wire x1="121.92" y1="129.54" x2="96.52" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<wire x1="121.92" y1="129.54" x2="121.92" y2="127" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="127" x2="111.76" y2="127" width="0.1524" layer="91"/>
-<junction x="106.68" y="127"/>
+<wire x1="121.92" y1="129.54" x2="127" y2="129.54" width="0.1524" layer="91"/>
+<junction x="121.92" y="129.54"/>
 <pinref part="U1" gate="G$1" pin="VOUT"/>
-<pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="127" x2="121.92" y2="127" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="127" x2="111.76" y2="124.46" width="0.1524" layer="91"/>
-<junction x="111.76" y="127"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="127" y1="129.54" x2="137.16" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="127" y1="129.54" x2="127" y2="127" width="0.1524" layer="91"/>
+<junction x="127" y="129.54"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="VIN+"/>
@@ -10294,8 +10303,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </net>
 <net name="FB" class="0">
 <segment>
-<wire x1="81.28" y1="121.92" x2="78.74" y2="121.92" width="0.1524" layer="91"/>
-<label x="81.28" y="121.92" size="1.27" layer="95" xref="yes"/>
+<wire x1="99.06" y1="124.46" x2="96.52" y2="124.46" width="0.1524" layer="91"/>
+<label x="99.06" y="124.46" size="1.27" layer="95" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="FB"/>
 </segment>
 <segment>
@@ -10312,44 +10321,40 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </net>
 <net name="VDD" class="0">
 <segment>
-<wire x1="53.34" y1="134.62" x2="30.48" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="134.62" x2="22.86" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="134.62" x2="22.86" y2="127" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="137.16" x2="48.26" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="137.16" x2="48.26" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="U1" gate="G$1" pin="VDD"/>
-<wire x1="20.32" y1="134.62" x2="22.86" y2="134.62" width="0.1524" layer="91"/>
-<junction x="22.86" y="134.62"/>
-<label x="20.32" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="129.54" x2="30.48" y2="134.62" width="0.1524" layer="91"/>
-<junction x="30.48" y="134.62"/>
+<wire x1="45.72" y1="137.16" x2="48.26" y2="137.16" width="0.1524" layer="91"/>
+<junction x="48.26" y="137.16"/>
+<label x="45.72" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SW" class="0">
 <segment>
-<wire x1="83.82" y1="142.24" x2="83.82" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="144.78" x2="101.6" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="144.78" x2="83.82" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="154.94" x2="71.12" y2="154.94" width="0.1524" layer="91"/>
-<label x="76.2" y="154.94" size="1.27" layer="95"/>
+<wire x1="101.6" y1="147.32" x2="101.6" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="157.48" x2="88.9" y2="157.48" width="0.1524" layer="91"/>
+<label x="93.98" y="157.48" size="1.27" layer="95"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 <pinref part="U1" gate="G$1" pin="SW"/>
-<wire x1="78.74" y1="144.78" x2="83.82" y2="144.78" width="0.1524" layer="91"/>
-<junction x="83.82" y="144.78"/>
+<wire x1="96.52" y1="147.32" x2="101.6" y2="147.32" width="0.1524" layer="91"/>
+<junction x="101.6" y="147.32"/>
 </segment>
 </net>
 <net name="VBAT_RECT" class="0">
 <segment>
 <pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="U3" gate="G$1" pin="IN"/>
-<wire x1="175.26" y1="132.08" x2="170.18" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="132.08" x2="170.18" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="132.08" x2="170.18" y2="127" width="0.1524" layer="91"/>
-<junction x="170.18" y="132.08"/>
+<wire x1="187.96" y1="162.56" x2="182.88" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="162.56" x2="182.88" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="162.56" x2="182.88" y2="157.48" width="0.1524" layer="91"/>
+<junction x="182.88" y="162.56"/>
 <pinref part="U3" gate="G$1" pin="EN"/>
-<wire x1="170.18" y1="127" x2="175.26" y2="127" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="132.08" x2="170.18" y2="132.08" width="0.1524" layer="91"/>
-<label x="167.64" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="182.88" y1="157.48" x2="187.96" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="162.56" x2="182.88" y2="162.56" width="0.1524" layer="91"/>
+<label x="180.34" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="223.52" y1="86.36" x2="220.98" y2="86.36" width="0.1524" layer="91"/>
@@ -10382,8 +10387,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <label x="198.12" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="33.02" y1="154.94" x2="33.02" y2="152.4" width="0.1524" layer="91"/>
-<label x="33.02" y="154.94" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="50.8" y1="157.48" x2="50.8" y2="154.94" width="0.1524" layer="91"/>
+<label x="50.8" y="157.48" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="ENABLE" gate="G$1" pin="3"/>
 </segment>
 </net>
@@ -10391,8 +10396,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="LED+" gate="G$1" pin="1"/>
-<wire x1="132.08" y1="127" x2="137.16" y2="127" width="0.1524" layer="91"/>
-<label x="134.62" y="127" size="1.27" layer="95"/>
+<wire x1="147.32" y1="129.54" x2="152.4" y2="129.54" width="0.1524" layer="91"/>
+<label x="149.86" y="129.54" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="VIN-"/>
@@ -10423,79 +10428,70 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </net>
 <net name="SOFTSTART" class="0">
 <segment>
-<pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="127" x2="48.26" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="129.54" x2="66.04" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="SS"/>
-<wire x1="48.26" y1="129.54" x2="53.34" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="129.54" x2="48.26" y2="129.54" width="0.1524" layer="91"/>
-<junction x="48.26" y="129.54"/>
-<label x="45.72" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="66.04" y1="132.08" x2="71.12" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="132.08" x2="66.04" y2="132.08" width="0.1524" layer="91"/>
+<junction x="66.04" y="132.08"/>
+<label x="63.5" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="BST" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="BST"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="78.74" y1="129.54" x2="83.82" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="129.54" x2="83.82" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="129.54" x2="83.82" y2="129.54" width="0.1524" layer="91"/>
-<junction x="83.82" y="129.54"/>
-<label x="86.36" y="129.54" size="1.27" layer="95" xref="yes"/>
+<wire x1="96.52" y1="132.08" x2="101.6" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="132.08" x2="101.6" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="132.08" x2="101.6" y2="132.08" width="0.1524" layer="91"/>
+<junction x="101.6" y="132.08"/>
+<label x="104.14" y="132.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="COMP" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="COMP"/>
-<wire x1="78.74" y1="116.84" x2="88.9" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="88.9" y1="116.84" x2="88.9" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="116.84" x2="88.9" y2="116.84" width="0.1524" layer="91"/>
-<junction x="88.9" y="116.84"/>
-<label x="91.44" y="116.84" size="1.27" layer="95" xref="yes"/>
+<wire x1="96.52" y1="119.38" x2="106.68" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="106.68" y1="119.38" x2="106.68" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="119.38" x2="106.68" y2="119.38" width="0.1524" layer="91"/>
+<junction x="106.68" y="119.38"/>
+<label x="109.22" y="119.38" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MODE" class="0">
 <segment>
 <pinref part="MODE" gate="G$1" pin="2"/>
-<wire x1="22.86" y1="147.32" x2="22.86" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="149.86" x2="40.64" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="MODE"/>
-<wire x1="22.86" y1="139.7" x2="53.34" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="139.7" x2="22.86" y2="139.7" width="0.1524" layer="91"/>
-<junction x="22.86" y="139.7"/>
-<label x="20.32" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="40.64" y1="142.24" x2="71.12" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="142.24" x2="40.64" y2="142.24" width="0.1524" layer="91"/>
+<junction x="40.64" y="142.24"/>
+<label x="38.1" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ENABLE" class="0">
 <segment>
 <pinref part="ENABLE" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="147.32" x2="38.1" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="149.86" x2="55.88" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="EN"/>
-<wire x1="38.1" y1="142.24" x2="53.34" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="142.24" x2="38.1" y2="142.24" width="0.1524" layer="91"/>
-<junction x="38.1" y="142.24"/>
-<label x="35.56" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="55.88" y1="144.78" x2="71.12" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="144.78" x2="55.88" y2="144.78" width="0.1524" layer="91"/>
+<junction x="55.88" y="144.78"/>
+<label x="53.34" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="COMP_MID" class="0">
 <segment>
-<pinref part="C10" gate="G$1" pin="1"/>
-<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="MODE_PD" class="0">
 <segment>
 <pinref part="MODE" gate="G$1" pin="3"/>
-<wire x1="17.78" y1="152.4" x2="17.78" y2="154.94" width="0.1524" layer="91"/>
-<label x="17.78" y="154.94" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<wire x1="30.48" y1="111.76" x2="33.02" y2="111.76" width="0.1524" layer="91"/>
-<label x="33.02" y="111.76" size="1.27" layer="95" xref="yes"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="111.76" x2="30.48" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="109.22" x2="30.48" y2="111.76" width="0.1524" layer="91"/>
-<junction x="30.48" y="111.76"/>
+<wire x1="35.56" y1="154.94" x2="35.56" y2="157.48" width="0.1524" layer="91"/>
+<label x="35.56" y="157.48" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -10503,7 +10499,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </sheets>
 <errors>
 <approved hash="113,1,22.86,152.542,MODE,,,,,"/>
-<approved hash="113,1,38.1,150.904,EN,,,,,"/>
 </errors>
 </schematic>
 </drawing>
