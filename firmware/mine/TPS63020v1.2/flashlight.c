@@ -34,27 +34,31 @@
  *		Resistor values for voltage divider (reference BLF-VLD README for more info)
  *		Reference voltage can be anywhere from 1.0 to 1.2, so this cannot be all that accurate
  *
- *           VCC
- *            |
- *           Vd (~.25 v drop from protection diode)
- *            |
- *          1912 (R1 19,100 ohms)
- *            |
- *            |---- PB2 from MCU
- *            |
- *          4701 (R2 4,700 ohms)
- *            |
- *           GND
+ *		 VCC
+ *		  |
+ *		 Vd (~.25 v drop from protection diode)
+ *		  |
+ *		 [R1] 360 kohms
+ *		  |
+ *		  |---- PB2 from MCU
+ *		  |
+ *		 [R2] 47 kohms
+ *		  |
+ *		 GND
  *
  *		ADC = ((V_bat - V_diode) * R2   * 255) / ((R1    + R2  ) * V_ref)
- *		125 = ((3.0   - .25    ) * 4700 * 255) / ((19100 + 4700) * 1.1  )
- *		121 = ((2.9   - .25    ) * 4700 * 255) / ((19100 + 4700) * 1.1  )
+ *		79.0 = ((3.2   - .25    ) * 47000 * 255) / ((360000 + 47000) * 1.1  )
+ *		73.6 = ((3.0   - .25    ) * 47000 * 255) / ((360000 + 47000) * 1.1  )
  *
- *		Well 125 and 121 were too close, so it shut off right after lowering to low mode, so I went with
- *		130 and 120
+ *		Well 79 and 73 were too close, so it shut off right after lowering to low mode, so I went with
+ *		80 and 70
  *
  *		To find out what value to use, plug in the target voltage (V) to this equation
- *			value = (V * 4700 * 255) / (23800 * 1.1)
+ *			value = (V * 47000 * 255) / (407000 * 1.1)
+ *
+ *		So, e.g., for LiFePO4:
+ *		(2.8V * 47000 * 255) / (407000 * 1.1) = 75
+ *		(2.5V * 47000 * 255) / (407000 * 1.1) = 67
  *      
  */
 
@@ -105,19 +109,21 @@
 						// PWM outputs?  Comment out to disable
 						// alternate PWM output
 
+#ifndef LIFEPO4
 #define LIFEPO4 			0	//Changes low voltage detection threshold
 						// from around 3.2V to 2.8V, as LiFePO4
 						// batteries have a slightly lower voltage
 						// because of their chemistry.
+#endif
 
 #if LIFEPO4
-#warning "Compiling for LiFePO4 low batt level (2.8V)"
-#define ADC_LOW			110	// (LiFePO4 3.2V) When do we start ramping
-#define ADC_CRIT			100	// (LiFePO4 3.2V) When do we turn off
+#warning "Compiling for LiFePO4 low batt level (2.8V/2.5V)"
+#define ADC_LOW			75	// (LiFePO4 2.8V) When do we start ramping
+#define ADC_CRIT			67	// (LiFePO4 2.5V) When do we turn off
 #else
-#warning "Compiling for Li-ion low batt level (3.2V)"
-#define ADC_LOW			130	// (Li-ion 3.7V) When do we start ramping
-#define ADC_CRIT			120	// (Li-ion 3.7V) When do we turn off
+#warning "Compiling for Li-ion low batt level (3.2V/3.0V)"
+#define ADC_LOW			80	// (Li-ion 3.2V) When do we start ramping
+#define ADC_CRIT			70	// (Li-ion 3.0V) When do we turn off
 #endif
 
 #define CAP_THRESHOLD		130	// Value between 1 and 255 corresponding
