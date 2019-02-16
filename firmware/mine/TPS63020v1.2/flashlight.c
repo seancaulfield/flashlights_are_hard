@@ -57,8 +57,8 @@
  *			value = (V * 47000 * 255) / (407000 * 1.1)
  *
  *		So, e.g., for LiFePO4:
- *		(2.8V * 47000 * 255) / (407000 * 1.1) = 75
- *		(2.5V * 47000 * 255) / (407000 * 1.1) = 67
+ *		((2.8 - 0.25) * 47000 * 255) / (407000 * 1.1) = 68
+ *		((2.5 - 0.25) * 47000 * 255) / (407000 * 1.1) = 60
  *      
  */
 
@@ -118,8 +118,8 @@
 
 #if LIFEPO4
 #warning "Compiling for LiFePO4 low batt level (2.8V/2.5V)"
-#define ADC_LOW			75	// (LiFePO4 2.8V) When do we start ramping
-#define ADC_CRIT			67	// (LiFePO4 2.5V) When do we turn off
+#define ADC_LOW			68	// (LiFePO4 2.8V) When do we start ramping
+#define ADC_CRIT			60	// (LiFePO4 2.5V) When do we turn off
 #else
 #warning "Compiling for Li-ion low batt level (3.2V/3.0V)"
 #define ADC_LOW			80	// (Li-ion 3.2V) When do we start ramping
