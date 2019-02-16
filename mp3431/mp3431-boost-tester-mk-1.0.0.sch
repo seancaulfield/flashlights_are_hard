@@ -9798,7 +9798,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <parts>
 <part name="FRAME1" library="a_parts" deviceset="FRAME-LETTER" device="NO_PACKAGE">
 <attribute name="DESIGNER" value="sean@yak.net"/>
-<attribute name="VERSION" value="v2.0.1"/>
+<attribute name="VERSION" value="v1.0"/>
 </part>
 <part name="SUPPLY2" library="a_parts" deviceset="VCC" device=""/>
 <part name="GND3" library="a_parts" deviceset="GND" device=""/>
