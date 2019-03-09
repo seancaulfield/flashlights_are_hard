@@ -24,3 +24,33 @@ dIpp = ripple * Iout = 20% * 100mA = 20mA
     Vin(min) * Dmax * Ts   3 * .663 * .000000625
 L = -------------------- = --------------------- = 
          2 * dIpp                 2 * .02
+
+
+------------------------------------------------------------
+
+310nm UVB LED
+
+Vout = 7V (nom?)
+Iout = 40mA max
+ripple = 20% (?)
+Il(pp) = 80mA (?)
+
+Vin(min) = 2.7
+fsw = 1.6MHz => Ts = 625ns
+dV = 250mV
+Rd ~= 4 Ohm (?)
+
+       Vout - eff * Vin(min)
+Dmax = --------------------- ~= 0.65
+              Vout
+
+       Vin(min) * Dmax * Ts
+Lmin = -------------------- ~= 6.89 => L = 8.2 uH
+            2 * Il(pp)
+
+
+         Vout * Dmax
+C2 >= ----------------- = 1.42
+      2 * fsw * Rd * dV
+
+C1 = C2 = 2.2uF

@@ -1,0 +1,40 @@
+* SpiceNetList
+* 
+* Exported from crap.sch at 2/24/19 5:57 PM
+* 
+* EAGLE Version 9.3.1 Copyright (c) 1988-2019 Autodesk, Inc.
+* 
+.TEMP=25.0
+
+* --------- .OPTIONS ---------
+.OPTIONS ABSTOL=1e-12 GMIN=1e-12 PIVREL=1e-3 ITL1=100 ITL2=50 PIVTOL=1e-13 RELTOL=1e-3 VNTOL=1e-6 CHGTOL=1e-15 ITL4=10 METHOD=TRAP SRCSTEPS=0 TRTOL=7 NODE
+
+* --------- .PARAMS ---------
+
+* --------- devices ---------
+V_V1 VCC 0 DC 6 AC 0 
+R_R3 FB VCC 75000 
+V_V2 VDD 0 DC 1 AC 0 
+R_R1 0 FB 15000 
+R_R2 FB VDD 47000 
+
+* --------- simulation ---------
+.control
+set filetype=ascii
+DC V_V2 0 3 0.006 
+write crap.sch.sim V(VDD) V(VCC) V(FB) I(V_V2) I(V_V1)
+.endc
+
+
+
+.END
+
+
+
+
+
+
+
+
+
+
