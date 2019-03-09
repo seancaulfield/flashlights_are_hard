@@ -1,0 +1,33 @@
+* SpiceNetList
+* 
+* Exported from resistors.sch at 3/3/19 9:59 PM
+* 
+* EAGLE Version 9.3.1 Copyright (c) 1988-2019 Autodesk, Inc.
+* 
+.TEMP=25.000000
+* --------- .OPTIONS ---------
+* --------- .PARAMS ---------
+
+* --------- devices ---------
+R_R3 0 LEDK 0.1 
+R_RL LEDA LEDK 1 
+V_V1 VDD 0 DC 2.8 AC 0 
+V_V2 LEDA 0 DC 3.3 AC 0 
+R_R1 VDD FB 10000 
+R_R2 FB LEDK 1000 
+
+* --------- simulation ---------
+.print DC V(VDD) V(FB) V(LEDK) V(LEDA) I(V_V1) I(V_V2)
+.print AC V(VDD) V(FB) V(LEDK) V(LEDA) I(V_V1) I(V_V2)
+.print TRAN V(VDD) V(FB) V(LEDK) V(LEDA) I(V_V1) I(V_V2)
+.END
+
+
+
+
+
+
+
+
+
+
