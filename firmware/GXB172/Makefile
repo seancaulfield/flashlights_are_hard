@@ -74,3 +74,6 @@ fuses:
 upload:
 	#$(AVRDUDE) -v -cusbtiny -p $(AVRDUDE_MCU) -Uflash:w:$(PRG).hex:a -Ueeprom:w:$(PRG).eep:i
 	$(AVRDUDE) -v -cusbtiny -p $(AVRDUDE_MCU) -Uflash:w:$(PRG).hex:a
+
+verify:
+	$(AVRDUDE) -v -cusbtiny -p $(AVRDUDE_MCU) -Uflash:v:$(PRG).hex:a
