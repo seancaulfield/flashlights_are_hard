@@ -1,6 +1,8 @@
 PRG            = GXB172ATtiny841_FW10_MAR2018
 OBJ            = flashlight.o
 MCU_TARGET     = t841
+#PROGRAMMER     = usbtiny
+PROGRAMMER     = usbtiny
 
 # Target Dependent Variables
 
@@ -69,11 +71,11 @@ ehex:  $(PRG).eep
 		ihex $< $@ || { echo empty $@ not generated; exit 0; }
 
 fuses:
-	$(AVRDUDE) -v -cusbtiny -p $(AVRDUDE_MCU) $(AVRDUDE_FUSES)
+	$(AVRDUDE) -v -c $(PROGRAMMER) -p $(AVRDUDE_MCU) $(AVRDUDE_FUSES)
 
 upload:
-	#$(AVRDUDE) -v -cusbtiny -p $(AVRDUDE_MCU) -Uflash:w:$(PRG).hex:a -Ueeprom:w:$(PRG).eep:i
-	$(AVRDUDE) -v -cusbtiny -p $(AVRDUDE_MCU) -Uflash:w:$(PRG).hex:a
+	#$(AVRDUDE) -v -c $(PROGRAMMER) -p $(AVRDUDE_MCU) -Uflash:w:$(PRG).hex:a -Ueeprom:w:$(PRG).eep:i
+	$(AVRDUDE) -v -c $(PROGRAMMER) -p $(AVRDUDE_MCU) -Uflash:w:$(PRG).hex:a
 
 verify:
-	$(AVRDUDE) -v -cusbtiny -p $(AVRDUDE_MCU) -Uflash:v:$(PRG).hex:a
+	$(AVRDUDE) -v -c $(PROGRAMMER) -p $(AVRDUDE_MCU) -Uflash:v:$(PRG).hex:a
